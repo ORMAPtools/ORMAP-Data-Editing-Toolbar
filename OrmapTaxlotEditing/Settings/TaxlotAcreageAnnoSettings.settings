@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="" GeneratedClassName="TaxlotAcreageAnnoSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TextSize00120Scale" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0.8</Value>
+    </Setting>
+    <Setting Name="TextSize00240Scale" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1.6</Value>
+    </Setting>
+    <Setting Name="TextSize00360Scale" Type="System.String" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="TextSize00480Scale" Type="System.String" Scope="User">
+      <Value Profile="(Default)">3.2</Value>
+    </Setting>
+    <Setting Name="TextSize00600Scale" Type="System.String" Scope="User">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+    <Setting Name="TextSize01200Scale" Type="System.String" Scope="User">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="TextSize02400Scale" Type="System.String" Scope="User">
+      <Value Profile="(Default)">16</Value>
+    </Setting>
+    <Setting Name="TextSize04800Scale" Type="System.String" Scope="User">
+      <Value Profile="(Default)">32</Value>
+    </Setting>
+    <Setting Name="TextSize09600Scale" Type="System.String" Scope="User">
+      <Value Profile="(Default)">48</Value>
+    </Setting>
+    <Setting Name="TextSize24000Scale" Type="System.String" Scope="User">
+      <Value Profile="(Default)">160</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

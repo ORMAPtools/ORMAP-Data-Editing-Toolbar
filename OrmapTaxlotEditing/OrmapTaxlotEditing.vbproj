@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EBBEA746-E8D6-4B83-8AD6-7E43D6389D76}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>OrmapTaxlotEditing</RootNamespace>
+    <AssemblyName>OrmapTaxlotEditing</AssemblyName>
+    <MyType>Windows</MyType>
+    <OptionStrict>On</OptionStrict>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>OrmapTaxlotEditing.xml</DocumentationFile>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>Full</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>OrmapTaxlotEditing.xml</DocumentationFile>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ESRI.ArcGIS.ADF.Local, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.ArcMapUI, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Carto, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Catalog, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.CatalogUI, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesGDB, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Display, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Editor, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Framework, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geodatabase, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geometry, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.System, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.SystemUI, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
+    <Reference Include="System.configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.Designer.vb">
+      <DependentUpon>AboutForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddArrows.vb" />
+    <Compile Include="AddArrowsForm.Designer.vb">
+      <DependentUpon>AddArrowsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddArrowsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatalogFileDlg.vb" />
+    <Compile Include="AutoUpdateAllToggle.vb" />
+    <Compile Include="CombineTaxlotsForm.Designer.vb">
+      <DependentUpon>CombineTaxlotsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CombineTaxlotsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataMonitor.vb" />
+    <Compile Include="DimensionArrowsForm.Designer.vb">
+      <DependentUpon>DimensionArrowsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DimensionArrowsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpForm.Designer.vb">
+      <DependentUpon>HelpForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HelpForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocateFeature.vb" />
+    <Compile Include="LocateFeatureDockWin.vb" />
+    <Compile Include="EditMapIndexForm.Designer.vb">
+      <DependentUpon>EditMapIndexForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditMapIndexForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocateFeatureUserControl.Designer.vb">
+      <DependentUpon>LocateFeatureUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LocateFeatureUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MapDefinitionForm.Designer.vb">
+      <DependentUpon>MapDefinitionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MapDefinitionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORMapNum.vb" />
+    <Compile Include="OrmapSettings.vb" />
+    <Compile Include="OrmapSettingsForm.Designer.vb">
+      <DependentUpon>OrmapSettingsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OrmapSettingsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORMAPToolBarResource.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ORMAPToolBarResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="settings\AllTablesSettings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>AllTablesSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="settings\AnnoTableNamesSettings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>AnnoTableNamesSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="settings\DefinitionQuerySettings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>DefinitionQuerySettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="settings\TaxlotAcreageAnnoSettings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>TaxlotAcreageAnnoSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="settings\CartographicLinesSettings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>CartographicLinesSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="settings\DefaultValuesSettings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>DefaultValuesSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="EditorExtension.vb" />
+    <Compile Include="CombineTaxlots.vb" />
+    <Compile Include="EditMapIndex.vb" />
+    <Compile Include="settings\MapIndexSettings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>MapIndexSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="PropertiesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settings\TableNamesSettings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>TableNamesSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SpatialUtilities.vb" />
+    <Compile Include="StringUtilities.vb" />
+    <Compile Include="TaxlotAssignment.vb" />
+    <Compile Include="OrmapToolbar.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PropertyPage.vb" />
+    <Compile Include="settings\TaxlotNumberAnnoSettings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>TaxlotNumberAnnoSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="settings\TaxLotSettings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>TaxLotSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="settings\TaxLotLinesSettings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>TaxLotLinesSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="TaxlotAssignmentForm.Designer.vb">
+      <DependentUpon>TaxlotAssignmentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TaxlotAssignmentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilities.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="help\AddArrows_help.rtf" />
+    <EmbeddedResource Include="help\LocateFeature_help.rtf" />
+    <EmbeddedResource Include="help\CombineSelectedTaxlots_help.rtf" />
+    <EmbeddedResource Include="help\EditMapIndex_help.rtf" />
+    <EmbeddedResource Include="help\TaxlotAssignment_help.rtf" />
+    <EmbeddedResource Include="help\ReportOrRequest_help.rtf" />
+    <EmbeddedResource Include="help\Settings_help.rtf" />
+    <None Include="My Project\DataSources\AllTablesSettings.datasource" />
+    <None Include="My Project\DataSources\AnnoTableNamesSettings.datasource" />
+    <None Include="My Project\DataSources\CartographicLinesSettings.datasource" />
+    <None Include="My Project\DataSources\DefaultValuesSettings.datasource" />
+    <None Include="My Project\DataSources\MapIndexSettings.datasource" />
+    <None Include="My Project\DataSources\TableNamesSettings.datasource" />
+    <None Include="My Project\DataSources\TaxlotAcreageAnnoSettings.datasource" />
+    <None Include="My Project\DataSources\TaxLotLinesSettings.datasource" />
+    <None Include="My Project\DataSources\TaxlotNumberAnnoSettings.datasource" />
+    <None Include="My Project\DataSources\TaxLotSettings.datasource" />
+    <None Include="settings\AllTablesSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>AllTablesSettings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="settings\AnnoTableNamesSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>AnnoTableNamesSettings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="settings\DefinitionQuerySettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>DefinitionQuerySettings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="settings\TaxlotAcreageAnnoSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>TaxlotAcreageAnnoSettings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="app.config" />
+    <None Include="settings\CartographicLinesSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>CartographicLinesSettings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="ClassDiagram.cd">
+      <SubType>
+      </SubType>
+    </None>
+    <None Include="settings\DefaultValuesSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>DefaultValuesSettings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="settings\MapIndexSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>MapIndexSettings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="settings\TableNamesSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>TableNamesSettings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="settings\TaxlotNumberAnnoSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>TaxlotNumberAnnoSettings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="settings\TaxLotSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>TaxLotSettings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="settings\TaxLotLinesSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>TaxLotLinesSettings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="cursors\TaxlotAssignment.cur" />
+    <EmbeddedResource Include="cursors\Disabled.cur" />
+    <EmbeddedResource Include="PropertiesForm.resx">
+      <DependentUpon>PropertiesForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HelpForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditMapIndexForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EditMapIndexForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaxlotAssignmentForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TaxlotAssignmentForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="icons\AddArrows.bmp" />
+    <EmbeddedResource Include="icons\AutoUpdateAllToggle.bmp" />
+    <EmbeddedResource Include="icons\CombineTaxlots.bmp" />
+    <EmbeddedResource Include="icons\EditMapIndex.bmp" />
+    <EmbeddedResource Include="icons\lgplv3-88x31.png" />
+    <EmbeddedResource Include="icons\LocateFeature.bmp" />
+    <EmbeddedResource Include="icons\LocateFeature_Old.bmp" />
+    <EmbeddedResource Include="icons\ORMAPLogo.gif" />
+    <EmbeddedResource Include="icons\TaxlotAssignment.bmp" />
+    <Content Include="license\COPYING.LESSER.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="license\SOURCE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="AddArrowsForm.resx">
+      <DependentUpon>AddArrowsForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CombineTaxlotsForm.resx">
+      <DependentUpon>CombineTaxlotsForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DimensionArrowsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DimensionArrowsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocateFeatureUserControl.resx">
+      <DependentUpon>LocateFeatureUserControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapDefinitionForm.resx">
+      <DependentUpon>MapDefinitionForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrmapSettingsForm.resx">
+      <DependentUpon>OrmapSettingsForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORMAPToolBarResource.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ORMAPToolBarResource.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Target Name="BeforeClean">
+    <Exec WorkingDirectory="$(CommonProgramFiles)\ArcGIS\bin" Command="esriRegasm.exe &quot;$(TargetPath)&quot; /p:Desktop /u /s" Condition="Exists('$(TargetPath)')" />
+  </Target>
+  <Target Name="AfterBuild">
+    <Exec WorkingDirectory="$(CommonProgramFiles)\ArcGIS\bin" Command="esriRegasm.exe &quot;$(TargetPath)&quot; /p:Desktop /s" />
+  </Target>
+</Project>

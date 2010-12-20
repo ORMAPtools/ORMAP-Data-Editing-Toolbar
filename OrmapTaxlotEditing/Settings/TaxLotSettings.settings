@@ -1,0 +1,69 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="" GeneratedClassName="TaxLotSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CountyField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">County</Value>
+    </Setting>
+    <Setting Name="TownshipField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Town</Value>
+    </Setting>
+    <Setting Name="TownshipPartField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">TownPart</Value>
+    </Setting>
+    <Setting Name="TownshipDirectionField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">TownDir</Value>
+    </Setting>
+    <Setting Name="RangeField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Range</Value>
+    </Setting>
+    <Setting Name="RangePartField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">RangePart</Value>
+    </Setting>
+    <Setting Name="RangeDirectionField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">RangeDir</Value>
+    </Setting>
+    <Setting Name="SectionNumberField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SecNumber</Value>
+    </Setting>
+    <Setting Name="QuarterSectionField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Qtr</Value>
+    </Setting>
+    <Setting Name="QuarterQuarterSectionField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">QtrQtr</Value>
+    </Setting>
+    <Setting Name="OrmapMapNumberField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ORMapNum</Value>
+    </Setting>
+    <Setting Name="OrmapTaxlotField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ORTaxlot</Value>
+    </Setting>
+    <Setting Name="MapNumberField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MapNumber</Value>
+    </Setting>
+    <Setting Name="TaxlotField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Taxlot</Value>
+    </Setting>
+    <Setting Name="MapTaxlotField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MapTaxlot</Value>
+    </Setting>
+    <Setting Name="MapTaxlotFormatMask" Type="System.String" Scope="User">
+      <Value Profile="(Default)">TR^DSSQQ@@@@@</Value>
+    </Setting>
+    <Setting Name="SpecialInterestField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SpecialInt</Value>
+    </Setting>
+    <Setting Name="MapSuffixNumberField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MapSufNum</Value>
+    </Setting>
+    <Setting Name="MapSuffixTypeField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MapSufType</Value>
+    </Setting>
+    <Setting Name="MapAcresField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MapAcres</Value>
+    </Setting>
+    <Setting Name="AnomalyField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Anomaly</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

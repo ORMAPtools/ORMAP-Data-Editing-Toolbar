@@ -1,0 +1,496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Font Name="Tahoma" Size="8.25" />
+  <Comment CommentText="ORMAP Taxlot Editing Toolbar&#xD;&#xA;Copyright 2008 ORMAP Tech Group&#xD;&#xA;&#xD;&#xA;Original Authors:  OPET.NET Migration Team (Shad Campbell, James Moore, Nick Seigal)&#xD;&#xA;&#xD;&#xA;Copyright Holder:  ORMAP Tech Group  &#xD;&#xA;Contact Info:  ORMAP Tech Group may be reached at ORMAP_ESRI_Programmers@listsmart.osl.state.or.us&#xD;&#xA;&#xD;&#xA;ORMAP Taxlot Editing Toolbar is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.&#xD;&#xA;&#xD;&#xA;This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License located in the COPYING.LESSER.txt file for more details.&#xD;&#xA;&#xD;&#xA;You should have received a copy of the GNU Lesser General Public License along with the ORMAP Taxlot Editing Toolbar; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.&#xD;&#xA;">
+    <Position X="0.5" Y="0.5" Height="2.979" Width="5.481" />
+  </Comment>
+  <Class Name="OrmapTaxlotEditing.AddArrows">
+    <Position X="23.5" Y="5.25" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>AddArrows.vb</FileName>
+      <HashCode>EASEkAAjgOBkAo0BBALZAAISwGNgEGgMOaBwQRFAACA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_partnerAddArrowsForm" />
+      <Field Name="_partnerDimensionArrowsForm" />
+    </ShowAsAssociation>
+    <InheritanceLine Type="ESRI.ArcGIS.ADF.BaseClasses.BaseTool" FixedFromPoint="true">
+      <Path>
+        <Point X="23.75" Y="3.562" />
+        <Point X="24.906" Y="3.562" />
+        <Point X="24.906" Y="5.25" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="_partnerAddArrowsForm" Type="OrmapTaxlotEditing.AddArrowsForm" FixedFromPoint="true">
+      <Path>
+        <Point X="25.562" Y="18.291" />
+        <Point X="25.562" Y="18.75" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="_partnerDimensionArrowsForm" Type="OrmapTaxlotEditing.DimensionArrowsForm" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="23.5" Y="11.77" />
+        <Point X="23.213" Y="11.77" />
+        <Point X="23.213" Y="22.76" />
+        <Point X="25.625" Y="22.76" />
+        <Point X="25.625" Y="23.25" />
+      </Path>
+    </AssociationLine>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OrmapTaxlotEditing.CombineTaxlots">
+    <Position X="14.5" Y="5.25" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>CombineTaxlots.vb</FileName>
+      <HashCode>AARAAAAgACBEAIEAAAHAAAACgKGgAAQIACAgCAhABSA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_partnerCombineTaxlotsForm" />
+    </ShowAsAssociation>
+    <InheritanceLine Type="ESRI.ArcGIS.ADF.BaseClasses.BaseCommand" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="22.25" Y="4.5" />
+        <Point X="15.647" Y="4.5" />
+        <Point X="15.647" Y="5.25" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="_partnerCombineTaxlotsForm" Type="OrmapTaxlotEditing.CombineTaxlotsForm" FixedFromPoint="true">
+      <Path>
+        <Point X="16.688" Y="11.388" />
+        <Point X="16.688" Y="11.75" />
+      </Path>
+    </AssociationLine>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OrmapTaxlotEditing.EditMapIndex">
+    <Position X="17.25" Y="5.25" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>EditMapIndex.vb</FileName>
+      <HashCode>KgAIAAAmRCI1AKFAgALKCQGjgCEqAAJgELQgZABBACY=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_ormapNumber" />
+      <Field Name="_partnerEditMapIndexForm" />
+    </ShowAsAssociation>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="OrmapTaxlotEditing.EditMapIndex.StatePassageType">
+        <TypeIdentifier>
+          <NewMemberFileName>EditMapIndex.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="OrmapTaxlotEditing.EditMapIndex.CommandStateType">
+        <TypeIdentifier>
+          <NewMemberFileName>EditMapIndex.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="OrmapTaxlotEditing.EditMapIndex.TaxlotFieldMap">
+        <TypeIdentifier>
+          <NewMemberFileName>EditMapIndex.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="OrmapTaxlotEditing.EditMapIndex.MapIndexFieldMap">
+        <TypeIdentifier>
+          <NewMemberFileName>EditMapIndex.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <InheritanceLine Type="ESRI.ArcGIS.ADF.BaseClasses.BaseCommand" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="22.25" Y="4.5" />
+        <Point X="18.5" Y="4.5" />
+        <Point X="18.5" Y="5.25" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="_ormapNumber" Type="OrmapTaxlotEditing.ORMapNum" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="19.75" Y="15.312" />
+        <Point X="19.938" Y="15.312" />
+        <Point X="19.938" Y="21.135" />
+        <Point X="22.062" Y="21.135" />
+        <Point X="22.062" Y="21.5" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="_partnerEditMapIndexForm" Type="OrmapTaxlotEditing.EditMapIndexForm" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.25" Y="15.312" />
+        <Point X="16.625" Y="15.312" />
+        <Point X="16.625" Y="17" />
+      </Path>
+    </AssociationLine>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OrmapTaxlotEditing.EditorExtension" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="5.25" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>EditorExtension.vb</FileName>
+      <HashCode>EEQQgKl0gDhOwAATUAXARRwAlghAIDIGACCgQAJISBk=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OrmapTaxlotEditing.LocateFeature">
+    <Position X="20.25" Y="5.25" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>LocateFeature.vb</FileName>
+      <HashCode>AACEiAAgACAEAIGgAQDAACAGgCkkEAAAAiAiBABAACA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_partnerLocateFeatureUserControl" />
+    </ShowAsAssociation>
+    <InheritanceLine Type="ESRI.ArcGIS.ADF.BaseClasses.BaseCommand" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="22.25" Y="4.5" />
+        <Point X="21.5" Y="4.5" />
+        <Point X="21.5" Y="5.25" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="_partnerLocateFeatureUserControl" Type="OrmapTaxlotEditing.LocateFeatureUserControl" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="22.75" Y="9.062" />
+        <Point X="22.959" Y="9.062" />
+        <Point X="22.959" Y="16.812" />
+        <Point X="22.75" Y="16.812" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.904" Y="0.4" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OrmapTaxlotEditing.PropertiesForm">
+    <Position X="6" Y="13.25" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>PropertiesForm.vb</FileName>
+      <HashCode>AAAAABBAgDAAAAAgAgCAAAACAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrmapTaxlotEditing.TaxlotAssignment">
+    <Position X="26.25" Y="5.25" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>TaxlotAssignment.vb</FileName>
+      <HashCode>AABEAAAwAGAEAYADIADEAFACgKEgCAAEICAgCQRAACQ=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_partnerTaxlotAssignmentForm" />
+    </ShowAsAssociation>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <InheritanceLine Type="ESRI.ArcGIS.ADF.BaseClasses.BaseTool" FixedFromPoint="true">
+      <Path>
+        <Point X="23.75" Y="3.562" />
+        <Point X="27.5" Y="3.562" />
+        <Point X="27.5" Y="5.25" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="_partnerTaxlotAssignmentForm" Type="OrmapTaxlotEditing.TaxlotAssignmentForm" FixedFromPoint="true">
+      <Path>
+        <Point X="28.312" Y="12.538" />
+        <Point X="28.312" Y="13" />
+      </Path>
+    </AssociationLine>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ESRI.ArcGIS.ADF.BaseClasses.BaseCommand" Collapsed="true">
+    <Position X="22.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.221" />
+  </Class>
+  <Class Name="OrmapTaxlotEditing.OrmapSettings">
+    <Position X="8.75" Y="5.25" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>OrmapSettings.vb</FileName>
+      <HashCode>AAAAAAAAAAAEAAAAAAAIAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_partnerOrmapSettingsForm" />
+    </ShowAsAssociation>
+    <AssociationLine Name="_partnerOrmapSettingsForm" Type="OrmapTaxlotEditing.OrmapSettingsForm" FixedFromPoint="true">
+      <Path>
+        <Point X="10.903" Y="6.777" />
+        <Point X="10.903" Y="7.25" />
+      </Path>
+    </AssociationLine>
+  </Class>
+  <Class Name="OrmapTaxlotEditing.OrmapSettingsForm">
+    <Position X="8.75" Y="7.25" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>OrmapSettingsForm.vb</FileName>
+      <HashCode>ziIJa2M6MCwcMVgrACGdT4A2U0EeQWjrDWIhwAPBCSE=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Internal" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="ESRI.ArcGIS.ADF.BaseClasses.BaseTool" Collapsed="true">
+    <Position X="22.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier />
+    <InheritanceLine Type="ESRI.ArcGIS.ADF.BaseClasses.BaseCommand" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="23.375" Y="4.25" />
+        <Point X="23.375" Y="3.88" />
+      </Path>
+    </InheritanceLine>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OrmapTaxlotEditing.TaxlotAssignmentForm">
+    <Position X="26.25" Y="13" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>TaxlotAssignmentForm.vb</FileName>
+      <HashCode>AAQAAEEAACACAAAAAACAAABCQABAABAAAAQAAAQAAEA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrmapTaxlotEditing.StringUtilities">
+    <Position X="0.5" Y="21.75" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>StringUtilities.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAIAAAASAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrmapTaxlotEditing.SpatialUtilities">
+    <Position X="3.25" Y="18" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>SpatialUtilities.vb</FileName>
+      <HashCode>ACCAGEAhIAPBAESFBACCFEIBBAAAMATEEASAAoAwBAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrmapTaxlotEditing.Utilities">
+    <Position X="0.5" Y="18" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>Utilities.vb</FileName>
+      <HashCode>AAAEAAAAgAAAAAAABAAAAAAAAAAAAAAAAQAAAAACAQA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="OrmapTaxlotEditing.Utilities.EsriMouseButtons">
+        <TypeIdentifier>
+          <NewMemberFileName>Utilities.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+  </Class>
+  <Class Name="OrmapTaxlotEditing.HelpForm">
+    <Position X="3.25" Y="13.25" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>HelpForm.vb</FileName>
+      <HashCode>AAAAQAAAgCAAAQAAIACAAAACBAAAAgAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrmapTaxlotEditing.CatalogFileDialog">
+    <Position X="6" Y="18" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>CatalogFileDlg.vb</FileName>
+      <HashCode>AgAABAAECAAAAAAAAQAAAIQCEAAAAIBAAQAAAAAACAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrmapTaxlotEditing.AboutForm">
+    <Position X="3.25" Y="8.75" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>AboutForm.vb</FileName>
+      <HashCode>AgACAgAAASAAAAAAAACEAABCgAAAIAAAAEAACAAQEAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrmapTaxlotEditing.ORMapNum">
+    <Position X="20" Y="21.5" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>ORMapNum.vb</FileName>
+      <HashCode>kAAUAIgICQQACABAEAAAywQCAgEQAABEAACAQcAAgBI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrmapTaxlotEditing.PropertyPage">
+    <Position X="6" Y="5.25" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>PropertyPage.vb</FileName>
+      <HashCode>hBCGAAQgRBBCAUBEEADAAMAQgAAECAAAASAwBAZAASA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_partnerPropertiesForm" />
+    </ShowAsAssociation>
+    <AssociationLine Name="_partnerPropertiesForm" Type="OrmapTaxlotEditing.PropertiesForm" FixedFromPoint="true">
+      <Path>
+        <Point X="8.125" Y="12.911" />
+        <Point X="8.125" Y="13.25" />
+      </Path>
+    </AssociationLine>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OrmapTaxlotEditing.OrmapToolbar">
+    <Position X="3.25" Y="5.25" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>OrmapToolbar.vb</FileName>
+      <HashCode>AAAAAAAgAAAAAAAAAADAAAQAgAAAAAAACCAgAABAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="ESRI.ArcGIS.ADF.BaseClasses.BaseToolbar" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.5" Y="4.63" />
+        <Point X="4.5" Y="5.25" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="ESRI.ArcGIS.ADF.BaseClasses.BaseToolbar" Collapsed="true">
+    <Position X="3.75" Y="4" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OrmapTaxlotEditing.EditMapIndexForm">
+    <Position X="14.5" Y="17" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>EditMapIndexForm.vb</FileName>
+      <HashCode>JgCAiAAIAjGIAABgBACASMEHcIkAEAQACjgEAQCIOAU=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrmapTaxlotEditing.AutoUpdateAllToggle">
+    <Position X="11.75" Y="5.25" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>AutoUpdateAllToggle.vb</FileName>
+      <HashCode>AAAAAAAgACAEAICAAADAAAACgCAgAAAAACAgAABAACA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="ESRI.ArcGIS.ADF.BaseClasses.BaseCommand" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="22.25" Y="4.5" />
+        <Point X="12.897" Y="4.5" />
+        <Point X="12.897" Y="5.25" />
+      </Path>
+    </InheritanceLine>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OrmapTaxlotEditing.CombineTaxlotsForm">
+    <Position X="14.5" Y="11.75" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>CombineTaxlotsForm.vb</FileName>
+      <HashCode>AAAAAAABACAACBAAAACAAAACQAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrmapTaxlotEditing.DataMonitor">
+    <Position X="8.75" Y="18" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>DataMonitor.vb</FileName>
+      <HashCode>AABABAiiKUBACBAxICBA0AAZKYhABAAAEgAAQAACwxA=</HashCode>
+    </TypeIdentifier>
+    <NestedTypes>
+      <Enum Name="OrmapTaxlotEditing.DataMonitor.ESRIClassType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DataMonitor.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+  </Class>
+  <Class Name="OrmapTaxlotEditing.AddArrowsForm">
+    <Position X="23.5" Y="18.75" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>AddArrowsForm.vb</FileName>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACQAAQABAICAAAEAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrmapTaxlotEditing.DimensionArrowsForm">
+    <Position X="23.5" Y="23.25" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>DimensionArrowsForm.vb</FileName>
+      <HashCode>AAAAAoAAACQAAIACAACCAAECAAAAAABQACAAAAAAAAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrmapTaxlotEditing.AllTablesSettings">
+    <Position X="29.5" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAIAAAAAAFAAACAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrmapTaxlotEditing.AnnoTableNamesSettings">
+    <Position X="32" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>QAAQAAAAAACICAAAAAgAYAAxAAABAAAAIAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrmapTaxlotEditing.CartographicLinesSettings">
+    <Position X="34.5" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAIAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrmapTaxlotEditing.DefaultValuesSettings">
+    <Position X="37" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAgQAABAAAYgQAAAABAAAAAAAAAgQAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrmapTaxlotEditing.MapIndexSettings">
+    <Position X="29.5" Y="9.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAQAAAAABAAAAAAIAACAAABACAAAAEAAAkAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrmapTaxlotEditing.TableNamesSettings">
+    <Position X="32" Y="9.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAIAAAAAAAAAAoAAAEQAJAAAAAAAAAQAAABA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrmapTaxlotEditing.TaxlotAcreageAnnoSettings">
+    <Position X="34.5" Y="9.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAQAAQACIAAAAAABAAAIAIAAAgAEiAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrmapTaxlotEditing.TaxLotLinesSettings">
+    <Position X="37" Y="9.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAIAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrmapTaxlotEditing.TaxlotNumberAnnoSettings">
+    <Position X="29.5" Y="12.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAQAAQACIAAAAAABAAAIAIAAAgAEiAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrmapTaxlotEditing.TaxLotSettings">
+    <Position X="32" Y="12.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>CAACgACYAAAARgAAAAwgIAAABAQBADAgAAEAAAEBAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrmapTaxlotEditing.InstallationConfiguration">
+    <Position X="32" Y="20.25" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>InstallationConfiguration.vb</FileName>
+      <HashCode>AAAAAAAAACAAAAAEAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Configuration.Install.Installer" Collapsed="true">
+    <Position X="32.25" Y="19" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="OrmapTaxlotEditing.LocateFeatureDockWin">
+    <Position X="20.25" Y="12.5" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>LocateFeatureDockWin.vb</FileName>
+      <HashCode>AQQBAAAgAAAAAAAAAADAAAQAgCAAAAAACCAgAABIAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_locateFeatureUserControl" />
+    </ShowAsAssociation>
+    <AssociationLine Name="_locateFeatureUserControl" Type="OrmapTaxlotEditing.LocateFeatureUserControl" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="20.25" Y="15.312" />
+        <Point X="20.01" Y="15.312" />
+        <Point X="20.01" Y="16.812" />
+        <Point X="20.25" Y="16.812" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.485" Y="0.708" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OrmapTaxlotEditing.LocateFeatureUserControl">
+    <Position X="20.25" Y="16.5" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>LocateFeatureUserControl.vb</FileName>
+      <HashCode>AAAABAAAGCEAQAAAAACACABCQAAAIAAAAQCAAQAAAAg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>
