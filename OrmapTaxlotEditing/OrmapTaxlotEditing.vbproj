@@ -175,6 +175,24 @@
     <Compile Include="MapDefinitionForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="OrmapAnnotate\AnnotationUtilities.vb" />
+    <Compile Include="OrmapAnnotate\CreateAnnotation.vb" />
+    <Compile Include="OrmapAnnotate\CreateAnnotationForm.Designer.vb">
+      <DependentUpon>CreateAnnotationForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OrmapAnnotate\CreateAnnotationForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrmapAnnotate\InvertAnnotation.vb" />
+    <Compile Include="OrmapAnnotate\MoveDown.vb" />
+    <Compile Include="OrmapAnnotate\MoveUp.vb" />
+    <Compile Include="OrmapAnnotate\OrmapAnnotateToolbar.vb" />
+    <Compile Include="OrmapAnnotate\OrmapAnnotateToolbarResource.Designer.vb" />
+    <Compile Include="OrmapAnnotate\StandardBothSidesDown.vb" />
+    <Compile Include="OrmapAnnotate\StandardBothSidesUp.vb" />
+    <Compile Include="OrmapAnnotate\TransposeAnnotation.vb" />
+    <Compile Include="OrmapAnnotate\WideBothSidesDown.vb" />
+    <Compile Include="OrmapAnnotate\WideBothSidesUp.vb" />
     <Compile Include="ORMapNum.vb" />
     <Compile Include="OrmapSettings.vb" />
     <Compile Include="OrmapSettingsForm.Designer.vb">
@@ -365,6 +383,10 @@
   <ItemGroup>
     <EmbeddedResource Include="cursors\TaxlotAssignment.cur" />
     <EmbeddedResource Include="cursors\Disabled.cur" />
+    <EmbeddedResource Include="OrmapAnnotate\CreateAnnotationForm.resx">
+      <DependentUpon>CreateAnnotationForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrmapAnnotate\OrmapAnnotateToolbarResource.resx" />
     <EmbeddedResource Include="PropertiesForm.resx">
       <DependentUpon>PropertiesForm.vb</DependentUpon>
       <SubType>Designer</SubType>
@@ -389,6 +411,15 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="OrmapAnnotate\icons\CreateAnnotation.bmp" />
+    <EmbeddedResource Include="OrmapAnnotate\icons\InvertAnnotation.bmp" />
+    <EmbeddedResource Include="OrmapAnnotate\icons\MoveDown.bmp" />
+    <EmbeddedResource Include="OrmapAnnotate\icons\MoveUp.bmp" />
+    <EmbeddedResource Include="OrmapAnnotate\icons\StandardBothSidesDown.bmp" />
+    <EmbeddedResource Include="OrmapAnnotate\icons\StandardBothSidesUp.bmp" />
+    <EmbeddedResource Include="OrmapAnnotate\icons\TransposeAnnotation.bmp" />
+    <EmbeddedResource Include="OrmapAnnotate\icons\WideBothSidesDown.bmp" />
+    <EmbeddedResource Include="OrmapAnnotate\icons\WideBothSidesUp.bmp" />
     <EmbeddedResource Include="icons\AddArrows.bmp" />
     <EmbeddedResource Include="icons\AutoUpdateAllToggle.bmp" />
     <EmbeddedResource Include="icons\CombineTaxlots.bmp" />
