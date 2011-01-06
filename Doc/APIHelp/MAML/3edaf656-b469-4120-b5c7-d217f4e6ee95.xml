@@ -1,0 +1,2304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<developerOrientationDocument
+  xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <!--
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+
+  <introduction address="Intro">
+  	<para>The <application>ORMAP Taxlot Editing Toolbar</application> is developed according to 
+  	coding standards and practices. These standards are applied in designing, writing, testing and 
+  	integrating code. They are also used by the development team during review of code. Code review 
+  	is performed manually by the following:</para>
+    <para>
+    <list class="bullet">
+  		<listItem>another developer on the development team</listItem>
+    	<listItem>the designated application architect</listItem>
+    	<listItem>the development team as a group</listItem>
+    </list>
+    </para>
+    <para>In addition to manual review, some developers also find it useful to use 
+    <application>FxCop</application>, an automated code checking tool, to flag code that may have 
+    problems. The rules in <application>FxCop</application> don't perfectly match those in the 
+    standards document. The standards document takes precedence where they conflict.</para>
+    
+    <para>&#160;</para>
+    
+  </introduction>
+
+  <section address="CodingStandards">
+    <title>Coding Standards</title>
+    <content>
+      	
+      	<para>&#160;</para>
+	  		
+	  	<!-- Uncomment this to create a sub-section outline
+      	<autoOutline /> -->
+      	<autoOutline lead="Table of Contents:" />
+      	
+      	<para>&#160;</para>
+		
+		<para>From:</para>
+		
+		<quote>
+		<para><legacyBold>VB 2005 (.NET) Coding Standards and Best Programming Practices</legacyBold></para>
+		<para>by </para>
+		<para>Nick Seigal</para>
+		<para>Lane Council of Governments</para>
+		<para><externalLink>
+		  <linkText>http://www.lcog.org</linkText>
+		  <linkUri>http://www.lcog.org/</linkUri>
+		</externalLink></para>
+		</quote>
+		
+		<para>&#160;</para>
+		
+    </content>
+    
+    <!-- If a section contains a sections element, its content creates
+         sub-sections. These are not collapsible. -->
+    <sections>
+        <section address="SubSection1">
+            <title>1.&#160;&#160; Introduction</title>
+            <content>
+                <!-- TODO: Add named anchor: _Toc197487120 <para>1.&#160;&#160; Introduction</para> -->
+								
+				<para>&#160;</para>
+				
+				<para>Anybody can write code. With a few months of programming experience, you can
+				write 'working applications'. Making it work is easy, but doing it in a
+				professional way requires more effort.</para>
+				
+				<para>Believe it of not, the majority of the programmers write 'working code', but
+				not 'good code'. Writing good code is an art and you must learn and practice
+				it to do it well.</para>
+				
+				<para>Everyone may have different definitions for the term 'good code'. In our 
+				definition, the	following are the characteristics of good code.</para>
+				
+				<para>
+				<list class="bullet">
+		  			<listItem>Reliable (Robust, Usable)</listItem>
+		    		<listItem>Maintainable (Readable, Scalable, Updatable)</listItem>
+		    		<listItem>Efficient (Quick)</listItem>
+		        </list>
+		    	</para>
+				
+				<para>Most developers are inclined towards writing code for higher performance,
+				compromising reliability and maintainability. But considering long-term return 
+				on your investment, efficiency probably comes below reliability and maintainability.
+				If your code is not reliable and maintainable, you (and your company) will be
+				spending a lot of time trying to identify issues and understand code throughout
+				the life of your application.</para>
+				
+				<para>&#160;</para>
+				
+            </content>
+        </section>
+        <section address="SubSection2">
+            <title>2.&#160;&#160; Purpose of Coding Standards and Best Practices</title>
+            <content>
+                <!-- TODO: Add named anchor: _Toc197487121 <para>2.&#160;&#160; Purpose of Coding Standards and Best Practices</para> -->
+				
+				<para>&#160;</para>
+				
+				<para>To develop reliable and maintainable applications, you must follow coding
+				standards and best practices.</para>
+				
+				<para>The coding standards and best practices described in this document are compiled
+				from our own experience and by referring to various Microsoft and non-Microsoft
+				guidelines. In general, they bear a close resemblance to the Microsoft
+				standards, but extend and alter them where it seemed needed.</para>
+				
+				<para>Many sources of coding standards exist in the programming industry. None of 
+				them are perfect and you may follow any of them that work for you. What is more
+				important is selecting one standard approach and ensuring that everyone is
+				following it. The highest goal of any standard is standardization, i.e. that
+				the standard is used to create consistent code. Consistent code tends to be
+				more reliable, maintainable and efficient (fewer bugs, better documented, simpler
+				logic, etc.).</para>
+				
+				<para>&#160;</para>
+				
+            </content>
+        </section>
+        <section address="SubSection3">
+            <title>3.&#160;&#160; How to Follow the Standards Across the Team</title>
+            <content>
+                <!-- TODO: Add named anchor: _Toc197487122 <para>3.&#160;&#160; How to Follow the Standards Across the Team</para> -->
+				
+				<para>&#160;</para>
+				
+				<para>If you have
+				a team of different skills and tastes, you are going to have a tough time
+				convincing everyone to follow the same standards. The best approach is to have
+				a team meeting and develop your own standards document. You may use this
+				document as a template to base your own document on.</para>
+				
+				<para>Distribute
+				a copy of this document (or your own coding standard document) well ahead of the
+				coding standards meeting. All members should come to the meeting prepared to
+				discuss pros and cons of the various points in the document. Often, it is
+				useful if you have a manager present in the meeting to resolve conflicts.</para>
+				
+				<para>Discuss all
+				points in the document. Everyone may have a different opinion about each point,
+				but at the end of the discussion, all members must agree upon the standard you
+				are going to follow. Prepare a new standards document with appropriate changes
+				based on the suggestions from all of the team members. Print copies of it and
+				post it in all workstations.</para>
+				
+				<para>After you	start the development, you must schedule code review meetings to 
+				ensure that	everyone is following the rules. Three types of code reviews are 
+				recommended:</para>
+				
+				<list class="bullet">
+  					<listItem>
+  						<legacyBold>Peer review</legacyBold> – another team member review the
+						code to ensure that the code follows the coding standards and meets
+						requirements. This level of review can include some unit testing also. Every
+						file in the project must go through this process.
+					</listItem>
+  					<listItem>
+  						<legacyBold>Architect
+						review</legacyBold> – the
+						architect of the team must review the core modules of the project to ensure
+						that they adhere to the design and there are no “big” mistakes that can affect
+						the project in the long run.
+					</listItem>
+  					<listItem>
+		 				<legacyBold>Group review</legacyBold> – randomly select one or more files
+						and conduct a group review regularly (e.g once per week). Distribute a printed 
+						copy of the files to all team members 30 minutes before the meeting. Let them
+						read and come up with points for discussion. In the group review meeting, use a 
+						projector or web meeting format to display the file content in the screen. Go through 
+						every section of the code and let every member give their suggestions on how could 
+						that piece of code can be written in a better way. (Don’t forget to thank the 
+						developer for the good work and also make sure he does not get offended by the 
+						“group attack”!)
+  					</listItem>
+  				</list>
+  				
+  				<para>&#160;</para>
+								
+            </content>
+        </section>
+        <section address="SubSection4">
+            <title>4.&#160;&#160; Authors and Credits</title>
+            <content>
+                <!-- TODO: Add named anchor: _Toc197487123 <para>4.&#160;&#160; Authors and Credits</para> -->
+				
+				<para>&#160;</para>
+				
+				<para>This
+				document is based on a document prepared by the <externalLink>
+				  <linkText>dotnetspider.com</linkText>
+				  <linkUri>http://www.dotnetspider.com/</linkUri>
+				</externalLink> team. Most of the
+				information in that document was compiled from the coding standards and best
+				practices published in various articles at <fictitiousUri>www.dotnetspider.com</fictitiousUri>. Also, they
+				referred to the 
+				<externalLink>
+				  <linkText>guidelines published by Microsoft</linkText>
+				  <linkUri>http://msdn.microsoft.com/en-us/library/ms229042.aspx</linkUri>
+				</externalLink> 
+				and various other sources. I have converted the
+				whole discussion including all code samples to work with Visual Basic 2005. I
+				have also added many topics and modifications based on a variety of sources.</para>
+				
+				<para>&#160;</para>
+				
+            </content>
+        </section>
+        <section address="SubSection5">
+            <title>5.&#160;&#160; License, Copyright and Disclaimer</title>
+            <content>
+                <!-- TODO: Add named anchor: _Toc197487124 <para>5.&#160;&#160; License, Copyright and Disclaimer</para> -->
+				
+				<para>&#160;</para>
+				
+				<para>You are permitted to use and distribute this document for any non-commercial 
+				purpose as long as you retain this license and copyright information.</para>
+				
+				<para>This document is provided on an "as-is" basis. The author of this 
+				document will not be responsible for any kind of loss for you due to any 
+				inaccurate information provided in this document.</para>
+				
+				<para>&#160;</para>
+				
+            </content>
+        </section>
+        <section address="SubSection6">
+            <title>6.&#160;&#160; Revision History</title>
+            <content>
+                <!-- TODO: Add named anchor: _Toc197487125 <para>6.&#160;&#160; Revision History</para> -->
+				
+				<para>&#160;</para>
+				
+				<para>If you are
+				editing this document, you are required to fill the revision history with your
+				name and time stamp so that anybody can easily distinguish your updates from
+				the original author.</para>
+				
+				<para>&#160;</para>
+				
+				<table>
+				 <tableHeader>
+				  <row>
+				   <entry>
+				    <para><legacyBold>Rev#</legacyBold></para>
+				   </entry>
+				   <entry>
+				    <para><legacyBold>Date</legacyBold></para>
+				   </entry>
+				   <entry>
+				    <para><legacyBold>Changed By</legacyBold></para>
+				   </entry>
+				   <entry>
+				    <para><legacyBold>Description</legacyBold></para>
+				   </entry>
+				  </row>
+				 </tableHeader>
+				 <row>
+				  <entry>
+				  <para>1</para>
+				  </entry>
+				  <entry>
+				  <para>2/3/2008</para>
+				  </entry>
+				  <entry>
+				  <para>Nick
+				  Seigal</para>
+				  </entry>
+				  <entry>
+				  <para>Changed
+				  file title and footers, order of sections, revised text</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				  <para>2</para>
+				  </entry>
+				  <entry>
+				  <para>2/4/2008</para>
+				  </entry>
+				  <entry>
+				  <para>Nick
+				  Seigal</para>
+				  </entry>
+				  <entry>
+				  <para>Converted
+				  code examples to VB, revised text</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				  <para>3</para>
+				  </entry>
+				  <entry>
+				  <para>2/6/2008</para>
+				  </entry>
+				  <entry>
+				  <para>Nick
+				  Seigal</para>
+				  </entry>
+				  <entry>
+				  <para>Revised
+				  text</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				  <para>4</para>
+				  </entry>
+				  <entry>
+				  <para>4/25/2008</para>
+				  </entry>
+				  <entry>
+				  <para>Nick
+				  Seigal</para>
+				  </entry>
+				  <entry>
+				  <para>Revised
+				  Exceptions section; removed ASP.NET section</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				  <para>5</para>
+				  </entry>
+				  <entry>
+				  <para>5/1/2008</para>
+				  </entry>
+				  <entry>
+				  <para>Nick
+				  Seigal</para>
+				  </entry>
+				  <entry>
+				  <para>Added
+				  Visual Design Guidelines section</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				  <para>6</para>
+				  </entry>
+				  <entry>
+				  <para>6/7/2009</para>
+				  </entry>
+				  <entry>
+				  <para>Nick
+				  Seigal</para>
+				  </entry>
+				  <entry>
+				  <para>Edited
+				  text (grammar, formatting, etc.), updated exception handling section</para>
+				  </entry>
+				 </row>
+				</table>
+				
+				<para>&#160;</para>
+				
+            </content>
+        </section>
+        <section address="SubSection7">
+            <title>7.&#160;&#160; Architecture</title>
+            <content>
+                <!-- TODO: Add named anchor: _Toc197487126 <para>7.&#160;&#160; Architecture</para> -->
+				
+				<para>&#160;</para>
+				
+				<para>7.1.&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+				Do not have more
+				than one class in a single file.</para>
+				
+				<para>7.2.&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+				Avoid having very
+				large files. If a single file has more than 1,000 lines of code, it is a good
+				candidate for refactoring. Split them logically into two or more classes.</para>
+				
+				<para>7.3.&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+				Logically
+				organize all your files within appropriate folders. Use 2 level folder
+				hierarchies. You can have up to 10 folders in the root folder and each folder
+				can have up to 5 sub folders. If you have too many folders than cannot be
+				accommodated with the above mentioned 2 level hierarchy, you may need re
+				factoring into multiple assemblies.</para>
+				
+				<para>7.4.&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+				Always use multi
+				layer (N-Tier) architecture. The Model-View-Controler (MVC) or
+				User-Control-Model (UCM) architecture patterns are good choices.</para>
+				
+				<para>7.5.&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+				Never access a database
+				or other data source from the UI layer. </para>
+				
+				<para>Always have a data layer class which performs all the
+				database related tasks. This will help you support or migrate to another
+				database back end easily.</para>
+				
+				<para>&#160;</para>
+				
+            </content>
+        </section>
+        <section address="SubSection8">
+            <title>8.&#160;&#160; Naming Conventions and Standards</title>
+            <content>
+                <!-- TODO: Add named anchor: _Toc197487127 <para>8.&#160;&#160; Naming Conventions and Standards</para> -->
+				
+				<para>&#160;</para>
+				
+				<alert class="note">
+					<para>The terms <newTerm>Pascal Casing</newTerm> and <newTerm>Camel
+					Casing</newTerm> are used throughout this document.</para>
+					
+					<para>Pascal Casing - The first character of
+					all words are Upper Case and other characters are lower case.</para>
+					
+					<para><legacyBold>Example:</legacyBold> <literal><legacyUnderline>B</legacyUnderline>ack<legacyUnderline>C</legacyUnderline>olor</literal></para>
+					
+					<para>Camel Casing - The first character of all
+					words, except the first word, are Upper Case and other characters are
+					lower case.</para>
+					
+					<para><legacyBold>Example:</legacyBold> <literal><legacyUnderline>b</legacyUnderline>ack<legacyUnderline>C</legacyUnderline>olor</literal></para>
+				</alert>
+				
+				<para>&#160;</para>
+				
+				<para>8.1.&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+				Use Pascal casing for class names </para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[
+				Public Class HelloWorld
+				    ...
+				End Class 'HelloWorld
+				]]>
+				</code>
+				</para>
+				
+				<para>8.2.&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+				Use Pascal casing for method names.</para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[
+				Sub SayHello(name As String)
+				    ...
+				End Sub 'SayHello
+				]]>
+				</code>
+				</para>
+								
+				<para>8.3.&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+				Use Camel casing for variables and method parameters </para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[
+				Dim totalCount As Integer = 0
+				
+				Sub SayHello(name As String)
+				    Dim fullMessage As String = "Hello " & name
+				    ...
+				End Sub 'SayHello
+				]]>
+				</code>
+				</para>
+				
+				<para>8.4.&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+				Use the prefix <literal>I</literal> with Camel Casing for interfaces 
+				( Example: <codeInline>IEntity</codeInline> )</para>
+				
+				<para>&#160;</para>
+				
+				<para>8.5.&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+				Do not use Hungarian notation to name variables. </para>
+				
+				<para>In earlier days most of the programmers liked it - having
+				the data type as a prefix for the variable name and using <literal>m_</literal> as prefix for
+				member variables.</para>
+				
+				<para>For example (not good): </para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[
+				Dim m_sName As String
+				
+				Dim nAge As Integer
+				]]>
+				</code>
+				</para>
+				
+				<para>However, in .NET coding standards, <legacyBold>this is not recommended</legacyBold>.
+				Usage of data type prefixes or suffixes (e.g. NameString) and the prefix <literal>m_</literal> to represent
+				member variables should not be used. Use All variables should use camel casing.</para>
+				
+				<para>&#160;</para>
+				
+				<alert class="note">
+					<para>Exception:</para>
+				  	<para>UI controls are sometimes still usefully named using a form of Hungarian notation. 
+				  	See rule 7.13 below.</para>
+				</alert>
+				
+				<para>&#160;</para>
+				
+				<para>8.6.&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+				Use Meaningful,
+				descriptive words to name variables. Avoid abbreviations unless the variable
+				names would be very long (30+ characters) without them. Be <legacyItalic>very</legacyItalic>
+				consistent with abbreviation practices. Developers should agree explicitly on
+				the abbreviation rules that will be followed.</para>
+				
+				<para>Good:</para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[
+				Dim address As String
+				Dim salary As Integer
+				]]>
+				</code>
+				</para>
+				
+				<para>Not Good:</para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[
+				Dim nam As String
+				Dim addr As String
+				Dim sal As Integer
+				]]>
+				</code>
+				</para>
+				
+				<alert class="note">
+				  <para>Exception :</para>
+				  <para>If the variable is based on a field
+				  value that contains an abbreviation (most do), consider naming the variable
+				  like the field instead of inventing a different suitable name. This will make
+				  variables a bit harder to read, but will make it easier to understand the
+				  connection between the data and the code.</para>
+				</alert>
+				
+				<para>&#160;</para>
+				
+				<para>8.7.&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+				Do not use single
+				character variable names like <literal>i</literal>, <literal>n</literal>, 
+				<literal>s</literal> etc. Use names like <literal>index</literal>, 
+				<literal>temp</literal>, <literal>item</literal>. </para>
+				
+				<para>One exception in this case would be variables used for
+				iterations in loops: </para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[
+				For i As Integer = 0 To count – 1
+					...
+				Next i
+				]]>
+				</code>
+				</para>
+								
+				<alert class="note">
+					<para>Exception:</para>
+				  	<para>If the variable is used only as a counter for iteration and <legacyItalic>is 
+				  	not used anywhere else in the loop</legacyItalic>, you can opt to use a single 
+				  	generic character variable (e.g. <literal>i</literal> or <literal>n</literal>).</para>
+				  </alert>
+				
+				<para>&#160;</para>
+				
+				<para>8.8.&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+				Do not use underscores (<literal>_</literal>) anywhere in local variable names.</para>
+				
+				<para>&#160;</para>
+				
+				<para>8.9.&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+				All private member
+				variables which are referenced by public or private properties must be prefixed
+				with underscore (<literal>_</literal>) so that they can be differentiated from other 
+				variables.</para>
+				
+				<para>&#160;</para>
+				
+				<para>8.10..&#160;&#160;&#160;&#160;&#160;
+				Do not use
+				variable names that resemble <externalLink><linkText>reserved language keywords</linkText>
+				<linkUri>http://msdn.microsoft.com/en-us/library/ksh7h19t(VS.80).aspx</linkUri>
+				<linkAlternateText>Visual Basic Language Keywords (MSDN)</linkAlternateText>
+				</externalLink>. Although you can, do not bypass this restriction by enclosing the 
+				name in brackets (<literal>[ ]</literal>).</para>
+				
+				<para>&#160;</para>
+				
+				<para>8.11.&#160;&#160;&#160;&#160;&#160;
+				Prefix Boolean variables, properties and methods
+				with <literal>is</literal>, <literal>can</literal> or similar prefixes.</para>
+				
+				<para>For example: </para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[
+				Private _isFinished As Boolean
+				Dim canEdit As Boolean</para>
+				]]>
+				</code>
+				</para>
+				
+				<para>8.12.&#160;&#160;&#160;&#160;&#160;
+				Namespace names
+				should follow the standard pattern. The product name should be the name of the
+				project in the solution that builds the main assembly. </para>
+				
+				<para><codeInline><legacyItalic>OrganizationName</legacyItalic>.<legacyItalic>ProductName</legacyItalic>.<legacyItalic>TopLevelModule</legacyItalic>.<legacyItalic>BottomLevelModule</legacyItalic></codeInline></para>
+				
+				<para>&#160;</para>
+				
+				<para>8.13.&#160;&#160;&#160;&#160;&#160;
+				Use appropriate
+				prefix for the UI elements so that you can identify them from the rest of the
+				variables.</para>
+				
+				<para>There are 2 different approaches recommended here. <legacyBold>The
+				first is preferable.</legacyBold></para>
+				
+				<para>(a)&#160;&#160;&#160;&#160;&#160;
+				Use a common prefix such as <literal>ux</literal> for all UI elements. This will 
+				help you group all of the UI elements together and make it easy to access all 
+				of them from Intellisense. It will also allow you to change the type of a control, 
+				say from a Label to a TextBox with fewer code changes.</para>
+				
+				<para>(b)&#160;&#160;&#160;&#160;&#160;
+				Use appropriate Hungarian-style
+				prefix for each UI element. A brief list is given below. Since .NET has given
+				several controls, you may have to arrive at a complete list of standard
+				prefixes for each of the controls (including third party controls) you are
+				using.</para>
+				
+				<para>&#160;</para>
+				
+				<table>
+				 <tableHeader>
+				  <row>
+				   <entry>
+				    <para><legacyBold>Control</legacyBold></para>
+				   </entry>
+				   <entry>
+				    <para><legacyBold>Prefix</legacyBold></para>
+				   </entry>
+				  </row>
+				 </tableHeader>
+				 <row>
+				  <entry>
+				  <para>Label</para>
+				  </entry>
+				  <entry>
+				  <para>lbl</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				  <para>TextBox</para>
+				  </entry>
+				  <entry>
+				  <para>txt</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				  <para>DataGrid</para>
+				  </entry>
+				  <entry>
+				  <para>dtg</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				  <para>Button</para>
+				  </entry>
+				  <entry>
+				  <para>btn</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				  <para>ImageButton</para>
+				  </entry>
+				  <entry>
+				  <para>imb</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				  <para>Hyperlink</para>
+				  </entry>
+				  <entry>
+				  <para>hlk</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				  <para>DropDownList</para>
+				  </entry>
+				  <entry>
+				  <para>ddl</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				  <para>ListBox</para>
+				  </entry>
+				  <entry>
+				  <para>lst</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				  <para>DataList</para>
+				  </entry>
+				  <entry>
+				  <para>dtl</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				  <para>Repeater</para>
+				  </entry>
+				  <entry>
+				  <para>rep</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				  <para>Checkbox</para>
+				  </entry>
+				  <entry>
+				  <para>chk</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				  <para>CheckBoxList</para>
+				  </entry>
+				  <entry>
+				  <para>cbl</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				  <para>RadioButton</para>
+				  </entry>
+				  <entry>
+				  <para>rdo</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				  <para>RadioButtonList</para>
+				  </entry>
+				  <entry>
+				  <para>rbl</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				  <para>Image</para>
+				  </entry>
+				  <entry>
+				  <para>img</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				  <para>Panel</para>
+				  </entry>
+				  <entry>
+				  <para>pnl</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				  <para>PlaceHolder</para>
+				  </entry>
+				  <entry>
+				  <para>phd</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				  <para>Table</para>
+				  </entry>
+				  <entry>
+				  <para>tbl</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				  <para>Validators</para>
+				  </entry>
+				  <entry>
+				  <para>val</para>
+				  </entry>
+				 </row>
+				</table>
+				
+				<para>&#160;</para>
+				
+				<para>8.14.&#160;&#160;&#160;&#160;&#160;
+				The file name
+				should match the class name.</para>
+				
+				<para>For example, for the class <codeInline>HelloWorld</codeInline>, the file name
+				should be <localUri>HelloWorld.vb</localUri>. </para>
+				
+				<para>&#160;</para>
+				
+				<para>8.15.&#160;&#160;&#160;&#160;&#160;
+				Use Pascal Case for file names.</para>
+				
+				<para>&#160;</para>
+				
+				<para>8.16.&#160;&#160;&#160;&#160;&#160;
+				For more detailed
+				information on naming conventions (compatible with this document), see <externalLink>
+				  <linkText>http://www.irritatedvowel.com/Programming/Standards.aspx</linkText>
+				  <linkUri>http://www.irritatedvowel.com/Programming/Standards.aspx</linkUri>
+				</externalLink>.</para>
+				
+				<para>&#160;</para>
+				
+            </content>
+        </section>
+        <section address="SubSection9">
+            <title>9.&#160;&#160; Indentation and Spacing</title>
+            <content>
+                <!-- TODO: Add named anchor: _Toc197487128 <para>9.&#160;&#160; Indentation and Spacing</para> -->
+				
+				<para>&#160;</para>
+				
+				<para>9.1.&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+				Use TABS for indentation (do not use SPACES) and define the Tab size as 
+				<literal>4</literal>.</para>
+				
+				<para>These are the <application>Visual Studio 2005</application> defaults for 
+				<application>Visual Basic</application>. When people working in your code have 
+				different tab settings, it really makes a huge mess of the formatting. Whenever 
+				possible, avoid fighting the IDE and just go with the flow.</para>
+				
+				<para>&#160;</para>
+				
+				<para>9.2.&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+				Comments should
+				be indented to the same level as the code. </para>
+				
+				<para>Good:</para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[
+				' Format a message and display
+				Dim fullMessage As String = "Hello " & name
+				Dim currentTime As DateTime = DateTime.Now
+				Dim message As String =	fullMessage & ", the time is : " & _
+				        currentTime.ToShortTimeString()
+				
+				MessageBox.Show(message)
+				]]>
+				</code>
+				</para>
+				
+				<para>Not Good:</para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[
+				' Format a message and display
+				Dim fullMessage As String = "Hello " & name
+				Dim	currentTime As DateTime = DateTime.Now
+				Dim	message As String = fullMessage & ", the time is : " & _
+				        currentTime.ToShortTimeString()
+				
+				MessageBox.Show(message)
+				]]>
+				</code>
+				</para>
+				
+				<para>9.3.&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+				Use one blank
+				line to separate logical groups of code within a member. </para>
+				
+				<para>Good:</para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[
+				' Format a message and display
+				Function SayHello(name As String) As Boolean
+				    
+				    Dim fullMessage As String = "Hello " & name
+					Dim currentTime As DateTime = DateTime.Now
+					Dim message As String =	fullMessage & ", the time is : " & _
+					
+					currentTime.ToShortTimeString()
+				    MessageBox.Show(message)
+				    
+				    If ... Then
+				        ' Do something
+				        ' ...
+				        Return False
+				    End If
+				    
+				    Return True
+				    
+				End Function 'SayHello
+				]]>
+				</code>
+				</para>
+				
+				<para>Not Good:</para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[
+				' Format a message and display
+				Function SayHello(name As String) As Boolean
+				   	Dim fullMessage As String = &quot;Hello &quot; &amp; name
+				   	Dim currentTime As DateTime = DateTime.Now
+					Dim message As String = fullMessage & ", the time is : " & _			       
+						currentTime.ToShortTimeString()
+					MessageBox.Show(message)
+					If ... Then
+						' Do something
+						' ...
+						Return False
+					End If
+					Return True
+				End Function 'SayHello
+				]]>
+				</code>
+				</para>
+				
+				<para>9.4.&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+				There should be one
+				and only one blank line between each member inside the class.</para>
+				
+				<para>Screen real-estate is valuable. Classes that require more
+				blank lines to separate related code chunks are probably in need of refactoring
+				into multiple classes. Use the #Region directive instead. </para>
+				
+				<para>&#160;</para>
+				
+				<para>9.5.&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+				Organize code in
+				classes in the following general order (use a similar layout for structures and
+				form classes):</para>
+				
+				<list class="bullet">
+					<listItem>
+						<para>Class header</para>
+					</listItem>
+					<listItem>
+						<para>[Imported namespace statements]</para>
+					</listItem>
+					<listItem>
+						<para>[Class declaration]</para>
+					</listItem>
+					<listItem>
+						<para>[Inherited class statements]</para>
+					</listItem>
+					<listItem>
+						<para>[Inherited interface statements]</para>
+					</listItem>
+					<listItem>
+						<para>Class-level constants and enumerations</para>
+					</listItem>
+					<listItem>
+						<para>Built-in class members (properties, methods, events, event handlers, 
+						delegates, etc.)</para>
+					</listItem>
+					<listItem>
+						<para>Custom class members</para>
+					</listItem>
+					<listItem>
+						<para>Inherited class members</para>
+					</listItem>
+					<listItem>
+						<para>Implemented interface members</para>
+					</listItem>
+					<listItem>
+						<para>Other members</para>
+					</listItem>
+				</list>
+				
+				<para>Place each kind of code group above (except those in square
+				brackets) and subgroup (e.g. properties) in a <codeInline>#Region block</codeInline>.</para>
+				
+				<para>Organize within these groups by access level (public,
+				friend, private, etc.) and then alphabetically.</para>
+				
+				<para>Do not organize first by access level. A class diagram can
+				be created to view the members by (1) access level and then (2) by name
+				alphabetically. The kind of member (method, property, field, etc.) is also
+				shown.</para>
+				
+				<alert class="note">
+					<para>Exception :</para>
+				  	<para>Do not apply this rule to change the order within generated code.</para>
+				</alert>
+				
+				<para>&#160;</para>
+				
+				<para>9.6.&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+				Use the <codeInline>#Region</codeInline> directive to group related pieces of
+				code together. If you create proper grouping using <codeInline>#Region</codeInline>, 
+				the page should something like this when all definitions are collapsed.</para>
+				
+				<para><mediaLink><caption placement="after" lead="Figure 1">Regions Example</caption><image xlink:href="88c51ef0-501f-4e6a-8d0f-4112d19d0d72"/></mediaLink></para>
+				
+				<para>&#160;</para>
+				
+            </content>
+        </section>
+        <section address="SubSection10">
+            <title>10.&#160;&#160; Members</title>
+            <content>
+                <!-- TODO: Add named anchor: _Toc197487129 <para>10.&#160;&#160; Members</para> -->
+				
+				<para>&#160;</para>
+				
+				<para>10.1.&#160;&#160;&#160;&#160;
+				Avoid writing
+				very long members (properties, methods, event handlers, delegates, etc.). A member
+				should typically have no more than 25 lines of code. If a method has more than
+				25 lines of code, you should consider refactoring it into separate methods. </para>
+				
+				<para>&#160;</para>
+				
+				<para>10.2.&#160;&#160;&#160;&#160;
+				A method name
+				should tell what it does. </para>
+				
+				<para>Do not use misleading names. If the method name is obvious,
+				there is no need of documentation explaining what the method does. </para>
+				
+				<para>Good: </para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[
+				Sub SavePhoneNumber(phoneNumber As String)
+				    ' Save the phone number.
+				    ...
+				End Sub 'SavePhoneNumber
+				]]>
+				</code>
+				</para>
+				
+				<para>Not Good: </para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[
+				Sub SaveDetails(phoneNumber As String)
+				    ' Save the phone number.
+				    ...
+				End Sub 'SaveDetails
+				]]>
+				</code>
+				</para>
+				
+				<para>10.3.&#160;&#160;&#160;&#160;
+				A method should
+				do only one job. Do not combine more than one job in a single method, even if
+				those jobs are very small. </para>
+				
+				<para>Good: </para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[
+				' Save the address.
+				SaveAddress(address)
+				' Send an email to the supervisor to inform that the address is
+				' updated.
+				SendEmail(address, email)
+				Sub SaveAddress(address As String)
+				    ' Save the address.
+				    ' ...
+				End Sub 'SaveAddress
+				Sub SendEmail(address As String, email As String)
+				    ' Send an email to inform the supervisor that the address is 
+				    ' changed.
+				    ' ...
+				End Sub 'SendEmail
+				]]>
+				</code>
+				</para>
+				
+				<para>Not Good: </para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[
+				' Save address and send an email to the supervisor to inform that
+				' the address is updated.
+				SaveAddress(address, email)
+				Sub SaveAddress(address As String, email As String)
+				    ' Job 1.
+				    ' Save the address.
+				    ' ...
+				    ' Job 2.
+				    ' Send an email to inform the supervisor that the address is changed.
+				    ' ...
+				End Sub 'SaveAddress
+				]]>
+				</code>
+				</para>
+				
+				<para>10.4.&#160;&#160;&#160;&#160;
+				Avoid public
+				methods and properties, unless they really need to be accessed from outside the
+				class. Use <literal>internal</literal> if they are accessed only within the same 
+				assembly.</para>
+				
+				<para>&#160;</para>
+				
+				<para>10.5.&#160;&#160;&#160;&#160;
+				Avoid passing too
+				many parameters to a method. If you have more than 4 - 5 parameters, it is a
+				good candidate to define a class or structure.</para>
+				
+				<para>&#160;</para>
+				
+				<para>10.6.&#160;&#160;&#160;&#160;
+				If you have a
+				method returning a collection, return an empty collection instead of <literal>Null</literal>, 
+				if you have no data to return. </para>
+				
+				<para>For example, if you have a method returning an <codeInline>ArrayList</codeInline>,
+				always return a valid ArrayList. If you have no items to return, then return a
+				valid ArrayList with 0 items. This will make it easy for the calling
+				application to just check for the “count” rather than doing an additional check
+				for “null”.</para>
+				
+				<para>&#160;</para>
+				
+				<para>10.7.&#160;&#160;&#160;&#160;
+				An event handler
+				should not contain the code to perform the required action. </para>
+				
+				<para>Instead, call another method from the event handler.</para>
+				
+				<para>&#160;</para>
+				
+				<para>10.8.&#160;&#160;&#160;&#160;
+				Do not programmatically click a button to execute the same action you have written in
+				the button click event. </para>
+				
+				<para>Rather, call the same method which is called by the button
+				click event handler.</para>
+				
+				<para>&#160;</para>
+				
+            </content>
+        </section>
+        <section address="SubSection11">
+            <title>11.&#160;&#160; Variables</title>
+            <content>
+                <!-- TODO: Add named anchor: _Toc197487130 <para>11.&#160;&#160; Variables</para> -->
+				
+				<para>&#160;</para>
+				
+				<para>11.1.&#160;&#160;&#160;&#160;
+				Declare variables as close as possible to where it is first used. </para>
+				
+				<para>&#160;</para>
+				
+				<para>11.2.&#160;&#160;&#160;&#160;
+				Use one variable
+				declaration per line.</para>
+				
+				<para>&#160;</para>
+				
+				<para>11.3.&#160;&#160;&#160;&#160;
+				Do not make
+				member variables public or protected. </para>
+				
+				<para>Keep them private and expose public/protected Properties. </para>
+				
+				<para>&#160;</para>
+				
+				<para>11.4.&#160;&#160;&#160;&#160;
+				Avoid using class-level
+				member variables (also often called “fields”). </para>
+				
+				<para>Instead, declare local variables wherever necessary and pass
+				it to other methods instead of sharing a member variable between methods. If
+				you share a member variable between methods, it will be difficult to track
+				which method changed the value and when. </para>
+				
+				<para>An exception can be made for private member fields that are
+				supporting properties.</para>
+				
+				<para>&#160;</para>
+				
+				<para>11.5.&#160;&#160;&#160;&#160;
+				Use the VB
+				specific types (aliases), rather than the types defined in System namespace. </para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[
+				Dim age As Integer '(not System.Int16)
+				Dim name As String '(not System.String)
+				Dim contactInfo As Object '(not System.Object)
+				]]>
+				</code>
+				</para>
+				
+				<para>11.6.&#160;&#160;&#160;&#160;
+				Use StringBuilder
+				class instead of String when you have to manipulate string objects in a loop. </para>
+				
+				<para>The String object works in weird way in .NET. Each time you
+				append a string, it is actually discarding the old string object and recreating
+				a new object, which is a relatively expensive operations.</para>
+				
+				<para>Consider the following example:</para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[
+				Public Function ComposeMessage(lines() As String) As String
+					Dim message As String = String.Empty
+				    Dim i As Integer
+				    
+				    For i = 0 To lines.Length - 1
+				        message += lines(i)
+				    Next i</para>
+					
+					Return message
+				End Function 'ComposeMessage
+				]]>
+				</code>
+				</para>
+				
+				<para>In the above example, it may look like we are just appending
+				to the string object ‘message’. But what is happening in reality is, the string
+				object is discarded in each iteration and recreated and appending the line to
+				it.</para>
+				
+				<para>If your loop has several iterations, then it is a good idea
+				to use StringBuilder class instead of String object.</para>
+				
+				<para>See the following example where the String object is replaced
+				with StringBuilder.</para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[
+				Public Function ComposeMessage(lines() As String) As String
+				    Dim message As New StringBuilder()
+				    
+				    Dim i As Integer</para>
+				    For i = 0 To lines.Length - 1
+					  message.Append(lines(i))
+				    Next i
+				    
+				    Return message.ToString()
+				End Function 'ComposeMessage
+				]]>
+				</code>
+				</para>
+								
+            </content>
+        </section>
+        <section address="SubSection12">
+            <title>12.&#160;&#160; Comments</title>
+            <content>
+                <!-- TODO: Add named anchor: _Toc197487131 <para>12.&#160;&#160; Comments</para> -->
+                
+				<para>&#160;</para>
+				
+				<para>Clear and	meaningful comments, used judiciously, make code more maintainable.</para>
+				
+				<para>&#160;</para>
+				
+				<para>12.1.&#160;&#160;&#160;&#160;
+				Do not write
+				comments for every line of code and every variable declared. </para>
+				
+				<para>&#160;</para>
+				
+				<para>12.2.&#160;&#160;&#160;&#160;
+				Use <legacyBold>'</legacyBold>
+				comments and <legacyBold>'''</legacyBold> for XML comments. Avoid end of line
+				comments except to clarify the use of a variable.</para>
+				
+				<para>&#160;</para>
+				
+				<para>12.3.&#160;&#160;&#160;&#160;
+				Write comments
+				wherever required, but good readable code will require less comments. If all
+				variables and method names are meaningful, that will make the code very
+				readable and will not need many comments. </para>
+				
+				<para>&#160;</para>
+				
+				<para>12.4.&#160;&#160;&#160;&#160;
+				Do not write
+				comments if the code is easily understandable without comment. The drawback of
+				having lot of comments is, if you change the code and forget to change the
+				comment, it will lead to more confusion. Keep comments very close to the lines
+				of code being commented.</para>
+				
+				<para>&#160;</para>
+				
+				<para>12.5.&#160;&#160;&#160;&#160;
+				Fewer lines of
+				comments will generally make the code more readable, but if the code is not simple 
+				and there are too few comments, that is usually less readable. </para>
+				
+				<para>&#160;</para>
+				
+				<para>12.6.&#160;&#160;&#160;&#160;
+				If you must use
+				some complex or weird logic for any reason, document it very well with comments.
+				Use a <codeInline>HACK</codeInline> comment in these cases.</para>
+				
+				<para>&#160;</para>
+				
+				<para>12.7.&#160;&#160;&#160;&#160;
+				If you initialize
+				a numeric variable to a special number other than 0, -1 etc, document the
+				reason for choosing that value. </para>
+				
+				<para>&#160;</para>
+				
+				<para>12.8.&#160;&#160;&#160;&#160;
+				The bottom line
+				is, write clean, readable code such a way that it doesn't need many comments to
+				understand. </para>
+				
+				<para>&#160;</para>
+				
+				<para>12.9.&#160;&#160;&#160;&#160;
+				Perform spelling
+				check on comments and also make sure proper grammar and punctuation is used. </para>
+				
+				<para>&#160;</para>
+				
+            </content>
+        </section>
+        <section address="SubSection13">
+            <title>13.&#160;&#160;  Errors and Exception Handling</title>
+            <content>
+                <!-- TODO: Add named anchor: _Toc197487132 <para>13.&#160;&#160; Errors and Exception Handling</para> -->
+				
+				<para>&#160;</para>
+				
+				<para>13.1.&#160;&#160;&#160;&#160;
+				Use as few <codeInline>Try...Catch</codeInline> blocks as possible. The general principle
+				is to handle all <legacyItalic>unexpected</legacyItalic> exceptions with exception handlers as high
+				in the call stack as possible (e.g. entry points). Handle <legacyItalic>expected</legacyItalic>
+				errors with control structures in code as close as possible to where they occur
+				rather than with exception handlers.</para>
+				
+				<para>&#160;</para>
+				
+				<para>13.2.&#160;&#160;&#160;&#160;
+				Do not write <codeInline>Try...Catch</codeInline> blocks in all your members. </para>
+				
+				<para>Use structured exception handling only if there is a
+				possibility that a specific exception may occur and it cannot be prevented by
+				any other means. </para>
+				
+				<para>For example, if you want to insert a record if it does not
+				already exists in database, you should try to select record using the key. Some
+				developers try to insert a record without checking if it already exists. If an
+				exception occurs, they will assume that the record already exists. This is
+				strictly not allowed. You should always explicitly check for errors rather than
+				waiting for exceptions to occur. </para>
+				
+				<para>&#160;</para>
+				
+				<para>13.3.&#160;&#160;&#160;&#160;
+				You should always
+				try to avoid expected exceptions by checking all the expected error conditions
+				programmatically. </para>
+				
+				<para>It is usually better to trap an expected exception where it
+				occurs and then either throw a new exception (of as specific a type as possible
+				of course) or fix the issue, than it is to catch an unexpected exception in a <codeInline>
+				Catch</codeInline> block (even if you then rethrow it).
+				</para>
+				
+				<alert class="note">
+					<para>Exception (no pun intended):</para>
+					<para>A good reason to use a <codeInline>Catch</codeInline> block would be if it
+					is not possible to resolve the issue and continue, <legacyItalic>but</legacyItalic> if it is
+					possible (and necessary) to perform some special clean up after the exception
+					<legacyItalic>and</legacyItalic> before returning control to the calling procedure. This 
+					would <legacyItalic>only</legacyItalic> be necessary if the clean-up was not clean-up that 
+					would be performed in a <codeInline>Finally</codeInline> block.</para>
+				</alert>
+				
+				<para>Some error conditions may not even throw an exception or
+				should not be caught for other reasons (see the following example).</para>
+				
+				<para>Good: </para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[
+				    Dim d As Double = 0
+				    Dim m As Double = 1 / d
+				    
+				    If Double.IsInfinity(m) Then
+				        ' Catch the divide-by-zero condition on floating point values.
+				        ...
+				    End If
+				
+				    Dim i As Integer = 0
+				    Dim k As Integer = 1
+				    
+				    If i <> 0 Then
+						' Perform the division only if the denominator is nonzero.
+						k = k \ i  '\ returns an integer
+					End If
+				]]>
+				</code>
+				</para>
+				
+				<para>Not Good: </para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[
+				    Try
+				        Dim d As Double = 0
+				        
+				        ' This statement does not throw, m becomes PositiveInfinity.
+			            Dim m As Double = 1 / d
+				        Dim i As Integer = 0
+				
+				        ' This statement does throw, but is inefficient.
+				        Dim k As Integer = 1 \ i  '\ returns an integer	
+				        
+				    Catch ex As DivideByZeroException			        
+				        ' Only Integer divisions throw this exception.
+				        ...			
+				    End Try
+				]]>
+				</code>		
+				</para>
+								
+				<para>13.4.&#160;&#160;&#160;&#160;
+				Never catch an expected
+				exception and then do nothing. </para>
+				
+				<para>If you hide an exception, you will never know if the
+				exception happened or not. Lot of developers uses this handy (and sloppy)
+				method to ignore non-critical errors.</para>
+				
+				<para>You should always try to avoid exceptions by checking all
+				the error conditions programmatically. In any case, catching an exception and
+				doing nothing is not responsible coding. In the worst case, if no clean-up or
+				recovery is possible, you should at least log the exception and proceed.</para>
+				
+				<para>&#160;</para>
+				
+				<para>13.5.&#160;&#160;&#160;&#160;
+				Use <codeInline>Try...Catch</codeInline> blocks for unexpected exceptions at
+				every entry point to the application. These are typically events, but also
+				include implemented interface properties and methods like Enabled().</para>
+				
+				<para>&#160;</para>
+				
+				<para>13.6.&#160;&#160;&#160;&#160;
+				Use <codeInline>Try...Catch</codeInline> blocks around any call to an
+				external resource (e.g. a file, data) or library to handle unexpected errors.
+				Expected errors should still be handled using control structures in code rather
+				than with exception handlers.</para>
+				
+				<para>&#160;</para>
+				
+				<para>13.7.&#160;&#160;&#160;&#160;
+				You can use <codeInline>Try...Catch</codeInline> blocks around any known source of
+				exceptions that can be recovered in place (in the same routine), but only if it
+				cannot be more effectively trapped and corrected using control structures in the
+				code.</para>
+				
+				<para>&#160;</para>
+				
+				<para>13.8.&#160;&#160;&#160;&#160;
+				Use a <codeInline>Try...Finally</codeInline>  block around any code that has variables
+				that should always be manually cleaned up before leaving a routine. Use <codeInline>Try...Catch...Finally</codeInline>  for variables that should always be
+				manually cleaned up upon an exception. </para>
+				
+				<para>&#160;</para>
+				
+				<para>13.9.&#160;&#160;&#160;&#160;
+				Validate
+				variables and parameters as much as possible (but avoiding redundancy) to
+				prevent unexpected exceptions before they happen. </para>
+				
+				<para>&#160;</para>
+				
+				<para>13.10.&#160;&#160;&#160;&#160;
+				Use Return and Exit calls to exit a procedure even if
+				inside a <codeInline>Try...Catch</codeInline> block. Do not use structured
+				exception handling to control program flow (i.e. don't use Exit Try for control flow).</para>
+				
+				<para>&#160;</para>
+				
+				<para>13.11.&#160;&#160;&#160;&#160;
+				Rethrow any
+				exception from any location that is not an entry point or other external
+				connection, so that procedures higher in the call stack also have a chance to
+				recover in place and clean up variables. </para>
+				
+				<para>&#160;</para>
+				
+				<para>13.12.&#160;&#160;&#160;&#160;
+				In the case of an
+				expected exception that is caught and handled, give a short, friendly, helpful message
+				to the user that an error has been caught, handled and logged. Log the actual
+				error with all possible details about the error, including the time it
+				occurred, method and class name, and other useful details about the state of
+				the application or the data in use. </para>
+				
+				<para>&#160;</para>
+				
+				<para>13.13.&#160;&#160;&#160;&#160;
+				Error messages
+				should always use complete sentences with proper punctuation, capitalization
+				and spelling.</para>
+				
+				<para>&#160;</para>
+				
+				<para>13.14.&#160;&#160;&#160;&#160;
+				Error messages
+				should help the user to solve the problem. </para>
+				
+				<para>Never give error messages like &quot;Error in
+				Application&quot;, &quot;There is an error&quot;, etc. Instead give specific and
+				helpful messages like &quot;The application failed to update the database.
+				Please make sure the login id and password are correct.&quot; </para>
+				
+				<para>&#160;</para>
+				
+				<para>13.15.&#160;&#160;&#160;&#160;
+				Do not write very
+				large <codeInline>Try...Catch</codeInline> blocks. </para>
+				
+				<para>If required, write separate <codeInline>Try...Catch</codeInline> block for each task you perform and
+				enclose only the specific piece of code inside the <codeInline>Try...Catch</codeInline> block. This will help you find which
+				piece of code generated the exception and you can give specific error message
+				to the user.</para>
+				
+				<para>Do not wrap every method in a <codeInline>Try...Catch</codeInline> block. This is unecessary and
+				creates bloated code.</para>
+				
+				<para>&#160;</para>
+				
+				<para>13.16.&#160;&#160;&#160;&#160;
+				There is no need
+				to catch unexpected general exceptions in all your members.</para>
+				
+				<para>During development, leave them un-caught and let the
+				application crash. This will help you find most of the errors during the development
+				cycle. </para>
+				
+				<para>For production code, you can have an application level (or thread
+				level) error handler wherein you can handle all general exceptions. In case of
+				an 'unexpected general error', this error handler should catch the exception
+				and log the error in addition to giving a friendly message to the user before
+				closing the application or allowing the user to ‘ignore and proceed'.</para>
+				
+				<para>&#160;</para>
+				
+				<para>13.17.&#160;&#160;&#160;&#160;
+				Always catch only
+				the specific exception, not a generic exception. </para>
+				
+				<para>Catching a general exception is bad. You will never know
+				whether it was a file error or some other error.</para>
+				
+				<para>Good: </para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[
+				Sub ReadFromFile(fileName As String)
+				    Try
+				        ' read from file.
+				        ...
+				    Catch ex As FileIOException
+				        ' Log the error.
+				        ...
+				        ' Re-throw the exception depending on your case.
+				        Throw
+				    End Try
+				End Sub 'ReadFromFile
+				]]>
+				</code>
+				</para>
+				
+				<para>Not Good: </para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[
+				Sub ReadFromFile(fileName As String)
+				    Try
+				        ' Read from file.
+				        ...
+				    Catch ex As Exception
+				    
+				        ' Here you are hiding an exception.
+				        ' In this case no one will ever know that an exception happened.
+				        
+				        Return ""
+				    End Try
+				End Sub 'ReadFromFile
+				]]>
+				</code>
+				</para>
+				
+				<para>13.18.&#160;&#160;&#160;&#160;
+				When you re-throw an exception, use the Throw
+				statement without specifying the original exception or other arguments. This
+				way, the original call stack is preserved.</para>
+				
+				<para>Good:</para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[
+				Try
+				    ...
+				Catch
+				    ' Do whatever you want to handle the exception...
+				    Throw ' No arguments
+				End Try
+				]]>
+				</code>
+				</para>
+				
+				<para>Not Good:</para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[
+				Try
+				    ...
+				Catch ex As Exception
+				    ' Do whatever you want to handle the exception...
+				    Throw ex
+				End Try
+				]]>
+				</code>
+				</para>
+				
+				<para>13.19.&#160;&#160;&#160;&#160;
+				Always use exception handlers where you communicate with external systems like network
+				devices, hardware devices, etc. </para>
+				
+				<para>Such systems are subject to failure anytime and error
+				checking is not usually reliable. In those cases, you should use exception
+				handlers and try to recover from error.</para>
+				
+				<para>&#160;</para>
+				
+				<para>13.20.&#160;&#160;&#160;&#160;
+				Use <codeInline>Try...Catch...Finally</codeInline>  rather than simply Try...Catch. 
+				You can also use <codeInline>Try...Finally</codeInline>  without a Catch block. This 
+				gives the opportunity to clean up after an exception or a return statement, even if no 
+				exception is being caught. </para>
+				
+				<para>&#160;</para>
+				
+				<para>13.21.&#160;&#160;&#160;&#160;
+				Use <codeInline>Try...Catch...Finally</codeInline>  in your data layer to catch all
+				database exceptions. </para>
+				
+				<para>This exception handler should record all exceptions from the
+				database. The details recorded should include the name of the command being
+				executed, stored procedure name, parameters, connection string used etc. After
+				recording the exception, it could be re-thrown so that another layer in the
+				application can catch it and take appropriate action.</para>
+				
+				<para>&#160;</para>
+				
+				<para>13.22.&#160;&#160;&#160;&#160;
+				If you are opening database connections, sockets, file stream etc, always close them in
+				the Finally block. </para>
+				
+				<para>This will ensure that even if an exception occurs after
+				opening the connection, it will be safely closed in the Finally block.</para>
+				
+				<para>&#160;</para>
+				
+				<para>13.23.&#160;&#160;&#160;&#160;
+				Make sure you
+				have a good logging class which can be configured to log errors, warning or
+				traces. </para>
+				
+				<para>If you configure to log errors, it should <legacyItalic>only</legacyItalic> log
+				errors. If you configure to log traces using calls like Trace.WriteLine(ex.ToString), the trace listener should be
+				configured to record all errors, warnings and traces. Your log class should be
+				written in such a way that in future you can change it easily to log to Windows
+				Event Log, SQL Server, Email to administrator, or to a File, etc. without any
+				change in any other part of the application. Use the log class extensively
+				throughout the code to record errors, warning and even trace messages that can
+				help you trouble shoot a problem.</para>
+				
+				<para>Consider using the Microsoft Exception Management
+				Application Block, which can be downloaded at <externalLink>
+				  <linkText>http://msdn2.microsoft.com/en-us/library/aa480461.aspx</linkText>
+				  <linkUri>http://msdn2.microsoft.com/en-us/library/aa480461.aspx</linkUri>
+				</externalLink>.</para>
+				
+				<para>&#160;</para>
+				
+				<para>13.24.&#160;&#160;&#160;&#160;
+				Custom exceptions
+				should inherit from ApplicationException.</para>
+				
+				<para>If required in your application, you can write your own
+				custom exception classes, but do not derive your custom exceptions from the
+				base class SystemException. Instead, inherit from ApplicationException.</para>
+				
+				<para>&#160;</para>
+				
+            </content>
+        </section>
+        <section address="SubSection14">
+            <title>14.&#160;&#160;  Other Good Programming Practices</title>
+            <content>
+				<!-- TODO: Add named anchor: _Toc197487133 <para>14.&#160;&#160; Other Good Programming Practices</para> -->
+				
+				<para>&#160;</para>
+				
+				<para>14.1.&#160;&#160;&#160;&#160;
+				Separate your
+				application into multiple assemblies. Group all independent utility classes
+				into a separate class library. All your database related files can be in
+				another class library. </para>
+				
+				<para>&#160;</para>
+				
+				<para>14.2.&#160;&#160;&#160;&#160;
+				Always watch for
+				unexpected values. For example, if you are using a parameter with 3 or more
+				possible values, never assume that if one is not matching then the only
+				possibility is the other value.</para>
+				
+				<para>Good:</para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[
+				If memberType = eMemberTypes.Registered Then
+				    ' Registered user
+				    
+				    ' Do something...
+				    
+				ElseIf memberType =	eMemberTypes.Guest Then
+				    ' Guest user
+				    
+				    ' Do something...
+				    
+				Else
+				    ' Unexpected user type.
+					
+					' Throw an exception.
+				    Throw New Exception("Unexpected	value '" & memberType.ToString() & "'"\
+				    
+				    ' If we introduce a new	user type in future, we can easily find 
+				    ' the problem here.
+				    
+				End If
+				]]>
+				</code>
+				</para>
+				
+				<para>Not Good:</para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[
+				If memberType = eMemberTypes.Registered Then
+				    ' Registered user
+				    
+				    ' Do something...
+				    
+				Else
+				    ' Guest user
+				    
+				    ' Do something...
+				
+				    ' If we introduce another user type in future, this code will
+				    ' fail and will not be noticed.
+				
+				End If
+				]]>
+				</code>
+				</para>
+				
+				<para>14.3.&#160;&#160;&#160;&#160;
+				Do not hardcode numbers. </para>
+				
+				<para>You should persist these values in a config file or database
+				instead. Declare them as constants only if you are sure this value will never
+				need to be changed. If you do use constants, declare them at the top of the
+				file. However, using constants is not recommended.</para>
+				
+				<para>&#160;</para>
+				
+				<para>14.4.&#160;&#160;&#160;&#160;
+				Do not hardcode strings. Use resource files instead. </para>
+				
+				<para>&#160;</para>
+				
+				<para>14.5.&#160;&#160;&#160;&#160;
+				To compare strings use String.Compare(String, String, Boolean) to avoid issues 
+				with lowercase or upper case. </para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[
+				Dim strA As String </para>
+				Dim strB As String </para>
+				Dim ignoreCase As Boolean = True
+				Dim returnValue As Integer
+				
+				returnValue = String.Compare(strA, strB, ignoreCase)
+				]]>
+				</code>
+				</para>
+				
+				<para>14.6.&#160;&#160;&#160;&#160;
+				Use String.Empty instead of  empty quotes ("").</para>
+				
+				<para>Good:</para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[
+				If name = String.Empty Then
+				    ...
+				End If
+				]]>
+				</code>
+				</para>
+				
+				<para>Not Good:</para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[
+				If name = "" Then
+				    ...</para>
+				End If</para>
+				]]>
+				</code>
+				</para>
+				
+				<para>14.7.&#160;&#160;&#160;&#160;
+				Use Enum wherever related discrete values are needed. Do not use numbers or 
+				strings to indicate related discrete values.</para>
+				
+				<para>Good: </para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[
+				Enum MailType
+				    Html
+				    PlainText
+				    Attachment
+				End Enum 'MailType
+				
+				Sub SendMail(message As
+				String, mailType As MailType)
+				    Select Case mailType
+				    Case MailType.Html
+				        ' Do something...
+				    Case MailType.PlainText
+				        ' Do something...
+				    Case MailType.Attachment
+				        ' Do something...
+				    Case Else
+				        ' Do something...
+				    End Select
+				End Sub 'SendMail]]>
+				</code>
+				</para>
+				
+				<para>Not Good: </para>
+				
+				<para>
+				<code language="VB.NET">
+				<![CDATA[Sub SendMail(message As
+				String, mailType As String)		
+				Select Case mailType
+				    Case MailType.Html
+				        ' Do something...
+				    Case MailType.PlainText
+				        ' Do something...
+				    Case MailType.Attachment
+				        ' Do something...
+				    Case Else
+				        ' Do something...
+				    End Select
+				End Sub 'SendMail]]>
+				</code>
+				</para>
+				
+				<para>14.8.&#160;&#160;&#160;&#160;
+				Never hardcode a path or drive name in code. </para>
+				
+				<para>Get the application path programmatically and use relative
+				path. </para>
+				
+				<para>&#160;</para>
+				
+				<para>14.9.&#160;&#160;&#160;&#160;
+				Never assume that your code will run from drive &quot;C:&quot;. </para>
+				
+				<para>You never know, some user may run it from network or from another
+				mapped drive (e.g. &quot;Z:&quot;). </para>
+				
+				<para>14.10.
+				Have your own
+				templates for each of the file types in Visual Studio. </para>
+				
+				<para>You can include your company name, copyright information, etc.
+				in the template. You can view or edit the Visual Studio file templates in the
+				folder <localUri>C:\Program Files\Microsoft
+				Visual Studio 8\Common7\IDE\ItemTemplatesCache\VisualBasic\1033</localUri>. (This folder has the templates for VB, but you can
+				easily find the corresponding folders or any other language .NET language)</para>
+				
+				<para>&#160;</para>
+				
+				<para>14.11.
+				Use the AssemblyInfo file to fill in information like version number, 
+				description, company name, copyright notice etc.</para>
+				
+				<para>&#160;</para>
+				
+				<para>14.12.
+				In the
+				application start up, do some kind of &quot;self check&quot; and ensure all
+				required files and dependancies are available in the expected locations. </para>
+				
+				<para>Check for database connection in start up, if required. Give
+				a friendly message to the user in case of any problems. </para>
+				
+				<para>&#160;</para>
+				
+				<para>14.13.
+				If the required
+				configuration file is not found, the application should be able to create one
+				with default values. </para>
+				
+				<para>If a wrong value found in the configuration file, the application
+				should throw an error or give a message and also should tell the user what the
+				correct values are.</para>
+				
+				<para>&#160;</para>
+				
+				<para>14.14.
+				Use Andale Mono
+				or Consolas (or a similar fixed-width, code-optimized font) as your code editor
+				font. </para>
+				
+				<para>This is much easier on the eyes than Courier New. Andale
+				Mono used to be free from Microsoft, but can be hard to find. It's out there on
+				the net, though, as a free download. Consolas comes with Vista as well as with
+				the latest versions of Microsoft Office (2007 and above). You can find Consolas
+				<externalLink>
+				  <linkText><legacyBold>here</legacyBold></linkText>
+				  <linkUri>http://www.microsoft.com/downloads/details.aspx?familyid=22e69ae4-7e40-4807-8a86-b3d36fab68d3&amp;amp;displaylang=en</linkUri>
+				  <linkTarget>_blank</linkTarget>
+				</externalLink>. Please note that Consolas looks terrible unless you have full 
+				ClearType font smoothing running on XP, or are using Windows Vista or a more recent
+				version of Windows.</para>
+				
+				<para>&#160;</para>
+				
+            </content>
+        </section>
+        <section address="SubSection15">
+            <title>15.&#160;&#160;  Visual Design Guidelines</title>
+            <content>
+				<!-- TODO: Add named anchor: _Toc197487134 <para>15.&#160;&#160; Visual Design Guidelines</para> -->
+				
+				<para>&#160;</para>
+				
+				<para>15.1.&#160;&#160;&#160;&#160;
+				Follow the visual design guidelines specified at <externalLink>
+				  <linkText>http://msdn2.microsoft.com/en-us/library/ms997612.aspx</linkText>
+				  <linkUri>http://msdn2.microsoft.com/en-us/library/ms997612.aspx</linkUri>
+				</externalLink>
+				where no more specific standard is specified in this document.</para>
+				
+				<para>The Microsoft guidelines specify sizes in dialog units
+				(DLUs), not pixels. A dialog unit is the device-independent measure to use for
+				layout. One horizontal dialog unit is equal to one-fourth of the average
+				character width for the current system font. One vertical dialog unit is equal
+				to one-eighth of an average character height for the current system font. The
+				default height for most single-line controls is 14 DLUs. In the specifications
+				in this document all sizes are in pixels as these are the default units for
+				windows form elements in Visual Studio 2005. To convert to pixels, assume that
+				a horizontal DLU is 1.5 pixels and a vertical DLU is 1.65 pixels.</para>
+				
+				<para>&#160;</para>
+				
+				<para>15.2.&#160;&#160;&#160;&#160;
+				The following
+				table lists the recommended height and width of common dialog box controls in
+				pixels (use similar sizes for controls not listed). </para>
+				
+				<table>
+				 <tableHeader>
+				  <row>
+				   <entry>
+				    <para><legacyBold>Control</legacyBold></para>
+				   </entry>
+				   <entry>
+				    <para><legacyBold>Height (pixels)</legacyBold></para>
+				   </entry>
+				   <entry>
+				    <para><legacyBold>Width (pixels)</legacyBold></para>
+				   </entry>
+				 </row>
+				 </tableHeader>
+				 <row>
+				  <entry>
+				  <para>Dialog
+				  boxes and property sheets (for 640 x 480 screen resolution)</para>
+				  </entry>
+				  <entry>
+				  <para>434 max</para>
+				  </entry>
+				  <entry>
+				  <para>395 max</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				  <para>Command
+				  buttons</para>
+				  </entry>
+				  <entry>
+				  <para>23</para>
+				  </entry>
+				  <entry>
+				  <para>75</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				  <para>Text boxes</para>
+				  </entry>
+				  <entry>
+				  <para>20 (set by
+				  Visual Studio)</para>
+				  </entry>
+				  <entry>
+				  <para>Size to match
+				  other combo, list and text boxes</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				  <para>Drop-down
+				  combo box and list</para>
+				  </entry>
+				  <entry>
+				  <para>22 (set by
+				  Visual Studio)</para>
+				  </entry>
+				  <entry>
+				  <para>Size to
+				  match other combo, list and text boxes</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				  <para>Text
+				  labels and other screen text</para>
+				  </entry>
+				  <entry>
+				  <para>12 per
+				  line of text</para>
+				  </entry>
+				  <entry>
+				  <para>As wide as
+				  needed</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				  <para>Check
+				  boxes, option buttons</para>
+				  </entry>
+				  <entry>
+				  <para>17 (set by
+				  Visual Studio)</para>
+				  </entry>
+				  <entry>
+				  <para>As wide as
+				  needed</para>
+				  </entry>
+				 </row>
+				</table>
+				
+				<para>15.3.&#160;&#160;&#160;&#160;
+				The following
+				table lists the typical items found in an interface and the recommended spacing
+				between them.</para>
+				
+				<table>
+				 <tableHeader>
+				  <row>
+				   <entry>
+				    <para><legacyBold>Interface Items</legacyBold></para>
+				   </entry>
+				   <entry>
+				    <para><legacyBold>Spacing (pixels)</legacyBold></para>
+				   </entry>
+				  </row>
+				 </tableHeader>
+				 <row>
+				  <entry>
+				   <para>Dialog box
+				   margins</para>
+				  </entry>
+				  <entry>
+				   <para>10 on all
+				  sides</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				   <para>Between
+				   paragraphs of text</para>
+				  </entry>
+				  <entry>
+				   <para>10</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				   <para>Between
+				   text labels and their associated controls</para>
+				  </entry>
+				  <entry>
+				   <para>5</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				   <para>Between
+				   related controls</para>
+				  </entry>
+				  <entry>
+				   <para>7</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				   <para>Between
+				   unrelated controls</para>
+				  </entry>
+				  <entry>
+				   <para>10</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				   <para>First
+				   control in a group box</para>
+				  </entry>
+				  <entry>
+				   <para>15 down
+				   from the top of the group box; align vertically to the group box title</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				   <para>Between
+				   controls in a group box</para>
+				  </entry>
+				  <entry>
+				   <para>7; align
+				   vertically to the group box title</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				   <para>Between
+				   horizontally or vertically arranged buttons</para>
+				  </entry>
+				  <entry>
+				   <para>7; align
+				   vertically to the group box title</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				   <para>From the
+				   left edge of a group box</para>
+				  </entry>
+				  <entry>
+				   <para>14; if the
+				   group box is left-aligned, controls are 24 from the left edge of the dialog
+				   box or property page</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				   <para>Last
+				   control in a group box</para>
+				  </entry>
+				  <entry>
+				   <para>10 above
+				   the bottom of the group box</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				   <para>Smallest
+				   space between controls</para>
+				  </entry>
+				  <entry>
+				   <para>3</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				   <para>Text label
+				   inside a button</para>
+				  </entry>
+				  <entry>
+				   <para>5 down
+				   from the top of the button</para>
+				  </entry>
+				 </row>
+				 <row>
+				  <entry>
+				   <para>Check box,
+				   list box, or option button beside a button</para>
+				  </entry>
+				  <entry>
+				   <para>3 down
+				   from the top of the button</para>
+				  </entry>
+				 </row>
+				</table>
+
+            </content>
+        </section>
+        <!-- Section Template:
+        <section address="SubSection2">
+            <title>Sub-section 2</title>
+            <content>
+                <para>Sub-section content.</para>
+            </content>
+        </section> -->
+    </sections>
+  </section>
+  
+  <para>&#160;</para>
+  
+  <relatedTopics>
+    
+    <externalLink>
+        <linkText>FxCop website</linkText>
+        <linkAlternateText>Go to FxCop page on MSDN website</linkAlternateText>
+        <linkUri>http://code.msdn.microsoft.com/codeanalysis/Release/ProjectReleases.aspx?ReleaseId=553</linkUri>
+    </externalLink>
+
+  </relatedTopics>
+  
+  <para>&#160;</para>
+  <link xlink:href="#Intro">Back to the Top</link>
+</developerOrientationDocument>

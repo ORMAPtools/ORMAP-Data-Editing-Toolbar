@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="e5f49add-f931-4a46-9958-f50eda227479" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>Version 1.1.0.0 was released on October 25th, 2008.</para>
+    </introduction>
+
+<section>
+  <title>Changes in This Release</title>
+  <content>
+
+<list class="bullet">
+  <listItem>Corrected the order of the <codeInline>linkAlternateText</codeInline>
+and <codeInline>linkUri</codeInline> elements in the <codeInline>externalLink</codeInline>
+topic and all uses of it throughout the guide.</listItem>
+
+  <listItem>Fixed a few bugs in the usage examples.</listItem>
+
+  <listItem>Updated the conceptual templates to reflect correct usage and
+to note some elements as being optional.</listItem>
+
+  <listItem>Updated the <codeInline>relatedTopics</codeInline> topic to
+include information about the optional <codeInline>topicType_id</codeInline>
+<codeInline>link</codeInline> attribute.</listItem>
+
+  <listItem>Updated the <codeInline>autoOutline</codeInline> topic to include
+information about the optional <codeInline>lead</codeInline> and
+<codeInline>excludeRelatedTopics</codeInline> attributes.</listItem>
+
+  <listItem>Added topics for:
+	<list class="bullet">
+	  <listItem><codeInline>definitionTable</codeInline>,
+<codeInline>definedTerm</codeInline>, and <codeInline>definition</codeInline></listItem>
+
+	  <listItem><codeInline>list</codeInline> and <codeInline>listItem</codeInline></listItem>
+	  
+	  <listItem><codeInline>table</codeInline>, <codeInline>tableHeader</codeInline>,
+<codeInline>row</codeInline>, and <codeInline>entry</codeInline></listItem>
+	</list></listItem>
+
+  <listItem>Converted the project to use the new Sandcastle Help File Builder
+1.8.0.0 project format.</listItem>
+</list>
+
+<alert class="note">
+  <para>The <codeInline>autoOutline</codeInline> <codeInline>excludeRelatedTopics</codeInline>
+attribute and the <codeInline>address</codeInline> attribute support on various
+list type elements are only available in Revision 2 of the
+<token>SandcastleStyles</token> patch.  If not yet available, check back
+every couple of days as it should be out soon.</para>
+</alert>
+
+  </content>
+</section>
+
+    <relatedTopics>
+    <link xlink:href="ba47a67c-4825-4fcd-b806-2b2e02d4373a" />
+    </relatedTopics>
+
+  </developerConceptualDocument>
+</topic>
