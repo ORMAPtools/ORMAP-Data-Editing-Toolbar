@@ -15,20 +15,8 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_02475C4C526D6C53560C5167D590EA90"
-        "OwnerKey" = "8:_F3B5A78937DF6297FB9B5CC324325CCA"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_0879D01DEA001EA14B92FCF1CFE503AD"
-        "OwnerKey" = "8:_975E44E2ECAF600C2A6F563E2D45B51D"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_0C910D1AE6E9561328E912FF24A24E75"
-        "OwnerKey" = "8:_A71B5944958A4ECBA7D035D01E76A75B"
+        "MsmKey" = "8:_0E9FA1D0A20DED6597EBAB4A40AD5A2B"
+        "OwnerKey" = "8:_43DE0D2C9CBC304E6E6AA3A41F5609FD"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -93,18 +81,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_1B2597488CA834E57EAD4A95212D2532"
-        "OwnerKey" = "8:_6EFE8A53F9502A0EFC2504665AA1A7EF"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_1F5FBAC139F75E190816E1CD34DFD1DC"
-        "OwnerKey" = "8:_6CAC8EEE923ECD886351FA9A69B5B252"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_22DE3A3B9CC05B2D7194D7E01201AF09"
         "OwnerKey" = "8:_F24AB05B63F693238C74F8EC30016340"
         "MsmSig" = "8:_UNDEFINED"
@@ -129,6 +105,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_2E1DAC39D4BB01EA0CF081BDB21F28CC"
+        "OwnerKey" = "8:_95BFD67D92E946319043F54981A96C2B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_2F7980DED0D538F9A685D024B43BAB8C"
         "OwnerKey" = "8:_8CB2868C9625D3712C6FA94EF5E53479"
         "MsmSig" = "8:_UNDEFINED"
@@ -143,12 +125,6 @@
         {
         "MsmKey" = "8:_2F7980DED0D538F9A685D024B43BAB8C"
         "OwnerKey" = "8:_3223DB3695B061D1892E2BA31859E380"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_320111E9A53AF446703D0099741C0543"
-        "OwnerKey" = "8:_4852EEBEF6F6BFAE9415DC6C60F4E226"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -189,14 +165,8 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_343581516B188BC0139C0A554E0093D4"
-        "OwnerKey" = "8:_F24AB05B63F693238C74F8EC30016340"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_382801B3A1868331D422174573A80905"
-        "OwnerKey" = "8:_22DE3A3B9CC05B2D7194D7E01201AF09"
+        "MsmKey" = "8:_3A4CC6A6FE5ECC788A9A36995E79BF42"
+        "OwnerKey" = "8:_8C5457EFDF834056D37834EB2409411A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -351,6 +321,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_3EA73D65230AE0D986E5D672EEF1E328"
+        "OwnerKey" = "8:_4B0F68BEA8E9B18D33E8B73653EFA61F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_40692F0993DA76456D0A482E0C62C18B"
         "OwnerKey" = "8:_22DE3A3B9CC05B2D7194D7E01201AF09"
         "MsmSig" = "8:_UNDEFINED"
@@ -363,8 +339,8 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_40E479330B5B0FD87C02C6B7A415E444"
-        "OwnerKey" = "8:_B9D55B8F1F30426308115A75FC1D6DC6"
+        "MsmKey" = "8:_420EA33E4CF6D8E30D6083BDFE119E19"
+        "OwnerKey" = "8:_6EFE8A53F9502A0EFC2504665AA1A7EF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -435,6 +411,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_44DA2FCD02A95C754957E3ADD322426E"
+        "OwnerKey" = "8:_7F5E820E667F391BD8FACEDF495840DC"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_4852EEBEF6F6BFAE9415DC6C60F4E226"
         "OwnerKey" = "8:_8CB2868C9625D3712C6FA94EF5E53479"
         "MsmSig" = "8:_UNDEFINED"
@@ -477,12 +459,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_4A3A7EB25F93687C862E330E0B9E5F0C"
-        "OwnerKey" = "8:_665FF30D7AD328CB554080696E679C51"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_4AC5A4A994C36E7ECA6C9D48DA993F36"
         "OwnerKey" = "8:_8C5457EFDF834056D37834EB2409411A"
         "MsmSig" = "8:_UNDEFINED"
@@ -507,26 +483,14 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_4FE3D20F2FFEF70C8B6156605DFFD5B1"
-        "OwnerKey" = "8:_95BFD67D92E946319043F54981A96C2B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_50783C3E7376093501B459F687D4091B"
         "OwnerKey" = "8:_95BFD67D92E946319043F54981A96C2B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_56005B9D375A1F678BBF812C39EA1A05"
-        "OwnerKey" = "8:_4B0F68BEA8E9B18D33E8B73653EFA61F"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_576AF53AAEC8735674F4D477159ABD6A"
-        "OwnerKey" = "8:_32F2A46EF21F756448ADA033ED62D5B1"
+        "MsmKey" = "8:_599EC03296DA9B0324D2D2D5D8FDAB42"
+        "OwnerKey" = "8:_A71B5944958A4ECBA7D035D01E76A75B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -807,18 +771,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_5DBF6F4A9A774C2DB447D0FFCDE36ACC"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_5FB8BFD997A4A330F17C058FB876AA93"
-        "OwnerKey" = "8:_43DE0D2C9CBC304E6E6AA3A41F5609FD"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_665FF30D7AD328CB554080696E679C51"
         "OwnerKey" = "8:_8C5457EFDF834056D37834EB2409411A"
         "MsmSig" = "8:_UNDEFINED"
@@ -833,12 +785,6 @@
         {
         "MsmKey" = "8:_665FF30D7AD328CB554080696E679C51"
         "OwnerKey" = "8:_F3B5A78937DF6297FB9B5CC324325CCA"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_6C68D234B63A305B39766B15440E7571"
-        "OwnerKey" = "8:_A1392C3BFEE491DA54235A6E41962826"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1017,12 +963,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_6E4FB3FCCDB17A114F53A9C4D8B3589E"
-        "OwnerKey" = "8:_7F5E820E667F391BD8FACEDF495840DC"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_6EFE8A53F9502A0EFC2504665AA1A7EF"
         "OwnerKey" = "8:_32F2A46EF21F756448ADA033ED62D5B1"
         "MsmSig" = "8:_UNDEFINED"
@@ -1041,8 +981,38 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_7B6C7D772587BE8CDF93CAC1F45BF1C1"
-        "OwnerKey" = "8:_4AC5A4A994C36E7ECA6C9D48DA993F36"
+        "MsmKey" = "8:_70AEE2DFB3954940FDE3F3FBAEC1285C"
+        "OwnerKey" = "8:_50783C3E7376093501B459F687D4091B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_71BB6F7ED208F31AD24A5B7A977642EC"
+        "OwnerKey" = "8:_A1392C3BFEE491DA54235A6E41962826"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_71ECF660E4A7BB11235333E8CD655E47"
+        "OwnerKey" = "8:_4852EEBEF6F6BFAE9415DC6C60F4E226"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7228816F709080C40F0E589549A7EC16"
+        "OwnerKey" = "8:_5B9A22C11EFFD4FEF564D69E0487365B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7B7CF792ABB8B0A764FA49080B911CAC"
+        "OwnerKey" = "8:_B9D55B8F1F30426308115A75FC1D6DC6"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7BFE11AB9E4B28DADEDE433E253DBB66"
+        "OwnerKey" = "8:_149BF8A89F3F16C9897E5EF2F870081E"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1061,6 +1031,18 @@
         {
         "MsmKey" = "8:_7F5E820E667F391BD8FACEDF495840DC"
         "OwnerKey" = "8:_22DE3A3B9CC05B2D7194D7E01201AF09"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_84779E5A36D6EB4A4FF55C954A4E322D"
+        "OwnerKey" = "8:_F3B5A78937DF6297FB9B5CC324325CCA"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_8BD7F11DD1E01C7B82E71DE58AE8C693"
+        "OwnerKey" = "8:_F24AB05B63F693238C74F8EC30016340"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1143,20 +1125,26 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_8EC87C6BF8D31C7D55B1C0EDBB040CCA"
-        "OwnerKey" = "8:_50783C3E7376093501B459F687D4091B"
+        "MsmKey" = "8:_8EACB9CF19630C363390908BC41B556A"
+        "OwnerKey" = "8:_6CAC8EEE923ECD886351FA9A69B5B252"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_8FE04DB9037289F3F77FBFD6D7AB32F9"
-        "OwnerKey" = "8:_8CB2868C9625D3712C6FA94EF5E53479"
+        "MsmKey" = "8:_91D7FA3F603C8A51AFE55A0EBCAA2897"
+        "OwnerKey" = "8:_665FF30D7AD328CB554080696E679C51"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_939A553D24C1F60F32FC3F5BFC5FFC99"
-        "OwnerKey" = "8:_5C825C7CD9CE56C809754905058BDF8E"
+        "MsmKey" = "8:_9304DF0B16CACA80DD2D9D06990CD58C"
+        "OwnerKey" = "8:_3223DB3695B061D1892E2BA31859E380"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_95516FF9CC3344290A166376CD75A6D1"
+        "OwnerKey" = "8:_2F7980DED0D538F9A685D024B43BAB8C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1181,12 +1169,6 @@
         {
         "MsmKey" = "8:_975E44E2ECAF600C2A6F563E2D45B51D"
         "OwnerKey" = "8:_22DE3A3B9CC05B2D7194D7E01201AF09"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_9DADE82032F690C8F87F17D312C3D924"
-        "OwnerKey" = "8:_149BF8A89F3F16C9897E5EF2F870081E"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1251,14 +1233,14 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_AA60CEC33AA682E8EAFC96635ED7D94C"
-        "OwnerKey" = "8:_8C5457EFDF834056D37834EB2409411A"
+        "MsmKey" = "8:_ABB5C1149602E5A6E6F5F8D4F4075B92"
+        "OwnerKey" = "8:_8CB2868C9625D3712C6FA94EF5E53479"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_B26F1F7991B1AD8AC6DCD6E0787D1BF8"
-        "OwnerKey" = "8:_1B1CCAAC42B76BE25267933E139B876C"
+        "MsmKey" = "8:_B9A59CF96040A6E6A84D707A70CC4120"
+        "OwnerKey" = "8:_5C841479F152C8E95B713925FF3FAE36"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1323,20 +1305,80 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_C79246952FB5554608E167F31D581841"
-        "OwnerKey" = "8:_40692F0993DA76456D0A482E0C62C18B"
+        "MsmKey" = "8:_BE10906E4AD04426B7E52620970370A7"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_CA977964A64C0B0B1B83370F57A3EFE0"
-        "OwnerKey" = "8:_2F7980DED0D538F9A685D024B43BAB8C"
+        "MsmKey" = "8:_C5B656BDF6689BF99E5BE5C2067C0D8F"
+        "OwnerKey" = "8:_975E44E2ECAF600C2A6F563E2D45B51D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_CEA1AB1ABE7C4619975CC038B83B3440"
-        "OwnerKey" = "8:_5B9A22C11EFFD4FEF564D69E0487365B"
+        "MsmKey" = "8:_C7DBF43D4B8B3A972021A62B762934FD"
+        "OwnerKey" = "8:_4AC5A4A994C36E7ECA6C9D48DA993F36"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D1F097BBD6478CE57BF38DE654C4F50D"
+        "OwnerKey" = "8:_22DE3A3B9CC05B2D7194D7E01201AF09"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D29BD18A8D0FC16D02D0C2309DFBE7B7"
+        "OwnerKey" = "8:_32F2A46EF21F756448ADA033ED62D5B1"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D9CE95D2575A192A58B01B636E69B39B"
+        "OwnerKey" = "8:_3DDC3EEDF7E28AB3699E50C58E972A88"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_DD273CF20D608FC54514EB406CD2BA4D"
+        "OwnerKey" = "8:_32F2A46EF21F756448ADA033ED62D5B1"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_DD273CF20D608FC54514EB406CD2BA4D"
+        "OwnerKey" = "8:_95BFD67D92E946319043F54981A96C2B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_DD273CF20D608FC54514EB406CD2BA4D"
+        "OwnerKey" = "8:_4B0F68BEA8E9B18D33E8B73653EFA61F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_DD273CF20D608FC54514EB406CD2BA4D"
+        "OwnerKey" = "8:_665FF30D7AD328CB554080696E679C51"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_DD273CF20D608FC54514EB406CD2BA4D"
+        "OwnerKey" = "8:_8C5457EFDF834056D37834EB2409411A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_DD273CF20D608FC54514EB406CD2BA4D"
+        "OwnerKey" = "8:_5C841479F152C8E95B713925FF3FAE36"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_DD273CF20D608FC54514EB406CD2BA4D"
+        "OwnerKey" = "8:_3223DB3695B061D1892E2BA31859E380"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1347,8 +1389,56 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_EA73B63273C3FB8862FB9FC7000924D6"
-        "OwnerKey" = "8:_3223DB3695B061D1892E2BA31859E380"
+        "MsmKey" = "8:_DD273CF20D608FC54514EB406CD2BA4D"
+        "OwnerKey" = "8:_22DE3A3B9CC05B2D7194D7E01201AF09"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_DD273CF20D608FC54514EB406CD2BA4D"
+        "OwnerKey" = "8:_149BF8A89F3F16C9897E5EF2F870081E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_DD273CF20D608FC54514EB406CD2BA4D"
+        "OwnerKey" = "8:_4852EEBEF6F6BFAE9415DC6C60F4E226"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_DD273CF20D608FC54514EB406CD2BA4D"
+        "OwnerKey" = "8:_B9D55B8F1F30426308115A75FC1D6DC6"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_DD273CF20D608FC54514EB406CD2BA4D"
+        "OwnerKey" = "8:_5B9A22C11EFFD4FEF564D69E0487365B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_DD273CF20D608FC54514EB406CD2BA4D"
+        "OwnerKey" = "8:_8CB2868C9625D3712C6FA94EF5E53479"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_DD6650B3CA44B17AE2802361C5BAE0EC"
+        "OwnerKey" = "8:_1B1CCAAC42B76BE25267933E139B876C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E207E7D44924B1383BCBE722686ED969"
+        "OwnerKey" = "8:_5C825C7CD9CE56C809754905058BDF8E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E6C2066DA045FFBFDF896B56E904AAA7"
+        "OwnerKey" = "8:_40692F0993DA76456D0A482E0C62C18B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1371,20 +1461,14 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_F4DEEB5BCFD6150C809B6F3542164BE9"
-        "OwnerKey" = "8:_5C841479F152C8E95B713925FF3FAE36"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_FAC07CD1B4509A3BCFEEB64DBA2A2F2E"
-        "OwnerKey" = "8:_3DDC3EEDF7E28AB3699E50C58E972A88"
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_95BFD67D92E946319043F54981A96C2B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_95BFD67D92E946319043F54981A96C2B"
+        "OwnerKey" = "8:_BE10906E4AD04426B7E52620970370A7"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1567,12 +1651,6 @@
         "OwnerKey" = "8:_149BF8A89F3F16C9897E5EF2F870081E"
         "MsmSig" = "8:_UNDEFINED"
         }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_5DBF6F4A9A774C2DB447D0FFCDE36ACC"
-        "MsmSig" = "8:_UNDEFINED"
-        }
     }
     "Configurations"
     {
@@ -1635,33 +1713,33 @@
     {
         "CustomAction"
         {
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_8DEC46793D524745AE7C2B17F4783E3E"
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_48F660FFD1C942458CCF6076788A702B"
             {
             "Name" = "8:InvokeESRIRegAsm.dll"
             "Condition" = "8:"
-            "Object" = "8:_5DBF6F4A9A774C2DB447D0FFCDE36ACC"
+            "Object" = "8:_BE10906E4AD04426B7E52620970370A7"
             "FileType" = "3:1"
             "InstallAction" = "3:4"
             "Arguments" = "8:"
             "EntryPoint" = "8:"
             "Sequence" = "3:1"
-            "Identifier" = "8:_D5416590_00DF_4C9C_AFA7_45E5C4CC28B3"
+            "Identifier" = "8:_AEED3128_DCD3_4906_9BE3_B4D59AD923F3"
             "InstallerClass" = "11:TRUE"
-            "CustomActionData" = "8:"
+            "CustomActionData" = "8:/arg1=\"[ProgramFilesFolder]\\[Manufacturer]\\[ProductName]\\bin\\OrmapTaxlotEditing.dll\""
             }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_941FD7983DFC44AF8EE519C73B18FCAF"
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_D420C78A64F24F66BE676B948DCD192C"
             {
             "Name" = "8:InvokeESRIRegAsm.dll"
             "Condition" = "8:"
-            "Object" = "8:_5DBF6F4A9A774C2DB447D0FFCDE36ACC"
+            "Object" = "8:_BE10906E4AD04426B7E52620970370A7"
             "FileType" = "3:1"
             "InstallAction" = "3:1"
             "Arguments" = "8:"
             "EntryPoint" = "8:"
             "Sequence" = "3:1"
-            "Identifier" = "8:_2034FDE7_0C6F_4294_A7AE_01912B78A0C5"
+            "Identifier" = "8:_630E4CA6_2C34_4E81_AE31_E26B5F868D15"
             "InstallerClass" = "11:TRUE"
-            "CustomActionData" = "8:"
+            "CustomActionData" = "8:/arg1=\"[ProgramFilesFolder]\\[Manufacturer]\\[ProductName]\\bin\\OrmapTaxlotEditing.dll\""
             }
         }
         "DefaultFeature"
@@ -1686,66 +1764,6 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_02475C4C526D6C53560C5167D590EA90"
-            {
-            "SourcePath" = "8:esriArcMapUI.olb"
-            "TargetName" = "8:esriArcMapUI.olb"
-            "Tag" = "8:"
-            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0879D01DEA001EA14B92FCF1CFE503AD"
-            {
-            "SourcePath" = "8:esriGeoDatabaseDistributed.olb"
-            "TargetName" = "8:esriGeoDatabaseDistributed.olb"
-            "Tag" = "8:"
-            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0C910D1AE6E9561328E912FF24A24E75"
-            {
-            "SourcePath" = "8:esriGISClient.olb"
-            "TargetName" = "8:esriGISClient.olb"
-            "Tag" = "8:"
-            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0E9FA1D0A20DED6597EBAB4A40AD5A2B"
             {
             "SourcePath" = "8:esriServer.olb"
@@ -1828,46 +1846,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1B2597488CA834E57EAD4A95212D2532"
-            {
-            "SourcePath" = "8:esriAnimation.olb"
-            "TargetName" = "8:esriAnimation.olb"
-            "Tag" = "8:"
-            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1F5FBAC139F75E190816E1CD34DFD1DC"
-            {
-            "SourcePath" = "8:esriSystem.olb"
-            "TargetName" = "8:esriSystem.olb"
-            "Tag" = "8:"
-            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_22DE3A3B9CC05B2D7194D7E01201AF09"
             {
             "AssemblyRegister" = "3:1"
@@ -1895,6 +1873,26 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:1"
+            "Exclude" = "11:TRUE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2E1DAC39D4BB01EA0CF081BDB21F28CC"
+            {
+            "SourcePath" = "8:OrmapTaxlotEditing.tlb"
+            "TargetName" = "8:OrmapTaxlotEditing.tlb"
+            "Tag" = "8:"
+            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:TRUE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:2"
             "Exclude" = "11:TRUE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
@@ -1927,26 +1925,6 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_320111E9A53AF446703D0099741C0543"
-            {
-            "SourcePath" = "8:esriDataSourcesRaster.olb"
-            "TargetName" = "8:esriDataSourcesRaster.olb"
-            "Tag" = "8:"
-            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
@@ -2009,66 +1987,6 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_343581516B188BC0139C0A554E0093D4"
-            {
-            "SourcePath" = "8:esriGlobeCore.olb"
-            "TargetName" = "8:esriGlobeCore.olb"
-            "Tag" = "8:"
-            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3735B4E8874E38C39E16F52C5FB2CA29"
-            {
-            "SourcePath" = "8:OrmapTaxlotEditing.tlb"
-            "TargetName" = "8:OrmapTaxlotEditing.tlb"
-            "Tag" = "8:"
-            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:TRUE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:2"
-            "Exclude" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_382801B3A1868331D422174573A80905"
-            {
-            "SourcePath" = "8:esriGeoprocessing.olb"
-            "TargetName" = "8:esriGeoprocessing.olb"
-            "Tag" = "8:"
-            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
@@ -2174,26 +2092,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_40E479330B5B0FD87C02C6B7A415E444"
-            {
-            "SourcePath" = "8:esriSystemUI.olb"
-            "TargetName" = "8:esriSystemUI.olb"
-            "Tag" = "8:"
-            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_420EA33E4CF6D8E30D6083BDFE119E19"
             {
             "SourcePath" = "8:esriAnimation.olb"
@@ -2296,26 +2194,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4A3A7EB25F93687C862E330E0B9E5F0C"
-            {
-            "SourcePath" = "8:esriCatalog.olb"
-            "TargetName" = "8:esriCatalog.olb"
-            "Tag" = "8:"
-            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4AC5A4A994C36E7ECA6C9D48DA993F36"
             {
             "AssemblyRegister" = "3:1"
@@ -2378,26 +2256,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4FE3D20F2FFEF70C8B6156605DFFD5B1"
-            {
-            "SourcePath" = "8:OrmapTaxlotEditing.tlb"
-            "TargetName" = "8:OrmapTaxlotEditing.tlb"
-            "Tag" = "8:"
-            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:2"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_50783C3E7376093501B459F687D4091B"
             {
             "AssemblyRegister" = "3:1"
@@ -2426,46 +2284,6 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_56005B9D375A1F678BBF812C39EA1A05"
-            {
-            "SourcePath" = "8:esriGeoDatabaseUI.olb"
-            "TargetName" = "8:esriGeoDatabaseUI.olb"
-            "Tag" = "8:"
-            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_576AF53AAEC8735674F4D477159ABD6A"
-            {
-            "SourcePath" = "8:esri3DAnalyst.olb"
-            "TargetName" = "8:esri3DAnalyst.olb"
-            "Tag" = "8:"
-            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
@@ -2582,57 +2400,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_5DBF6F4A9A774C2DB447D0FFCDE36ACC"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:InvokeESRIRegAsm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_5DBF6F4A9A774C2DB447D0FFCDE36ACC"
-                    {
-                    "Name" = "8:InvokeESRIRegAsm.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:Install DLLs\\InvokeESRIRegAsm.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5FB8BFD997A4A330F17C058FB876AA93"
-            {
-            "SourcePath" = "8:esriServer.olb"
-            "TargetName" = "8:esriServer.olb"
-            "Tag" = "8:"
-            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_665FF30D7AD328CB554080696E679C51"
             {
             "AssemblyRegister" = "3:1"
@@ -2664,26 +2431,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6C68D234B63A305B39766B15440E7571"
-            {
-            "SourcePath" = "8:esriEditor.olb"
-            "TargetName" = "8:esriEditor.olb"
-            "Tag" = "8:"
-            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_6CAC8EEE923ECD886351FA9A69B5B252"
             {
             "AssemblyRegister" = "3:1"
@@ -2712,26 +2459,6 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6E4FB3FCCDB17A114F53A9C4D8B3589E"
-            {
-            "SourcePath" = "8:esriDataSourcesNetCDF.olb"
-            "TargetName" = "8:esriDataSourcesNetCDF.olb"
-            "Tag" = "8:"
-            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
@@ -2843,26 +2570,6 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7B6C7D772587BE8CDF93CAC1F45BF1C1"
-            {
-            "SourcePath" = "8:esriSearch.olb"
-            "TargetName" = "8:esriSearch.olb"
-            "Tag" = "8:"
-            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
@@ -3059,46 +2766,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8EC87C6BF8D31C7D55B1C0EDBB040CCA"
-            {
-            "SourcePath" = "8:esriDataSourcesGDB.olb"
-            "TargetName" = "8:esriDataSourcesGDB.olb"
-            "Tag" = "8:"
-            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8FE04DB9037289F3F77FBFD6D7AB32F9"
-            {
-            "SourcePath" = "8:esriCarto.olb"
-            "TargetName" = "8:esriCarto.olb"
-            "Tag" = "8:"
-            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_91D7FA3F603C8A51AFE55A0EBCAA2897"
             {
             "SourcePath" = "8:esriCatalog.olb"
@@ -3136,26 +2803,6 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_939A553D24C1F60F32FC3F5BFC5FFC99"
-            {
-            "SourcePath" = "8:esriGeoDatabase.olb"
-            "TargetName" = "8:esriGeoDatabase.olb"
-            "Tag" = "8:"
-            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
@@ -3207,26 +2854,6 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9DADE82032F690C8F87F17D312C3D924"
-            {
-            "SourcePath" = "8:esriOutput.olb"
-            "TargetName" = "8:esriOutput.olb"
-            "Tag" = "8:"
-            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
@@ -3323,26 +2950,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_AA60CEC33AA682E8EAFC96635ED7D94C"
-            {
-            "SourcePath" = "8:esriCatalogUI.olb"
-            "TargetName" = "8:esriCatalogUI.olb"
-            "Tag" = "8:"
-            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_ABB5C1149602E5A6E6F5F8D4F4075B92"
             {
             "SourcePath" = "8:esriCarto.olb"
@@ -3360,26 +2967,6 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B26F1F7991B1AD8AC6DCD6E0787D1BF8"
-            {
-            "SourcePath" = "8:esriDataSourcesFile.olb"
-            "TargetName" = "8:esriDataSourcesFile.olb"
-            "Tag" = "8:"
-            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
@@ -3434,6 +3021,37 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_BE10906E4AD04426B7E52620970370A7"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:InvokeESRIRegAsm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_BE10906E4AD04426B7E52620970370A7"
+                    {
+                    "Name" = "8:InvokeESRIRegAsm.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Install DLLs\\InvokeESRIRegAsm.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C5B656BDF6689BF99E5BE5C2067C0D8F"
             {
             "SourcePath" = "8:esriGeoDatabaseDistributed.olb"
@@ -3454,26 +3072,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C79246952FB5554608E167F31D581841"
-            {
-            "SourcePath" = "8:esriGeoAnalyst.olb"
-            "TargetName" = "8:esriGeoAnalyst.olb"
-            "Tag" = "8:"
-            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C7DBF43D4B8B3A972021A62B762934FD"
             {
             "SourcePath" = "8:esriSearch.olb"
@@ -3491,46 +3089,6 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_CA977964A64C0B0B1B83370F57A3EFE0"
-            {
-            "SourcePath" = "8:esriGeoDatabaseExtensions.olb"
-            "TargetName" = "8:esriGeoDatabaseExtensions.olb"
-            "Tag" = "8:"
-            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_CEA1AB1ABE7C4619975CC038B83B3440"
-            {
-            "SourcePath" = "8:esriDisplay.olb"
-            "TargetName" = "8:esriDisplay.olb"
-            "Tag" = "8:"
-            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
@@ -3685,26 +3243,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EA73B63273C3FB8862FB9FC7000924D6"
-            {
-            "SourcePath" = "8:esriCartoUI.olb"
-            "TargetName" = "8:esriCartoUI.olb"
-            "Tag" = "8:"
-            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F24AB05B63F693238C74F8EC30016340"
             {
             "AssemblyRegister" = "3:1"
@@ -3764,46 +3302,6 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F4DEEB5BCFD6150C809B6F3542164BE9"
-            {
-            "SourcePath" = "8:esriFramework.olb"
-            "TargetName" = "8:esriFramework.olb"
-            "Tag" = "8:"
-            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FAC07CD1B4509A3BCFEEB64DBA2A2F2E"
-            {
-            "SourcePath" = "8:esriGeometry.olb"
-            "TargetName" = "8:esriGeometry.olb"
-            "Tag" = "8:"
-            "Folder" = "8:_D85A7B3DD9FF4933AB1613DD08E8AE01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
