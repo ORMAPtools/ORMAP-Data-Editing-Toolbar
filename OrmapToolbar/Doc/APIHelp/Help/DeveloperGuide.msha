@@ -1,0 +1,20 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ORMAP Taxlot Editing Toolbar AddIn Developer Guide</title>
+</head>
+<body class="vendor-book">
+    <div class="details">
+        <span class="vendor">ORMAP Tech Group</span>
+        <span class="locale">en-us</span>
+        <span class="product">ORMAP Taxlot Editing Toolbar AddIn</span>
+        <span class="name">ORMAP Taxlot Editing Toolbar AddIn Developer Guide</span>
+    </div>
+    <div class="package-list">
+        <div class="package">
+            <!-- NOTE: The "name" span value cannot contain any periods! -->
+            <span class="name">DeveloperGuide</span>
+            <a class="current-link" href="DeveloperGuide.mshc">DeveloperGuide.mshc</a>
+        </div>
+    </div>
+</body>
+</html>

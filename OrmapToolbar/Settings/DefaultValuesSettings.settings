@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="" GeneratedClassName="DefaultValuesSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="County" Type="System.String" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="TownshipDirection" Type="System.String" Scope="User">
+      <Value Profile="(Default)">N</Value>
+    </Setting>
+    <Setting Name="RangeDirection" Type="System.String" Scope="User">
+      <Value Profile="(Default)">E</Value>
+    </Setting>
+    <Setting Name="MapSuffixType" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="MapSuffixNumber" Type="System.String" Scope="User">
+      <Value Profile="(Default)">000</Value>
+    </Setting>
+    <Setting Name="QuarterSection" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="QuarterQuarterSection" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Anomaly" Type="System.String" Scope="User">
+      <Value Profile="(Default)">--</Value>
+    </Setting>
+    <Setting Name="TownshipPart" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.00</Value>
+    </Setting>
+    <Setting Name="RangePart" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.00</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

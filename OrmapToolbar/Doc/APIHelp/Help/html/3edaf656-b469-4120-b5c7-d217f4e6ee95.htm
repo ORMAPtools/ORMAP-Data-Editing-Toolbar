@@ -1,0 +1,2259 @@
+﻿<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+  <head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" />
+    <META NAME="save" CONTENT="history" />
+    <title>Coding Standards</title>
+    <meta name="Language" content="en-us" />
+    <meta name="Microsoft.Help.Id" content="3edaf656-b469-4120-b5c7-d217f4e6ee95" />
+    <meta name="Description" content="The ORMAP Taxlot Editing Toolbar is developed according to coding standards and practices. These standards are applied in designing, writing, testing and integrating code. They are also used by the development team during review of code." />
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    <link rel="stylesheet" type="text/css" href="../styles/Presentation.css" />
+    <link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+    <script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+    <script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+    <script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+    <script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+    <script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+    <script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+    <xml>
+      <MSHelp:Keyword Index="A" Term="3edaf656-b469-4120-b5c7-d217f4e6ee95" />
+      <MSHelp:Attr Name="RevisionNumber" Value="1" />
+      <MSHelp:Attr Name="AssetID" Value="3edaf656-b469-4120-b5c7-d217f4e6ee95" />
+      <MSHelp:Attr Name="Abstract" Value="The ORMAP Taxlot Editing Toolbar is developed according to coding standards and practices. These standards are applied in designing, writing, testing and integrating code. They are also used by the development team during review of code. Code review  ..." />
+      <MSHelp:Attr Name="TopicType" Value="kbOrient" />
+      <MSHelp:Attr Name="Locale" Value="en-us" />
+    </xml>
+    <link type="text/css" rel="stylesheet" href="../styles/highlight.css" />
+    <script type="text/javascript" src="../scripts/highlight.js"> </script>
+  </head>
+  <body>
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+    <img id="collapseImage" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+    <img id="expandImage" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+    <img id="collapseAllImage" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+    <img id="expandAllImage" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+    <img id="dropDownImage" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+    <img id="dropDownHoverImage" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+    <img id="copyImage" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+    <img id="copyHoverImage" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+    <div id="header">
+      <table id="topTable" cellspacing="0" cellpadding="0">
+        <tr>
+          <td>
+            <span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+              <img ID="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" /> <label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label><label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label> </span>
+          </td>
+        </tr>
+      </table>
+      <div id="devlangsMenu">
+        <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on" onClick="SetLanguage(this)" />
+        <label class="checkboxLabel" for="VisualBasicCheckbox">Visual Basic</label>
+        <br />
+      </div>
+      <table id="bottomTable" cellpadding="0" cellspacing="0">
+        <tr id="headerTableRow1">
+          <td align="left">
+            <span id="runningHeaderText">ORMAP Taxlot Editing Toolbar AddIn Developer Guide</span>
+          </td>
+        </tr>
+        <tr id="headerTableRow2">
+          <td align="left">
+            <span id="nsrTitle">Coding Standards</span>
+          </td>
+        </tr>
+        <tr id="headerTableRow3">
+          <td align="left">
+            <a href="#seeAlsoToggle" onclick="OpenSection(seeAlsoToggle)">See Also</a> <span id="headfeedbackarea" class="feedbackhead"><a href="javascript:SubmitFeedback('ORMAP_ESRI_Programmers@listsmart.osl.state.or.us','ORMAP Taxlot Editing Toolbar AddIn Developer Guide','','3.0.0.0','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback');">Send Feedback</a></span></td>
+        </tr>
+      </table>
+      <table id="gradientTable">
+        <tr>
+          <td class="nsrBottom" background="../icons/gradient.gif" />
+        </tr>
+      </table>
+    </div>
+    <div id="mainSection">
+      <div id="mainBody">
+        <div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+        <span style="color: DarkGray">
+          <p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p>
+        </span>
+        <a name="Intro"> </a>
+        <div class="introduction">
+          <p>The <b>ORMAP Taxlot Editing Toolbar</b> is developed according to 
+  	coding standards and practices. These standards are applied in designing, writing, testing and 
+  	integrating code. They are also used by the development team during review of code. Code review 
+  	is performed manually by the following:</p>
+          <p>
+            <ul>
+              <li>another developer on the development team</li>
+              <li>the designated application architect</li>
+              <li>the development team as a group</li>
+            </ul>
+          </p>
+          <p>In addition to manual review, some developers also find it useful to use 
+    <b>FxCop</b>, an automated code checking tool, to flag code that may have 
+    problems. The rules in <b>FxCop</b> don't perfectly match those in the 
+    standards document. The standards document takes precedence where they conflict.</p>
+          <p> </p>
+        </div>
+        <a name="CodingStandards"> </a>
+        <h1 class="heading">
+          <span onclick="ExpandCollapse(sectionToggleID0EEAAA)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(sectionToggleID0EEAAA, event)" tabindex="0">
+            <img id="sectionToggleID0EEAAA" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Coding Standards</span>
+        </h1>
+        <div id="sectionSectionID0EEAAA" class="section" name="collapseableSection" style="">
+          <p> </p>
+          <p>Table of Contents:</p>
+          <ul>
+            <li class="outlineSectionEntry">
+              <a href="#SubSection1">1.   Introduction</a>
+            </li>
+            <li class="outlineSectionEntry">
+              <a href="#SubSection2">2.   Purpose of Coding Standards and Best Practices</a>
+            </li>
+            <li class="outlineSectionEntry">
+              <a href="#SubSection3">3.   How to Follow the Standards Across the Team</a>
+            </li>
+            <li class="outlineSectionEntry">
+              <a href="#SubSection4">4.   Authors and Credits</a>
+            </li>
+            <li class="outlineSectionEntry">
+              <a href="#SubSection5">5.   License, Copyright and Disclaimer</a>
+            </li>
+            <li class="outlineSectionEntry">
+              <a href="#SubSection6">6.   Revision History</a>
+            </li>
+            <li class="outlineSectionEntry">
+              <a href="#SubSection7">7.   Architecture</a>
+            </li>
+            <li class="outlineSectionEntry">
+              <a href="#SubSection8">8.   Naming Conventions and Standards</a>
+            </li>
+            <li class="outlineSectionEntry">
+              <a href="#SubSection9">9.   Indentation and Spacing</a>
+            </li>
+            <li class="outlineSectionEntry">
+              <a href="#SubSection10">10.   Members</a>
+            </li>
+            <li class="outlineSectionEntry">
+              <a href="#SubSection11">11.   Variables</a>
+            </li>
+            <li class="outlineSectionEntry">
+              <a href="#SubSection12">12.   Comments</a>
+            </li>
+            <li class="outlineSectionEntry">
+              <a href="#SubSection13">13.    Errors and Exception Handling</a>
+            </li>
+            <li class="outlineSectionEntry">
+              <a href="#SubSection14">14.    Other Good Programming Practices</a>
+            </li>
+            <li class="outlineSectionEntry">
+              <a href="#SubSection15">15.    Visual Design Guidelines</a>
+            </li>
+          </ul>
+          <p> </p>
+          <p>From:</p>
+          <blockQuote>
+            <p>
+              <b>VB 2005 (.NET) Coding Standards and Best Programming Practices</b>
+            </p>
+            <p>by </p>
+            <p>Nick Seigal</p>
+            <p>Lane Council of Governments</p>
+            <p>
+              <a href="http://www.lcog.org/" target="_blank">http://www.lcog.org</a>
+            </p>
+          </blockQuote>
+          <p> </p>
+          <a name="SubSection1"> </a>
+          <h3 class="subHeading">1.   Introduction</h3>
+          <div class="subsection">
+            <p> </p>
+            <p>Anybody can write code. With a few months of programming experience, you can
+				write 'working applications'. Making it work is easy, but doing it in a
+				professional way requires more effort.</p>
+            <p>Believe it of not, the majority of the programmers write 'working code', but
+				not 'good code'. Writing good code is an art and you must learn and practice
+				it to do it well.</p>
+            <p>Everyone may have different definitions for the term 'good code'. In our 
+				definition, the	following are the characteristics of good code.</p>
+            <p>
+              <ul>
+                <li>Reliable (Robust, Usable)</li>
+                <li>Maintainable (Readable, Scalable, Updatable)</li>
+                <li>Efficient (Quick)</li>
+              </ul>
+            </p>
+            <p>Most developers are inclined towards writing code for higher performance,
+				compromising reliability and maintainability. But considering long-term return 
+				on your investment, efficiency probably comes below reliability and maintainability.
+				If your code is not reliable and maintainable, you (and your company) will be
+				spending a lot of time trying to identify issues and understand code throughout
+				the life of your application.</p>
+            <p> </p>
+          </div>
+          <a name="SubSection2"> </a>
+          <h3 class="subHeading">2.   Purpose of Coding Standards and Best Practices</h3>
+          <div class="subsection">
+            <p> </p>
+            <p>To develop reliable and maintainable applications, you must follow coding
+				standards and best practices.</p>
+            <p>The coding standards and best practices described in this document are compiled
+				from our own experience and by referring to various Microsoft and non-Microsoft
+				guidelines. In general, they bear a close resemblance to the Microsoft
+				standards, but extend and alter them where it seemed needed.</p>
+            <p>Many sources of coding standards exist in the programming industry. None of 
+				them are perfect and you may follow any of them that work for you. What is more
+				important is selecting one standard approach and ensuring that everyone is
+				following it. The highest goal of any standard is standardization, i.e. that
+				the standard is used to create consistent code. Consistent code tends to be
+				more reliable, maintainable and efficient (fewer bugs, better documented, simpler
+				logic, etc.).</p>
+            <p> </p>
+          </div>
+          <a name="SubSection3"> </a>
+          <h3 class="subHeading">3.   How to Follow the Standards Across the Team</h3>
+          <div class="subsection">
+            <p> </p>
+            <p>If you have
+				a team of different skills and tastes, you are going to have a tough time
+				convincing everyone to follow the same standards. The best approach is to have
+				a team meeting and develop your own standards document. You may use this
+				document as a template to base your own document on.</p>
+            <p>Distribute
+				a copy of this document (or your own coding standard document) well ahead of the
+				coding standards meeting. All members should come to the meeting prepared to
+				discuss pros and cons of the various points in the document. Often, it is
+				useful if you have a manager present in the meeting to resolve conflicts.</p>
+            <p>Discuss all
+				points in the document. Everyone may have a different opinion about each point,
+				but at the end of the discussion, all members must agree upon the standard you
+				are going to follow. Prepare a new standards document with appropriate changes
+				based on the suggestions from all of the team members. Print copies of it and
+				post it in all workstations.</p>
+            <p>After you	start the development, you must schedule code review meetings to 
+				ensure that	everyone is following the rules. Three types of code reviews are 
+				recommended:</p>
+            <ul>
+              <li>
+                <b>Peer review</b> – another team member review the
+						code to ensure that the code follows the coding standards and meets
+						requirements. This level of review can include some unit testing also. Every
+						file in the project must go through this process.
+					</li>
+              <li>
+                <b>Architect
+						review</b> – the
+						architect of the team must review the core modules of the project to ensure
+						that they adhere to the design and there are no “big” mistakes that can affect
+						the project in the long run.
+					</li>
+              <li>
+                <b>Group review</b> – randomly select one or more files
+						and conduct a group review regularly (e.g once per week). Distribute a printed 
+						copy of the files to all team members 30 minutes before the meeting. Let them
+						read and come up with points for discussion. In the group review meeting, use a 
+						projector or web meeting format to display the file content in the screen. Go through 
+						every section of the code and let every member give their suggestions on how could 
+						that piece of code can be written in a better way. (Don’t forget to thank the 
+						developer for the good work and also make sure he does not get offended by the 
+						“group attack”!)
+  					</li>
+            </ul>
+            <p> </p>
+          </div>
+          <a name="SubSection4"> </a>
+          <h3 class="subHeading">4.   Authors and Credits</h3>
+          <div class="subsection">
+            <p> </p>
+            <p>This
+				document is based on a document prepared by the <a href="http://www.dotnetspider.com/" target="_blank">dotnetspider.com</a> team. Most of the
+				information in that document was compiled from the coding standards and best
+				practices published in various articles at <span class="italic">www.dotnetspider.com</span>. Also, they
+				referred to the 
+				<a href="http://msdn.microsoft.com/en-us/library/ms229042.aspx" target="_blank">guidelines published by Microsoft</a> 
+				and various other sources. I have converted the
+				whole discussion including all code samples to work with Visual Basic 2005. I
+				have also added many topics and modifications based on a variety of sources.</p>
+            <p> </p>
+          </div>
+          <a name="SubSection5"> </a>
+          <h3 class="subHeading">5.   License, Copyright and Disclaimer</h3>
+          <div class="subsection">
+            <p> </p>
+            <p>You are permitted to use and distribute this document for any non-commercial 
+				purpose as long as you retain this license and copyright information.</p>
+            <p>This document is provided on an "as-is" basis. The author of this 
+				document will not be responsible for any kind of loss for you due to any 
+				inaccurate information provided in this document.</p>
+            <p> </p>
+          </div>
+          <a name="SubSection6"> </a>
+          <h3 class="subHeading">6.   Revision History</h3>
+          <div class="subsection">
+            <p> </p>
+            <p>If you are
+				editing this document, you are required to fill the revision history with your
+				name and time stamp so that anybody can easily distinguish your updates from
+				the original author.</p>
+            <p> </p>
+            <div class="tableSection">
+              <table width="50%" cellspacing="2" cellpadding="5" frame="lhs">
+                <tr>
+                  <th>
+                    <p>
+                      <b>Rev#</b>
+                    </p>
+                  </th>
+                  <th>
+                    <p>
+                      <b>Date</b>
+                    </p>
+                  </th>
+                  <th>
+                    <p>
+                      <b>Changed By</b>
+                    </p>
+                  </th>
+                  <th>
+                    <p>
+                      <b>Description</b>
+                    </p>
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    <p>1</p>
+                  </td>
+                  <td>
+                    <p>2/3/2008</p>
+                  </td>
+                  <td>
+                    <p>Nick
+				  Seigal</p>
+                  </td>
+                  <td>
+                    <p>Changed
+				  file title and footers, order of sections, revised text</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>2</p>
+                  </td>
+                  <td>
+                    <p>2/4/2008</p>
+                  </td>
+                  <td>
+                    <p>Nick
+				  Seigal</p>
+                  </td>
+                  <td>
+                    <p>Converted
+				  code examples to VB, revised text</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>3</p>
+                  </td>
+                  <td>
+                    <p>2/6/2008</p>
+                  </td>
+                  <td>
+                    <p>Nick
+				  Seigal</p>
+                  </td>
+                  <td>
+                    <p>Revised
+				  text</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>4</p>
+                  </td>
+                  <td>
+                    <p>4/25/2008</p>
+                  </td>
+                  <td>
+                    <p>Nick
+				  Seigal</p>
+                  </td>
+                  <td>
+                    <p>Revised
+				  Exceptions section; removed ASP.NET section</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>5</p>
+                  </td>
+                  <td>
+                    <p>5/1/2008</p>
+                  </td>
+                  <td>
+                    <p>Nick
+				  Seigal</p>
+                  </td>
+                  <td>
+                    <p>Added
+				  Visual Design Guidelines section</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>6</p>
+                  </td>
+                  <td>
+                    <p>6/7/2009</p>
+                  </td>
+                  <td>
+                    <p>Nick
+				  Seigal</p>
+                  </td>
+                  <td>
+                    <p>Edited
+				  text (grammar, formatting, etc.), updated exception handling section</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p> </p>
+          </div>
+          <a name="SubSection7"> </a>
+          <h3 class="subHeading">7.   Architecture</h3>
+          <div class="subsection">
+            <p> </p>
+            <p>7.1.       
+				Do not have more
+				than one class in a single file.</p>
+            <p>7.2.       
+				Avoid having very
+				large files. If a single file has more than 1,000 lines of code, it is a good
+				candidate for refactoring. Split them logically into two or more classes.</p>
+            <p>7.3.       
+				Logically
+				organize all your files within appropriate folders. Use 2 level folder
+				hierarchies. You can have up to 10 folders in the root folder and each folder
+				can have up to 5 sub folders. If you have too many folders than cannot be
+				accommodated with the above mentioned 2 level hierarchy, you may need re
+				factoring into multiple assemblies.</p>
+            <p>7.4.       
+				Always use multi
+				layer (N-Tier) architecture. The Model-View-Controler (MVC) or
+				User-Control-Model (UCM) architecture patterns are good choices.</p>
+            <p>7.5.       
+				Never access a database
+				or other data source from the UI layer. </p>
+            <p>Always have a data layer class which performs all the
+				database related tasks. This will help you support or migrate to another
+				database back end easily.</p>
+            <p> </p>
+          </div>
+          <a name="SubSection8"> </a>
+          <h3 class="subHeading">8.   Naming Conventions and Standards</h3>
+          <div class="subsection">
+            <p> </p>
+            <div class="alert">
+              <table>
+                <tr>
+                  <th>
+                    <img src="../icons/alert_note.gif" title="Note" /> <b>Note</b></th>
+                </tr>
+                <tr>
+                  <td>
+                    <p>The terms <span class="term">Pascal Casing</span> and <span class="term">Camel
+					Casing</span> are used throughout this document.</p>
+                    <p>Pascal Casing - The first character of
+					all words are Upper Case and other characters are lower case.</p>
+                    <p>
+                      <b>Example:</b>
+                      <span class="literalValue">
+                        <u>B</u>ack<u>C</u>olor</span>
+                    </p>
+                    <p>Camel Casing - The first character of all
+					words, except the first word, are Upper Case and other characters are
+					lower case.</p>
+                    <p>
+                      <b>Example:</b>
+                      <span class="literalValue">
+                        <u>b</u>ack<u>C</u>olor</span>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p> </p>
+            <p>8.1.       
+				Use Pascal casing for class names </p>
+            <p>
+              <span id="cbc_1" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-keyword">Public</span> <span class="highlight-keyword">Class</span> HelloWorld
+    ...
+<span class="highlight-keyword">End</span> <span class="highlight-keyword">Class</span> <span class="highlight-comment">'HelloWorld</span></pre>
+                </div>
+              </span>
+            </p>
+            <p>8.2.       
+				Use Pascal casing for method names.</p>
+            <p>
+              <span id="cbc_2" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-keyword">Sub</span> SayHello(name <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span>)
+    ...
+<span class="highlight-keyword">End</span> <span class="highlight-keyword">Sub</span> <span class="highlight-comment">'SayHello</span></pre>
+                </div>
+              </span>
+            </p>
+            <p>8.3.       
+				Use Camel casing for variables and method parameters </p>
+            <p>
+              <span id="cbc_3" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-keyword">Dim</span> totalCount <span class="highlight-keyword">As</span> <span class="highlight-keyword">Integer</span> = <span class="highlight-number">0</span>
+
+<span class="highlight-keyword">Sub</span> SayHello(name <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span>)
+    <span class="highlight-keyword">Dim</span> fullMessage <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span> = <span class="highlight-literal">"Hello "</span> &amp; name
+    ...
+<span class="highlight-keyword">End</span> <span class="highlight-keyword">Sub</span> <span class="highlight-comment">'SayHello</span></pre>
+                </div>
+              </span>
+            </p>
+            <p>8.4.       
+				Use the prefix <span class="literalValue">I</span> with Camel Casing for interfaces 
+				( Example: <span class="code">IEntity</span> )</p>
+            <p> </p>
+            <p>8.5.       
+				Do not use Hungarian notation to name variables. </p>
+            <p>In earlier days most of the programmers liked it - having
+				the data type as a prefix for the variable name and using <span class="literalValue">m_</span> as prefix for
+				member variables.</p>
+            <p>For example (not good): </p>
+            <p>
+              <span id="cbc_4" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-keyword">Dim</span> m_sName <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span>
+
+<span class="highlight-keyword">Dim</span> nAge <span class="highlight-keyword">As</span> <span class="highlight-keyword">Integer</span></pre>
+                </div>
+              </span>
+            </p>
+            <p>However, in .NET coding standards, <b>this is not recommended</b>.
+				Usage of data type prefixes or suffixes (e.g. NameString) and the prefix <span class="literalValue">m_</span> to represent
+				member variables should not be used. Use All variables should use camel casing.</p>
+            <p> </p>
+            <div class="alert">
+              <table>
+                <tr>
+                  <th>
+                    <img src="../icons/alert_note.gif" title="Note" /> <b>Note</b></th>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Exception:</p>
+                    <p>UI controls are sometimes still usefully named using a form of Hungarian notation. 
+				  	See rule 7.13 below.</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p> </p>
+            <p>8.6.       
+				Use Meaningful,
+				descriptive words to name variables. Avoid abbreviations unless the variable
+				names would be very long (30+ characters) without them. Be <i>very</i>
+				consistent with abbreviation practices. Developers should agree explicitly on
+				the abbreviation rules that will be followed.</p>
+            <p>Good:</p>
+            <p>
+              <span id="cbc_5" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-keyword">Dim</span> address <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span>
+<span class="highlight-keyword">Dim</span> salary <span class="highlight-keyword">As</span> <span class="highlight-keyword">Integer</span></pre>
+                </div>
+              </span>
+            </p>
+            <p>Not Good:</p>
+            <p>
+              <span id="cbc_6" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-keyword">Dim</span> nam <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span>
+<span class="highlight-keyword">Dim</span> addr <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span>
+<span class="highlight-keyword">Dim</span> sal <span class="highlight-keyword">As</span> <span class="highlight-keyword">Integer</span></pre>
+                </div>
+              </span>
+            </p>
+            <div class="alert">
+              <table>
+                <tr>
+                  <th>
+                    <img src="../icons/alert_note.gif" title="Note" /> <b>Note</b></th>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Exception :</p>
+                    <p>If the variable is based on a field
+				  value that contains an abbreviation (most do), consider naming the variable
+				  like the field instead of inventing a different suitable name. This will make
+				  variables a bit harder to read, but will make it easier to understand the
+				  connection between the data and the code.</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p> </p>
+            <p>8.7.       
+				Do not use single
+				character variable names like <span class="literalValue">i</span>, <span class="literalValue">n</span>, 
+				<span class="literalValue">s</span> etc. Use names like <span class="literalValue">index</span>, 
+				<span class="literalValue">temp</span>, <span class="literalValue">item</span>. </p>
+            <p>One exception in this case would be variables used for
+				iterations in loops: </p>
+            <p>
+              <span id="cbc_7" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-keyword">For</span> i <span class="highlight-keyword">As</span> <span class="highlight-keyword">Integer</span> = <span class="highlight-number">0</span> <span class="highlight-keyword">To</span> count – <span class="highlight-number">1</span>
+    ...
+<span class="highlight-keyword">Next</span> i</pre>
+                </div>
+              </span>
+            </p>
+            <div class="alert">
+              <table>
+                <tr>
+                  <th>
+                    <img src="../icons/alert_note.gif" title="Note" /> <b>Note</b></th>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Exception:</p>
+                    <p>If the variable is used only as a counter for iteration and <i>is 
+				  	not used anywhere else in the loop</i>, you can opt to use a single 
+				  	generic character variable (e.g. <span class="literalValue">i</span> or <span class="literalValue">n</span>).</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p> </p>
+            <p>8.8.       
+				Do not use underscores (<span class="literalValue">_</span>) anywhere in local variable names.</p>
+            <p> </p>
+            <p>8.9.       
+				All private member
+				variables which are referenced by public or private properties must be prefixed
+				with underscore (<span class="literalValue">_</span>) so that they can be differentiated from other 
+				variables.</p>
+            <p> </p>
+            <p>8.10..     
+				Do not use
+				variable names that resemble <a href="http://msdn.microsoft.com/en-us/library/ksh7h19t(VS.80).aspx" title="Visual Basic Language Keywords (MSDN)" target="_blank">reserved language keywords</a>. Although you can, do not bypass this restriction by enclosing the 
+				name in brackets (<span class="literalValue">[ ]</span>).</p>
+            <p> </p>
+            <p>8.11.     
+				Prefix Boolean variables, properties and methods
+				with <span class="literalValue">is</span>, <span class="literalValue">can</span> or similar prefixes.</p>
+            <p>For example: </p>
+            <p>
+              <span id="cbc_8" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-keyword">Private</span> _isFinished <span class="highlight-keyword">As</span> <span class="highlight-keyword">Boolean</span>
+<span class="highlight-keyword">Dim</span> canEdit <span class="highlight-keyword">As</span> <span class="highlight-keyword">Boolean</span>&lt;/para&gt;</pre>
+                </div>
+              </span>
+            </p>
+            <p>8.12.     
+				Namespace names
+				should follow the standard pattern. The product name should be the name of the
+				project in the solution that builds the main assembly. </p>
+            <p>
+              <span class="code">OrganizationName.ProductName.TopLevelModule.BottomLevelModule</span>
+            </p>
+            <p> </p>
+            <p>8.13.     
+				Use appropriate
+				prefix for the UI elements so that you can identify them from the rest of the
+				variables.</p>
+            <p>There are 2 different approaches recommended here. <b>The
+				first is preferable.</b></p>
+            <p>(a)     
+				Use a common prefix such as <span class="literalValue">ux</span> for all UI elements. This will 
+				help you group all of the UI elements together and make it easy to access all 
+				of them from Intellisense. It will also allow you to change the type of a control, 
+				say from a Label to a TextBox with fewer code changes.</p>
+            <p>(b)     
+				Use appropriate Hungarian-style
+				prefix for each UI element. A brief list is given below. Since .NET has given
+				several controls, you may have to arrive at a complete list of standard
+				prefixes for each of the controls (including third party controls) you are
+				using.</p>
+            <p> </p>
+            <div class="tableSection">
+              <table width="50%" cellspacing="2" cellpadding="5" frame="lhs">
+                <tr>
+                  <th>
+                    <p>
+                      <b>Control</b>
+                    </p>
+                  </th>
+                  <th>
+                    <p>
+                      <b>Prefix</b>
+                    </p>
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Label</p>
+                  </td>
+                  <td>
+                    <p>lbl</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>TextBox</p>
+                  </td>
+                  <td>
+                    <p>txt</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>DataGrid</p>
+                  </td>
+                  <td>
+                    <p>dtg</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Button</p>
+                  </td>
+                  <td>
+                    <p>btn</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>ImageButton</p>
+                  </td>
+                  <td>
+                    <p>imb</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Hyperlink</p>
+                  </td>
+                  <td>
+                    <p>hlk</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>DropDownList</p>
+                  </td>
+                  <td>
+                    <p>ddl</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>ListBox</p>
+                  </td>
+                  <td>
+                    <p>lst</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>DataList</p>
+                  </td>
+                  <td>
+                    <p>dtl</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Repeater</p>
+                  </td>
+                  <td>
+                    <p>rep</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Checkbox</p>
+                  </td>
+                  <td>
+                    <p>chk</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>CheckBoxList</p>
+                  </td>
+                  <td>
+                    <p>cbl</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>RadioButton</p>
+                  </td>
+                  <td>
+                    <p>rdo</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>RadioButtonList</p>
+                  </td>
+                  <td>
+                    <p>rbl</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Image</p>
+                  </td>
+                  <td>
+                    <p>img</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Panel</p>
+                  </td>
+                  <td>
+                    <p>pnl</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>PlaceHolder</p>
+                  </td>
+                  <td>
+                    <p>phd</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Table</p>
+                  </td>
+                  <td>
+                    <p>tbl</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Validators</p>
+                  </td>
+                  <td>
+                    <p>val</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p> </p>
+            <p>8.14.     
+				The file name
+				should match the class name.</p>
+            <p>For example, for the class <span class="code">HelloWorld</span>, the file name
+				should be <span class="italic">HelloWorld.vb</span>. </p>
+            <p> </p>
+            <p>8.15.     
+				Use Pascal Case for file names.</p>
+            <p> </p>
+            <p>8.16.     
+				For more detailed
+				information on naming conventions (compatible with this document), see <a href="http://www.irritatedvowel.com/Programming/Standards.aspx" target="_blank">http://www.irritatedvowel.com/Programming/Standards.aspx</a>.</p>
+            <p> </p>
+          </div>
+          <a name="SubSection9"> </a>
+          <h3 class="subHeading">9.   Indentation and Spacing</h3>
+          <div class="subsection">
+            <p> </p>
+            <p>9.1.       
+				Use TABS for indentation (do not use SPACES) and define the Tab size as 
+				<span class="literalValue">4</span>.</p>
+            <p>These are the <b>Visual Studio 2005</b> defaults for 
+				<b>Visual Basic</b>. When people working in your code have 
+				different tab settings, it really makes a huge mess of the formatting. Whenever 
+				possible, avoid fighting the IDE and just go with the flow.</p>
+            <p> </p>
+            <p>9.2.       
+				Comments should
+				be indented to the same level as the code. </p>
+            <p>Good:</p>
+            <p>
+              <span id="cbc_9" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-comment">' Format a message and display</span>
+<span class="highlight-keyword">Dim</span> fullMessage <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span> = <span class="highlight-literal">"Hello "</span> &amp; name
+<span class="highlight-keyword">Dim</span> currentTime <span class="highlight-keyword">As</span> DateTime = DateTime.Now
+<span class="highlight-keyword">Dim</span> message <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span> =    fullMessage &amp; <span class="highlight-literal">", the time is : "</span> &amp; _
+        currentTime.ToShortTimeString()
+
+MessageBox.Show(message)</pre>
+                </div>
+              </span>
+            </p>
+            <p>Not Good:</p>
+            <p>
+              <span id="cbc_10" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-comment">' Format a message and display</span>
+<span class="highlight-keyword">Dim</span> fullMessage <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span> = <span class="highlight-literal">"Hello "</span> &amp; name
+<span class="highlight-keyword">Dim</span>    currentTime <span class="highlight-keyword">As</span> DateTime = DateTime.Now
+<span class="highlight-keyword">Dim</span>    message <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span> = fullMessage &amp; <span class="highlight-literal">", the time is : "</span> &amp; _
+        currentTime.ToShortTimeString()
+
+MessageBox.Show(message)</pre>
+                </div>
+              </span>
+            </p>
+            <p>9.3.       
+				Use one blank
+				line to separate logical groups of code within a member. </p>
+            <p>Good:</p>
+            <p>
+              <span id="cbc_11" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-comment">' Format a message and display</span>
+<span class="highlight-keyword">Function</span> SayHello(name <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span>) <span class="highlight-keyword">As</span> <span class="highlight-keyword">Boolean</span>
+    
+    <span class="highlight-keyword">Dim</span> fullMessage <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span> = <span class="highlight-literal">"Hello "</span> &amp; name
+    <span class="highlight-keyword">Dim</span> currentTime <span class="highlight-keyword">As</span> DateTime = DateTime.Now
+    <span class="highlight-keyword">Dim</span> message <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span> =    fullMessage &amp; <span class="highlight-literal">", the time is : "</span> &amp; _
+
+    currentTime.ToShortTimeString()
+    MessageBox.Show(message)
+    
+    <span class="highlight-keyword">If</span> ... <span class="highlight-keyword">Then</span>
+        <span class="highlight-comment">' Do something</span>
+        <span class="highlight-comment">' ...</span>
+        <span class="highlight-keyword">Return</span> <span class="highlight-keyword">False</span>
+    <span class="highlight-keyword">End</span> <span class="highlight-keyword">If</span>
+    
+    <span class="highlight-keyword">Return</span> <span class="highlight-keyword">True</span>
+    
+<span class="highlight-keyword">End</span> <span class="highlight-keyword">Function</span> <span class="highlight-comment">'SayHello</span></pre>
+                </div>
+              </span>
+            </p>
+            <p>Not Good:</p>
+            <p>
+              <span id="cbc_12" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-comment">' Format a message and display</span>
+<span class="highlight-keyword">Function</span> SayHello(name <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span>) <span class="highlight-keyword">As</span> <span class="highlight-keyword">Boolean</span>
+       <span class="highlight-keyword">Dim</span> fullMessage <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span> = &amp;quot;Hello &amp;quot; &amp;amp; name
+       <span class="highlight-keyword">Dim</span> currentTime <span class="highlight-keyword">As</span> DateTime = DateTime.Now
+    <span class="highlight-keyword">Dim</span> message <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span> = fullMessage &amp; <span class="highlight-literal">", the time is : "</span> &amp; _                   
+        currentTime.ToShortTimeString()
+    MessageBox.Show(message)
+    <span class="highlight-keyword">If</span> ... <span class="highlight-keyword">Then</span>
+        <span class="highlight-comment">' Do something</span>
+        <span class="highlight-comment">' ...</span>
+        <span class="highlight-keyword">Return</span> <span class="highlight-keyword">False</span>
+    <span class="highlight-keyword">End</span> <span class="highlight-keyword">If</span>
+    <span class="highlight-keyword">Return</span> <span class="highlight-keyword">True</span>
+<span class="highlight-keyword">End</span> <span class="highlight-keyword">Function</span> <span class="highlight-comment">'SayHello</span></pre>
+                </div>
+              </span>
+            </p>
+            <p>9.4.       
+				There should be one
+				and only one blank line between each member inside the class.</p>
+            <p>Screen real-estate is valuable. Classes that require more
+				blank lines to separate related code chunks are probably in need of refactoring
+				into multiple classes. Use the #Region directive instead. </p>
+            <p> </p>
+            <p>9.5.       
+				Organize code in
+				classes in the following general order (use a similar layout for structures and
+				form classes):</p>
+            <ul>
+              <li>
+                <p>Class header</p>
+              </li>
+              <li>
+                <p>[Imported namespace statements]</p>
+              </li>
+              <li>
+                <p>[Class declaration]</p>
+              </li>
+              <li>
+                <p>[Inherited class statements]</p>
+              </li>
+              <li>
+                <p>[Inherited interface statements]</p>
+              </li>
+              <li>
+                <p>Class-level constants and enumerations</p>
+              </li>
+              <li>
+                <p>Built-in class members (properties, methods, events, event handlers, 
+						delegates, etc.)</p>
+              </li>
+              <li>
+                <p>Custom class members</p>
+              </li>
+              <li>
+                <p>Inherited class members</p>
+              </li>
+              <li>
+                <p>Implemented interface members</p>
+              </li>
+              <li>
+                <p>Other members</p>
+              </li>
+            </ul>
+            <p>Place each kind of code group above (except those in square
+				brackets) and subgroup (e.g. properties) in a <span class="code">#Region block</span>.</p>
+            <p>Organize within these groups by access level (public,
+				friend, private, etc.) and then alphabetically.</p>
+            <p>Do not organize first by access level. A class diagram can
+				be created to view the members by (1) access level and then (2) by name
+				alphabetically. The kind of member (method, property, field, etc.) is also
+				shown.</p>
+            <div class="alert">
+              <table>
+                <tr>
+                  <th>
+                    <img src="../icons/alert_note.gif" title="Note" /> <b>Note</b></th>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Exception :</p>
+                    <p>Do not apply this rule to change the order within generated code.</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p> </p>
+            <p>9.6.       
+				Use the <span class="code">#Region</span> directive to group related pieces of
+				code together. If you create proper grouping using <span class="code">#Region</span>, 
+				the page should something like this when all definitions are collapsed.</p>
+            <p>
+              <div class="mediaNear">
+                <img alt="Regions Example" src="../media/RegionsExample.jpg" />
+                <div class="caption">
+                  <span class="captionLead">Figure 1:</span>Regions Example</div>
+              </div>
+            </p>
+            <p> </p>
+          </div>
+          <a name="SubSection10"> </a>
+          <h3 class="subHeading">10.   Members</h3>
+          <div class="subsection">
+            <p> </p>
+            <p>10.1.    
+				Avoid writing
+				very long members (properties, methods, event handlers, delegates, etc.). A member
+				should typically have no more than 25 lines of code. If a method has more than
+				25 lines of code, you should consider refactoring it into separate methods. </p>
+            <p> </p>
+            <p>10.2.    
+				A method name
+				should tell what it does. </p>
+            <p>Do not use misleading names. If the method name is obvious,
+				there is no need of documentation explaining what the method does. </p>
+            <p>Good: </p>
+            <p>
+              <span id="cbc_13" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-keyword">Sub</span> SavePhoneNumber(phoneNumber <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span>)
+    <span class="highlight-comment">' Save the phone number.</span>
+    ...
+<span class="highlight-keyword">End</span> <span class="highlight-keyword">Sub</span> <span class="highlight-comment">'SavePhoneNumber</span></pre>
+                </div>
+              </span>
+            </p>
+            <p>Not Good: </p>
+            <p>
+              <span id="cbc_14" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-keyword">Sub</span> SaveDetails(phoneNumber <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span>)
+    <span class="highlight-comment">' Save the phone number.</span>
+    ...
+<span class="highlight-keyword">End</span> <span class="highlight-keyword">Sub</span> <span class="highlight-comment">'SaveDetails</span></pre>
+                </div>
+              </span>
+            </p>
+            <p>10.3.    
+				A method should
+				do only one job. Do not combine more than one job in a single method, even if
+				those jobs are very small. </p>
+            <p>Good: </p>
+            <p>
+              <span id="cbc_15" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-comment">' Save the address.</span>
+SaveAddress(address)
+<span class="highlight-comment">' Send an email to the supervisor to inform that the address is</span>
+<span class="highlight-comment">' updated.</span>
+SendEmail(address, email)
+<span class="highlight-keyword">Sub</span> SaveAddress(address <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span>)
+    <span class="highlight-comment">' Save the address.</span>
+    <span class="highlight-comment">' ...</span>
+<span class="highlight-keyword">End</span> <span class="highlight-keyword">Sub</span> <span class="highlight-comment">'SaveAddress</span>
+<span class="highlight-keyword">Sub</span> SendEmail(address <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span>, email <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span>)
+    <span class="highlight-comment">' Send an email to inform the supervisor that the address is </span>
+    <span class="highlight-comment">' changed.</span>
+    <span class="highlight-comment">' ...</span>
+<span class="highlight-keyword">End</span> <span class="highlight-keyword">Sub</span> <span class="highlight-comment">'SendEmail</span></pre>
+                </div>
+              </span>
+            </p>
+            <p>Not Good: </p>
+            <p>
+              <span id="cbc_16" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-comment">' Save address and send an email to the supervisor to inform that</span>
+<span class="highlight-comment">' the address is updated.</span>
+SaveAddress(address, email)
+<span class="highlight-keyword">Sub</span> SaveAddress(address <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span>, email <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span>)
+    <span class="highlight-comment">' Job 1.</span>
+    <span class="highlight-comment">' Save the address.</span>
+    <span class="highlight-comment">' ...</span>
+    <span class="highlight-comment">' Job 2.</span>
+    <span class="highlight-comment">' Send an email to inform the supervisor that the address is changed.</span>
+    <span class="highlight-comment">' ...</span>
+<span class="highlight-keyword">End</span> <span class="highlight-keyword">Sub</span> <span class="highlight-comment">'SaveAddress</span></pre>
+                </div>
+              </span>
+            </p>
+            <p>10.4.    
+				Avoid public
+				methods and properties, unless they really need to be accessed from outside the
+				class. Use <span class="literalValue">internal</span> if they are accessed only within the same 
+				assembly.</p>
+            <p> </p>
+            <p>10.5.    
+				Avoid passing too
+				many parameters to a method. If you have more than 4 - 5 parameters, it is a
+				good candidate to define a class or structure.</p>
+            <p> </p>
+            <p>10.6.    
+				If you have a
+				method returning a collection, return an empty collection instead of <span class="literalValue">Null</span>, 
+				if you have no data to return. </p>
+            <p>For example, if you have a method returning an <span class="code">ArrayList</span>,
+				always return a valid ArrayList. If you have no items to return, then return a
+				valid ArrayList with 0 items. This will make it easy for the calling
+				application to just check for the “count” rather than doing an additional check
+				for “null”.</p>
+            <p> </p>
+            <p>10.7.    
+				An event handler
+				should not contain the code to perform the required action. </p>
+            <p>Instead, call another method from the event handler.</p>
+            <p> </p>
+            <p>10.8.    
+				Do not programmatically click a button to execute the same action you have written in
+				the button click event. </p>
+            <p>Rather, call the same method which is called by the button
+				click event handler.</p>
+            <p> </p>
+          </div>
+          <a name="SubSection11"> </a>
+          <h3 class="subHeading">11.   Variables</h3>
+          <div class="subsection">
+            <p> </p>
+            <p>11.1.    
+				Declare variables as close as possible to where it is first used. </p>
+            <p> </p>
+            <p>11.2.    
+				Use one variable
+				declaration per line.</p>
+            <p> </p>
+            <p>11.3.    
+				Do not make
+				member variables public or protected. </p>
+            <p>Keep them private and expose public/protected Properties. </p>
+            <p> </p>
+            <p>11.4.    
+				Avoid using class-level
+				member variables (also often called “fields”). </p>
+            <p>Instead, declare local variables wherever necessary and pass
+				it to other methods instead of sharing a member variable between methods. If
+				you share a member variable between methods, it will be difficult to track
+				which method changed the value and when. </p>
+            <p>An exception can be made for private member fields that are
+				supporting properties.</p>
+            <p> </p>
+            <p>11.5.    
+				Use the VB
+				specific types (aliases), rather than the types defined in System namespace. </p>
+            <p>
+              <span id="cbc_17" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-keyword">Dim</span> age <span class="highlight-keyword">As</span> <span class="highlight-keyword">Integer</span> <span class="highlight-comment">'(not System.Int16)</span>
+<span class="highlight-keyword">Dim</span> name <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span> <span class="highlight-comment">'(not System.String)</span>
+<span class="highlight-keyword">Dim</span> contactInfo <span class="highlight-keyword">As</span> <span class="highlight-keyword">Object</span> <span class="highlight-comment">'(not System.Object)</span></pre>
+                </div>
+              </span>
+            </p>
+            <p>11.6.    
+				Use StringBuilder
+				class instead of String when you have to manipulate string objects in a loop. </p>
+            <p>The String object works in weird way in .NET. Each time you
+				append a string, it is actually discarding the old string object and recreating
+				a new object, which is a relatively expensive operations.</p>
+            <p>Consider the following example:</p>
+            <p>
+              <span id="cbc_18" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-keyword">Public</span> <span class="highlight-keyword">Function</span> ComposeMessage(lines() <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span>) <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span>
+    <span class="highlight-keyword">Dim</span> message <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span> = <span class="highlight-keyword">String</span>.Empty
+    <span class="highlight-keyword">Dim</span> i <span class="highlight-keyword">As</span> <span class="highlight-keyword">Integer</span>
+    
+    <span class="highlight-keyword">For</span> i = <span class="highlight-number">0</span> <span class="highlight-keyword">To</span> lines.Length - <span class="highlight-number">1</span>
+        message += lines(i)
+    <span class="highlight-keyword">Next</span> i&lt;/para&gt;
+
+    <span class="highlight-keyword">Return</span> message
+<span class="highlight-keyword">End</span> <span class="highlight-keyword">Function</span> <span class="highlight-comment">'ComposeMessage</span></pre>
+                </div>
+              </span>
+            </p>
+            <p>In the above example, it may look like we are just appending
+				to the string object ‘message’. But what is happening in reality is, the string
+				object is discarded in each iteration and recreated and appending the line to
+				it.</p>
+            <p>If your loop has several iterations, then it is a good idea
+				to use StringBuilder class instead of String object.</p>
+            <p>See the following example where the String object is replaced
+				with StringBuilder.</p>
+            <p>
+              <span id="cbc_19" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-keyword">Public</span> <span class="highlight-keyword">Function</span> ComposeMessage(lines() <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span>) <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span>
+    <span class="highlight-keyword">Dim</span> message <span class="highlight-keyword">As</span> <span class="highlight-keyword">New</span> StringBuilder()
+    
+    <span class="highlight-keyword">Dim</span> i <span class="highlight-keyword">As</span> <span class="highlight-keyword">Integer</span>&lt;/para&gt;
+    <span class="highlight-keyword">For</span> i = <span class="highlight-number">0</span> <span class="highlight-keyword">To</span> lines.Length - <span class="highlight-number">1</span>
+      message.Append(lines(i))
+    <span class="highlight-keyword">Next</span> i
+    
+    <span class="highlight-keyword">Return</span> message.ToString()
+<span class="highlight-keyword">End</span> <span class="highlight-keyword">Function</span> <span class="highlight-comment">'ComposeMessage</span></pre>
+                </div>
+              </span>
+            </p>
+          </div>
+          <a name="SubSection12"> </a>
+          <h3 class="subHeading">12.   Comments</h3>
+          <div class="subsection">
+            <p> </p>
+            <p>Clear and	meaningful comments, used judiciously, make code more maintainable.</p>
+            <p> </p>
+            <p>12.1.    
+				Do not write
+				comments for every line of code and every variable declared. </p>
+            <p> </p>
+            <p>12.2.    
+				Use <b>'</b>
+				comments and <b>'''</b> for XML comments. Avoid end of line
+				comments except to clarify the use of a variable.</p>
+            <p> </p>
+            <p>12.3.    
+				Write comments
+				wherever required, but good readable code will require less comments. If all
+				variables and method names are meaningful, that will make the code very
+				readable and will not need many comments. </p>
+            <p> </p>
+            <p>12.4.    
+				Do not write
+				comments if the code is easily understandable without comment. The drawback of
+				having lot of comments is, if you change the code and forget to change the
+				comment, it will lead to more confusion. Keep comments very close to the lines
+				of code being commented.</p>
+            <p> </p>
+            <p>12.5.    
+				Fewer lines of
+				comments will generally make the code more readable, but if the code is not simple 
+				and there are too few comments, that is usually less readable. </p>
+            <p> </p>
+            <p>12.6.    
+				If you must use
+				some complex or weird logic for any reason, document it very well with comments.
+				Use a <span class="code">HACK</span> comment in these cases.</p>
+            <p> </p>
+            <p>12.7.    
+				If you initialize
+				a numeric variable to a special number other than 0, -1 etc, document the
+				reason for choosing that value. </p>
+            <p> </p>
+            <p>12.8.    
+				The bottom line
+				is, write clean, readable code such a way that it doesn't need many comments to
+				understand. </p>
+            <p> </p>
+            <p>12.9.    
+				Perform spelling
+				check on comments and also make sure proper grammar and punctuation is used. </p>
+            <p> </p>
+          </div>
+          <a name="SubSection13"> </a>
+          <h3 class="subHeading">13.    Errors and Exception Handling</h3>
+          <div class="subsection">
+            <p> </p>
+            <p>13.1.    
+				Use as few <span class="code">Try...Catch</span> blocks as possible. The general principle
+				is to handle all <i>unexpected</i> exceptions with exception handlers as high
+				in the call stack as possible (e.g. entry points). Handle <i>expected</i>
+				errors with control structures in code as close as possible to where they occur
+				rather than with exception handlers.</p>
+            <p> </p>
+            <p>13.2.    
+				Do not write <span class="code">Try...Catch</span> blocks in all your members. </p>
+            <p>Use structured exception handling only if there is a
+				possibility that a specific exception may occur and it cannot be prevented by
+				any other means. </p>
+            <p>For example, if you want to insert a record if it does not
+				already exists in database, you should try to select record using the key. Some
+				developers try to insert a record without checking if it already exists. If an
+				exception occurs, they will assume that the record already exists. This is
+				strictly not allowed. You should always explicitly check for errors rather than
+				waiting for exceptions to occur. </p>
+            <p> </p>
+            <p>13.3.    
+				You should always
+				try to avoid expected exceptions by checking all the expected error conditions
+				programmatically. </p>
+            <p>It is usually better to trap an expected exception where it
+				occurs and then either throw a new exception (of as specific a type as possible
+				of course) or fix the issue, than it is to catch an unexpected exception in a <span class="code">
+				Catch</span> block (even if you then rethrow it).
+				</p>
+            <div class="alert">
+              <table>
+                <tr>
+                  <th>
+                    <img src="../icons/alert_note.gif" title="Note" /> <b>Note</b></th>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Exception (no pun intended):</p>
+                    <p>A good reason to use a <span class="code">Catch</span> block would be if it
+					is not possible to resolve the issue and continue, <i>but</i> if it is
+					possible (and necessary) to perform some special clean up after the exception
+					<i>and</i> before returning control to the calling procedure. This 
+					would <i>only</i> be necessary if the clean-up was not clean-up that 
+					would be performed in a <span class="code">Finally</span> block.</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p>Some error conditions may not even throw an exception or
+				should not be caught for other reasons (see the following example).</p>
+            <p>Good: </p>
+            <p>
+              <span id="cbc_20" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-keyword">Dim</span> d <span class="highlight-keyword">As</span> <span class="highlight-keyword">Double</span> = <span class="highlight-number">0</span>
+<span class="highlight-keyword">Dim</span> m <span class="highlight-keyword">As</span> <span class="highlight-keyword">Double</span> = <span class="highlight-number">1</span> / d
+
+<span class="highlight-keyword">If</span> <span class="highlight-keyword">Double</span>.IsInfinity(m) <span class="highlight-keyword">Then</span>
+    <span class="highlight-comment">' Catch the divide-by-zero condition on floating point values.</span>
+    ...
+<span class="highlight-keyword">End</span> <span class="highlight-keyword">If</span>
+
+<span class="highlight-keyword">Dim</span> i <span class="highlight-keyword">As</span> <span class="highlight-keyword">Integer</span> = <span class="highlight-number">0</span>
+<span class="highlight-keyword">Dim</span> k <span class="highlight-keyword">As</span> <span class="highlight-keyword">Integer</span> = <span class="highlight-number">1</span>
+
+<span class="highlight-keyword">If</span> i &lt;&gt; <span class="highlight-number">0</span> <span class="highlight-keyword">Then</span>
+    <span class="highlight-comment">' Perform the division only if the denominator is nonzero.</span>
+    k = k \ i  <span class="highlight-comment">'\ returns an integer</span>
+<span class="highlight-keyword">End</span> <span class="highlight-keyword">If</span></pre>
+                </div>
+              </span>
+            </p>
+            <p>Not Good: </p>
+            <p>
+              <span id="cbc_21" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-keyword">Try</span>
+    <span class="highlight-keyword">Dim</span> d <span class="highlight-keyword">As</span> <span class="highlight-keyword">Double</span> = <span class="highlight-number">0</span>
+
+    <span class="highlight-comment">' This statement does not throw, m becomes PositiveInfinity.</span>
+    <span class="highlight-keyword">Dim</span> m <span class="highlight-keyword">As</span> <span class="highlight-keyword">Double</span> = <span class="highlight-number">1</span> / d
+    <span class="highlight-keyword">Dim</span> i <span class="highlight-keyword">As</span> <span class="highlight-keyword">Integer</span> = <span class="highlight-number">0</span>
+
+    <span class="highlight-comment">' This statement does throw, but is inefficient.</span>
+    <span class="highlight-keyword">Dim</span> k <span class="highlight-keyword">As</span> <span class="highlight-keyword">Integer</span> = <span class="highlight-number">1</span> \ i  <span class="highlight-comment">'\ returns an integer    </span>
+
+
+<span class="highlight-keyword">Catch</span> ex <span class="highlight-keyword">As</span> DivideByZeroException                    
+    <span class="highlight-comment">' Only Integer divisions throw this exception.</span>
+    ...            
+<span class="highlight-keyword">End</span> <span class="highlight-keyword">Try</span></pre>
+                </div>
+              </span>
+            </p>
+            <p>13.4.    
+				Never catch an expected
+				exception and then do nothing. </p>
+            <p>If you hide an exception, you will never know if the
+				exception happened or not. Lot of developers uses this handy (and sloppy)
+				method to ignore non-critical errors.</p>
+            <p>You should always try to avoid exceptions by checking all
+				the error conditions programmatically. In any case, catching an exception and
+				doing nothing is not responsible coding. In the worst case, if no clean-up or
+				recovery is possible, you should at least log the exception and proceed.</p>
+            <p> </p>
+            <p>13.5.    
+				Use <span class="code">Try...Catch</span> blocks for unexpected exceptions at
+				every entry point to the application. These are typically events, but also
+				include implemented interface properties and methods like Enabled().</p>
+            <p> </p>
+            <p>13.6.    
+				Use <span class="code">Try...Catch</span> blocks around any call to an
+				external resource (e.g. a file, data) or library to handle unexpected errors.
+				Expected errors should still be handled using control structures in code rather
+				than with exception handlers.</p>
+            <p> </p>
+            <p>13.7.    
+				You can use <span class="code">Try...Catch</span> blocks around any known source of
+				exceptions that can be recovered in place (in the same routine), but only if it
+				cannot be more effectively trapped and corrected using control structures in the
+				code.</p>
+            <p> </p>
+            <p>13.8.    
+				Use a <span class="code">Try...Finally</span>  block around any code that has variables
+				that should always be manually cleaned up before leaving a routine. Use <span class="code">Try...Catch...Finally</span>  for variables that should always be
+				manually cleaned up upon an exception. </p>
+            <p> </p>
+            <p>13.9.    
+				Validate
+				variables and parameters as much as possible (but avoiding redundancy) to
+				prevent unexpected exceptions before they happen. </p>
+            <p> </p>
+            <p>13.10.    
+				Use Return and Exit calls to exit a procedure even if
+				inside a <span class="code">Try...Catch</span> block. Do not use structured
+				exception handling to control program flow (i.e. don't use Exit Try for control flow).</p>
+            <p> </p>
+            <p>13.11.    
+				Rethrow any
+				exception from any location that is not an entry point or other external
+				connection, so that procedures higher in the call stack also have a chance to
+				recover in place and clean up variables. </p>
+            <p> </p>
+            <p>13.12.    
+				In the case of an
+				expected exception that is caught and handled, give a short, friendly, helpful message
+				to the user that an error has been caught, handled and logged. Log the actual
+				error with all possible details about the error, including the time it
+				occurred, method and class name, and other useful details about the state of
+				the application or the data in use. </p>
+            <p> </p>
+            <p>13.13.    
+				Error messages
+				should always use complete sentences with proper punctuation, capitalization
+				and spelling.</p>
+            <p> </p>
+            <p>13.14.    
+				Error messages
+				should help the user to solve the problem. </p>
+            <p>Never give error messages like "Error in
+				Application", "There is an error", etc. Instead give specific and
+				helpful messages like "The application failed to update the database.
+				Please make sure the login id and password are correct." </p>
+            <p> </p>
+            <p>13.15.    
+				Do not write very
+				large <span class="code">Try...Catch</span> blocks. </p>
+            <p>If required, write separate <span class="code">Try...Catch</span> block for each task you perform and
+				enclose only the specific piece of code inside the <span class="code">Try...Catch</span> block. This will help you find which
+				piece of code generated the exception and you can give specific error message
+				to the user.</p>
+            <p>Do not wrap every method in a <span class="code">Try...Catch</span> block. This is unecessary and
+				creates bloated code.</p>
+            <p> </p>
+            <p>13.16.    
+				There is no need
+				to catch unexpected general exceptions in all your members.</p>
+            <p>During development, leave them un-caught and let the
+				application crash. This will help you find most of the errors during the development
+				cycle. </p>
+            <p>For production code, you can have an application level (or thread
+				level) error handler wherein you can handle all general exceptions. In case of
+				an 'unexpected general error', this error handler should catch the exception
+				and log the error in addition to giving a friendly message to the user before
+				closing the application or allowing the user to ‘ignore and proceed'.</p>
+            <p> </p>
+            <p>13.17.    
+				Always catch only
+				the specific exception, not a generic exception. </p>
+            <p>Catching a general exception is bad. You will never know
+				whether it was a file error or some other error.</p>
+            <p>Good: </p>
+            <p>
+              <span id="cbc_22" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-keyword">Sub</span> ReadFromFile(fileName <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span>)
+    <span class="highlight-keyword">Try</span>
+        <span class="highlight-comment">' read from file.</span>
+        ...
+    <span class="highlight-keyword">Catch</span> ex <span class="highlight-keyword">As</span> FileIOException
+        <span class="highlight-comment">' Log the error.</span>
+        ...
+        <span class="highlight-comment">' Re-throw the exception depending on your case.</span>
+        <span class="highlight-keyword">Throw</span>
+    <span class="highlight-keyword">End</span> <span class="highlight-keyword">Try</span>
+<span class="highlight-keyword">End</span> <span class="highlight-keyword">Sub</span> <span class="highlight-comment">'ReadFromFile</span></pre>
+                </div>
+              </span>
+            </p>
+            <p>Not Good: </p>
+            <p>
+              <span id="cbc_23" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-keyword">Sub</span> ReadFromFile(fileName <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span>)
+    <span class="highlight-keyword">Try</span>
+        <span class="highlight-comment">' Read from file.</span>
+        ...
+    <span class="highlight-keyword">Catch</span> ex <span class="highlight-keyword">As</span> Exception
+    
+        <span class="highlight-comment">' Here you are hiding an exception.</span>
+        <span class="highlight-comment">' In this case no one will ever know that an exception happened.</span>
+        
+        <span class="highlight-keyword">Return</span> <span class="highlight-literal">""</span>
+    <span class="highlight-keyword">End</span> <span class="highlight-keyword">Try</span>
+<span class="highlight-keyword">End</span> <span class="highlight-keyword">Sub</span> <span class="highlight-comment">'ReadFromFile</span></pre>
+                </div>
+              </span>
+            </p>
+            <p>13.18.    
+				When you re-throw an exception, use the Throw
+				statement without specifying the original exception or other arguments. This
+				way, the original call stack is preserved.</p>
+            <p>Good:</p>
+            <p>
+              <span id="cbc_24" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-keyword">Try</span>
+    ...
+<span class="highlight-keyword">Catch</span>
+    <span class="highlight-comment">' Do whatever you want to handle the exception...</span>
+    <span class="highlight-keyword">Throw</span> <span class="highlight-comment">' No arguments</span>
+<span class="highlight-keyword">End</span> <span class="highlight-keyword">Try</span></pre>
+                </div>
+              </span>
+            </p>
+            <p>Not Good:</p>
+            <p>
+              <span id="cbc_25" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-keyword">Try</span>
+    ...
+<span class="highlight-keyword">Catch</span> ex <span class="highlight-keyword">As</span> Exception
+    <span class="highlight-comment">' Do whatever you want to handle the exception...</span>
+    <span class="highlight-keyword">Throw</span> ex
+<span class="highlight-keyword">End</span> <span class="highlight-keyword">Try</span></pre>
+                </div>
+              </span>
+            </p>
+            <p>13.19.    
+				Always use exception handlers where you communicate with external systems like network
+				devices, hardware devices, etc. </p>
+            <p>Such systems are subject to failure anytime and error
+				checking is not usually reliable. In those cases, you should use exception
+				handlers and try to recover from error.</p>
+            <p> </p>
+            <p>13.20.    
+				Use <span class="code">Try...Catch...Finally</span>  rather than simply Try...Catch. 
+				You can also use <span class="code">Try...Finally</span>  without a Catch block. This 
+				gives the opportunity to clean up after an exception or a return statement, even if no 
+				exception is being caught. </p>
+            <p> </p>
+            <p>13.21.    
+				Use <span class="code">Try...Catch...Finally</span>  in your data layer to catch all
+				database exceptions. </p>
+            <p>This exception handler should record all exceptions from the
+				database. The details recorded should include the name of the command being
+				executed, stored procedure name, parameters, connection string used etc. After
+				recording the exception, it could be re-thrown so that another layer in the
+				application can catch it and take appropriate action.</p>
+            <p> </p>
+            <p>13.22.    
+				If you are opening database connections, sockets, file stream etc, always close them in
+				the Finally block. </p>
+            <p>This will ensure that even if an exception occurs after
+				opening the connection, it will be safely closed in the Finally block.</p>
+            <p> </p>
+            <p>13.23.    
+				Make sure you
+				have a good logging class which can be configured to log errors, warning or
+				traces. </p>
+            <p>If you configure to log errors, it should <i>only</i> log
+				errors. If you configure to log traces using calls like Trace.WriteLine(ex.ToString), the trace listener should be
+				configured to record all errors, warnings and traces. Your log class should be
+				written in such a way that in future you can change it easily to log to Windows
+				Event Log, SQL Server, Email to administrator, or to a File, etc. without any
+				change in any other part of the application. Use the log class extensively
+				throughout the code to record errors, warning and even trace messages that can
+				help you trouble shoot a problem.</p>
+            <p>Consider using the Microsoft Exception Management
+				Application Block, which can be downloaded at <a href="http://msdn2.microsoft.com/en-us/library/aa480461.aspx" target="_blank">http://msdn2.microsoft.com/en-us/library/aa480461.aspx</a>.</p>
+            <p> </p>
+            <p>13.24.    
+				Custom exceptions
+				should inherit from ApplicationException.</p>
+            <p>If required in your application, you can write your own
+				custom exception classes, but do not derive your custom exceptions from the
+				base class SystemException. Instead, inherit from ApplicationException.</p>
+            <p> </p>
+          </div>
+          <a name="SubSection14"> </a>
+          <h3 class="subHeading">14.    Other Good Programming Practices</h3>
+          <div class="subsection">
+            <p> </p>
+            <p>14.1.    
+				Separate your
+				application into multiple assemblies. Group all independent utility classes
+				into a separate class library. All your database related files can be in
+				another class library. </p>
+            <p> </p>
+            <p>14.2.    
+				Always watch for
+				unexpected values. For example, if you are using a parameter with 3 or more
+				possible values, never assume that if one is not matching then the only
+				possibility is the other value.</p>
+            <p>Good:</p>
+            <p>
+              <span id="cbc_26" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-keyword">If</span> memberType = eMemberTypes.Registered <span class="highlight-keyword">Then</span>
+    <span class="highlight-comment">' Registered user</span>
+    
+    <span class="highlight-comment">' Do something...</span>
+    
+<span class="highlight-keyword">ElseIf</span> memberType =    eMemberTypes.Guest <span class="highlight-keyword">Then</span>
+    <span class="highlight-comment">' Guest user</span>
+    
+    <span class="highlight-comment">' Do something...</span>
+    
+<span class="highlight-keyword">Else</span>
+    <span class="highlight-comment">' Unexpected user type.</span>
+
+
+    <span class="highlight-comment">' Throw an exception.</span>
+    <span class="highlight-keyword">Throw</span> <span class="highlight-keyword">New</span> Exception(<span class="highlight-comment">"Unexpected    value '"</span> &amp; memberType.ToString() &amp; <span class="highlight-comment">"'"</span>\
+    
+    <span class="highlight-comment">' If we introduce a new    user type in future, we can easily find </span>
+    <span class="highlight-comment">' the problem here.</span>
+    
+<span class="highlight-keyword">End</span> <span class="highlight-keyword">If</span></pre>
+                </div>
+              </span>
+            </p>
+            <p>Not Good:</p>
+            <p>
+              <span id="cbc_27" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-keyword">If</span> memberType = eMemberTypes.Registered <span class="highlight-keyword">Then</span>
+    <span class="highlight-comment">' Registered user</span>
+    
+    <span class="highlight-comment">' Do something...</span>
+    
+<span class="highlight-keyword">Else</span>
+    <span class="highlight-comment">' Guest user</span>
+    
+    <span class="highlight-comment">' Do something...</span>
+
+
+    <span class="highlight-comment">' If we introduce another user type in future, this code will</span>
+    <span class="highlight-comment">' fail and will not be noticed.</span>
+
+
+<span class="highlight-keyword">End</span> <span class="highlight-keyword">If</span></pre>
+                </div>
+              </span>
+            </p>
+            <p>14.3.    
+				Do not hardcode numbers. </p>
+            <p>You should persist these values in a config file or database
+				instead. Declare them as constants only if you are sure this value will never
+				need to be changed. If you do use constants, declare them at the top of the
+				file. However, using constants is not recommended.</p>
+            <p> </p>
+            <p>14.4.    
+				Do not hardcode strings. Use resource files instead. </p>
+            <p> </p>
+            <p>14.5.    
+				To compare strings use String.Compare(String, String, Boolean) to avoid issues 
+				with lowercase or upper case. </p>
+            <p>
+              <span id="cbc_28" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-keyword">Dim</span> strA <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span> &lt;/para&gt;
+<span class="highlight-keyword">Dim</span> strB <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span> &lt;/para&gt;
+<span class="highlight-keyword">Dim</span> ignoreCase <span class="highlight-keyword">As</span> <span class="highlight-keyword">Boolean</span> = <span class="highlight-keyword">True</span>
+<span class="highlight-keyword">Dim</span> returnValue <span class="highlight-keyword">As</span> <span class="highlight-keyword">Integer</span>
+
+returnValue = <span class="highlight-keyword">String</span>.Compare(strA, strB, ignoreCase)</pre>
+                </div>
+              </span>
+            </p>
+            <p>14.6.    
+				Use String.Empty instead of  empty quotes ("").</p>
+            <p>Good:</p>
+            <p>
+              <span id="cbc_29" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-keyword">If</span> name = <span class="highlight-keyword">String</span>.Empty <span class="highlight-keyword">Then</span>
+    ...
+<span class="highlight-keyword">End</span> <span class="highlight-keyword">If</span></pre>
+                </div>
+              </span>
+            </p>
+            <p>Not Good:</p>
+            <p>
+              <span id="cbc_30" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-keyword">If</span> name = <span class="highlight-literal">""</span> <span class="highlight-keyword">Then</span>
+    ...&lt;/para&gt;
+<span class="highlight-keyword">End</span> <span class="highlight-keyword">If</span>&lt;/para&gt;</pre>
+                </div>
+              </span>
+            </p>
+            <p>14.7.    
+				Use Enum wherever related discrete values are needed. Do not use numbers or 
+				strings to indicate related discrete values.</p>
+            <p>Good: </p>
+            <p>
+              <span id="cbc_31" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-keyword">Enum</span> MailType
+    Html
+    PlainText
+    Attachment
+<span class="highlight-keyword">End</span> <span class="highlight-keyword">Enum</span> <span class="highlight-comment">'MailType</span>
+
+
+<span class="highlight-keyword">Sub</span> SendMail(message <span class="highlight-keyword">As</span>
+<span class="highlight-keyword">String</span>, mailType <span class="highlight-keyword">As</span> MailType)
+    <span class="highlight-keyword">Select</span> <span class="highlight-keyword">Case</span> mailType
+    <span class="highlight-keyword">Case</span> MailType.Html
+        <span class="highlight-comment">' Do something...</span>
+    <span class="highlight-keyword">Case</span> MailType.PlainText
+        <span class="highlight-comment">' Do something...</span>
+    <span class="highlight-keyword">Case</span> MailType.Attachment
+        <span class="highlight-comment">' Do something...</span>
+    <span class="highlight-keyword">Case</span> <span class="highlight-keyword">Else</span>
+        <span class="highlight-comment">' Do something...</span>
+    <span class="highlight-keyword">End</span> <span class="highlight-keyword">Select</span>
+<span class="highlight-keyword">End</span> <span class="highlight-keyword">Sub</span> <span class="highlight-comment">'SendMail</span></pre>
+                </div>
+              </span>
+            </p>
+            <p>Not Good: </p>
+            <p>
+              <span id="cbc_32" x-lang="VisualBasic" codeLanguage="VisualBasic">
+                <div class="highlight-title">
+                  <span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);">
+                    <img style="margin-right: 5px;" src="../icons/CopyCode.gif" />Copy</span>VB.NET</div>
+                <div class="code">
+                  <pre xml:space="preserve">
+                    <span class="highlight-keyword">Sub</span> SendMail(message <span class="highlight-keyword">As</span>
+                <span class="highlight-keyword">String</span>, mailType <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span>)        
+                <span class="highlight-keyword">Select</span> <span class="highlight-keyword">Case</span> mailType
+                    <span class="highlight-keyword">Case</span> MailType.Html
+                        <span class="highlight-comment">' Do something...</span>
+                    <span class="highlight-keyword">Case</span> MailType.PlainText
+                        <span class="highlight-comment">' Do something...</span>
+                    <span class="highlight-keyword">Case</span> MailType.Attachment
+                        <span class="highlight-comment">' Do something...</span>
+                    <span class="highlight-keyword">Case</span> <span class="highlight-keyword">Else</span>
+                        <span class="highlight-comment">' Do something...</span>
+                    <span class="highlight-keyword">End</span> <span class="highlight-keyword">Select</span>
+                <span class="highlight-keyword">End</span> <span class="highlight-keyword">Sub</span> <span class="highlight-comment">'SendMail</span></pre>
+                </div>
+              </span>
+            </p>
+            <p>14.8.    
+				Never hardcode a path or drive name in code. </p>
+            <p>Get the application path programmatically and use relative
+				path. </p>
+            <p> </p>
+            <p>14.9.    
+				Never assume that your code will run from drive "C:". </p>
+            <p>You never know, some user may run it from network or from another
+				mapped drive (e.g. "Z:"). </p>
+            <p>14.10.
+				Have your own
+				templates for each of the file types in Visual Studio. </p>
+            <p>You can include your company name, copyright information, etc.
+				in the template. You can view or edit the Visual Studio file templates in the
+				folder <span class="italic">C:\Program Files\Microsoft
+				Visual Studio 8\Common7\IDE\ItemTemplatesCache\VisualBasic\1033</span>. (This folder has the templates for VB, but you can
+				easily find the corresponding folders or any other language .NET language)</p>
+            <p> </p>
+            <p>14.11.
+				Use the AssemblyInfo file to fill in information like version number, 
+				description, company name, copyright notice etc.</p>
+            <p> </p>
+            <p>14.12.
+				In the
+				application start up, do some kind of "self check" and ensure all
+				required files and dependancies are available in the expected locations. </p>
+            <p>Check for database connection in start up, if required. Give
+				a friendly message to the user in case of any problems. </p>
+            <p> </p>
+            <p>14.13.
+				If the required
+				configuration file is not found, the application should be able to create one
+				with default values. </p>
+            <p>If a wrong value found in the configuration file, the application
+				should throw an error or give a message and also should tell the user what the
+				correct values are.</p>
+            <p> </p>
+            <p>14.14.
+				Use Andale Mono
+				or Consolas (or a similar fixed-width, code-optimized font) as your code editor
+				font. </p>
+            <p>This is much easier on the eyes than Courier New. Andale
+				Mono used to be free from Microsoft, but can be hard to find. It's out there on
+				the net, though, as a free download. Consolas comes with Vista as well as with
+				the latest versions of Microsoft Office (2007 and above). You can find Consolas
+				<a href="http://www.microsoft.com/downloads/details.aspx?familyid=22e69ae4-7e40-4807-8a86-b3d36fab68d3&amp;amp;displaylang=en" target="_blank">here</a>. Please note that Consolas looks terrible unless you have full 
+				ClearType font smoothing running on XP, or are using Windows Vista or a more recent
+				version of Windows.</p>
+            <p> </p>
+          </div>
+          <a name="SubSection15"> </a>
+          <h3 class="subHeading">15.    Visual Design Guidelines</h3>
+          <div class="subsection">
+            <p> </p>
+            <p>15.1.    
+				Follow the visual design guidelines specified at <a href="http://msdn2.microsoft.com/en-us/library/ms997612.aspx" target="_blank">http://msdn2.microsoft.com/en-us/library/ms997612.aspx</a>
+				where no more specific standard is specified in this document.</p>
+            <p>The Microsoft guidelines specify sizes in dialog units
+				(DLUs), not pixels. A dialog unit is the device-independent measure to use for
+				layout. One horizontal dialog unit is equal to one-fourth of the average
+				character width for the current system font. One vertical dialog unit is equal
+				to one-eighth of an average character height for the current system font. The
+				default height for most single-line controls is 14 DLUs. In the specifications
+				in this document all sizes are in pixels as these are the default units for
+				windows form elements in Visual Studio 2005. To convert to pixels, assume that
+				a horizontal DLU is 1.5 pixels and a vertical DLU is 1.65 pixels.</p>
+            <p> </p>
+            <p>15.2.    
+				The following
+				table lists the recommended height and width of common dialog box controls in
+				pixels (use similar sizes for controls not listed). </p>
+            <div class="tableSection">
+              <table width="50%" cellspacing="2" cellpadding="5" frame="lhs">
+                <tr>
+                  <th>
+                    <p>
+                      <b>Control</b>
+                    </p>
+                  </th>
+                  <th>
+                    <p>
+                      <b>Height (pixels)</b>
+                    </p>
+                  </th>
+                  <th>
+                    <p>
+                      <b>Width (pixels)</b>
+                    </p>
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Dialog
+				  boxes and property sheets (for 640 x 480 screen resolution)</p>
+                  </td>
+                  <td>
+                    <p>434 max</p>
+                  </td>
+                  <td>
+                    <p>395 max</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Command
+				  buttons</p>
+                  </td>
+                  <td>
+                    <p>23</p>
+                  </td>
+                  <td>
+                    <p>75</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Text boxes</p>
+                  </td>
+                  <td>
+                    <p>20 (set by
+				  Visual Studio)</p>
+                  </td>
+                  <td>
+                    <p>Size to match
+				  other combo, list and text boxes</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Drop-down
+				  combo box and list</p>
+                  </td>
+                  <td>
+                    <p>22 (set by
+				  Visual Studio)</p>
+                  </td>
+                  <td>
+                    <p>Size to
+				  match other combo, list and text boxes</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Text
+				  labels and other screen text</p>
+                  </td>
+                  <td>
+                    <p>12 per
+				  line of text</p>
+                  </td>
+                  <td>
+                    <p>As wide as
+				  needed</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Check
+				  boxes, option buttons</p>
+                  </td>
+                  <td>
+                    <p>17 (set by
+				  Visual Studio)</p>
+                  </td>
+                  <td>
+                    <p>As wide as
+				  needed</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p>15.3.    
+				The following
+				table lists the typical items found in an interface and the recommended spacing
+				between them.</p>
+            <div class="tableSection">
+              <table width="50%" cellspacing="2" cellpadding="5" frame="lhs">
+                <tr>
+                  <th>
+                    <p>
+                      <b>Interface Items</b>
+                    </p>
+                  </th>
+                  <th>
+                    <p>
+                      <b>Spacing (pixels)</b>
+                    </p>
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Dialog box
+				   margins</p>
+                  </td>
+                  <td>
+                    <p>10 on all
+				  sides</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Between
+				   paragraphs of text</p>
+                  </td>
+                  <td>
+                    <p>10</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Between
+				   text labels and their associated controls</p>
+                  </td>
+                  <td>
+                    <p>5</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Between
+				   related controls</p>
+                  </td>
+                  <td>
+                    <p>7</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Between
+				   unrelated controls</p>
+                  </td>
+                  <td>
+                    <p>10</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>First
+				   control in a group box</p>
+                  </td>
+                  <td>
+                    <p>15 down
+				   from the top of the group box; align vertically to the group box title</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Between
+				   controls in a group box</p>
+                  </td>
+                  <td>
+                    <p>7; align
+				   vertically to the group box title</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Between
+				   horizontally or vertically arranged buttons</p>
+                  </td>
+                  <td>
+                    <p>7; align
+				   vertically to the group box title</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>From the
+				   left edge of a group box</p>
+                  </td>
+                  <td>
+                    <p>14; if the
+				   group box is left-aligned, controls are 24 from the left edge of the dialog
+				   box or property page</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Last
+				   control in a group box</p>
+                  </td>
+                  <td>
+                    <p>10 above
+				   the bottom of the group box</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Smallest
+				   space between controls</p>
+                  </td>
+                  <td>
+                    <p>3</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Text label
+				   inside a button</p>
+                  </td>
+                  <td>
+                    <p>5 down
+				   from the top of the button</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Check box,
+				   list box, or option button beside a button</p>
+                  </td>
+                  <td>
+                    <p>3 down
+				   from the top of the button</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <p> </p>
+        <h1 class="heading">
+          <span onclick="ExpandCollapse(seeAlsoToggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(seeAlsoToggle, event)" tabindex="0">
+            <img id="seeAlsoToggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />See Also</span>
+        </h1>
+        <div id="seeAlsoSection" class="section" name="collapseableSection" style="">
+          <h4 class="subHeading">Other Resources</h4>
+          <div class="seeAlsoStyle">
+            <a href="http://code.msdn.microsoft.com/codeanalysis/Release/ProjectReleases.aspx?ReleaseId=553" title="Go to FxCop page on MSDN website" target="_blank">FxCop website</a>
+          </div>
+        </div>
+        <p> </p>
+        <span sdata="link">
+          <a href="#Intro">Back to the Top</a>
+        </span>
+      </div>
+      <div id="footer">
+        <div class="footerLine">
+          <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" title="Footer image" />
+        </div>
+        <A NAME="feedback"></A>
+        <span id="fb" class="feedbackcss"></span>
+Created using <a href="http://www.codeplex.com/SHFB">Sandcastle Help File Builder</a>.<p />Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:ORMAP_ESRI_Programmers%40listsmart.osl.state.or.us?Subject=ORMAP Taxlot Editing Toolbar AddIn Developer Guide">ORMAP Tech Group</a><script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        var HT_mailLinkText = HT_mailLink.innerHTML;
+        HT_mailLink.href += ": " + document.title;
+        HT_mailLink.innerHTML = HT_mailLinkText;
+        </script><p />Copyright © 2007-2011 ORMAP Tech Group. All rights reserved.</div>
+    </div>
+  </body>
+</html>

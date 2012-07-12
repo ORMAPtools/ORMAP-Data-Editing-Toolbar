@@ -1,0 +1,359 @@
+﻿<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+  <head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" />
+    <META NAME="save" CONTENT="history" />
+    <title>Application Architecture</title>
+    <meta name="Language" content="en-us" />
+    <meta name="Microsoft.Help.Id" content="495805fb-8f85-484c-bba1-1a4ffad713d2" />
+    <meta name="Description" content="The ORMAP Taxlot Editing Toolbar application architecture is summarized in the Class Diagram (ClassDiagram.cd ). Each component of the architecture is expressed there." />
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    <link rel="stylesheet" type="text/css" href="../styles/Presentation.css" />
+    <link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+    <script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+    <script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+    <script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+    <script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+    <script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+    <script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+    <xml>
+      <MSHelp:Keyword Index="A" Term="495805fb-8f85-484c-bba1-1a4ffad713d2" />
+      <MSHelp:Attr Name="RevisionNumber" Value="1" />
+      <MSHelp:Attr Name="AssetID" Value="495805fb-8f85-484c-bba1-1a4ffad713d2" />
+      <MSHelp:Attr Name="Abstract" Value="The ORMAP Taxlot Editing Toolbar application architecture is summarized in the Class Diagram (ClassDiagram.cd ). Each component of the architecture is expressed there." />
+      <MSHelp:Attr Name="TopicType" Value="kbArticle" />
+      <MSHelp:Attr Name="Locale" Value="en-us" />
+    </xml>
+  </head>
+  <body>
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+    <img id="collapseImage" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+    <img id="expandImage" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+    <img id="collapseAllImage" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+    <img id="expandAllImage" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+    <img id="dropDownImage" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+    <img id="dropDownHoverImage" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+    <img id="copyImage" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+    <img id="copyHoverImage" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+    <div id="header">
+      <table id="topTable" cellspacing="0" cellpadding="0">
+        <tr>
+          <td>
+            <span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+              <img ID="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" /> <label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label><label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label> </span>
+          </td>
+        </tr>
+      </table>
+      <div id="devlangsMenu">
+        <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on" onClick="SetLanguage(this)" />
+        <label class="checkboxLabel" for="VisualBasicCheckbox">Visual Basic</label>
+        <br />
+      </div>
+      <table id="bottomTable" cellpadding="0" cellspacing="0">
+        <tr id="headerTableRow1">
+          <td align="left">
+            <span id="runningHeaderText">ORMAP Taxlot Editing Toolbar AddIn Developer Guide</span>
+          </td>
+        </tr>
+        <tr id="headerTableRow2">
+          <td align="left">
+            <span id="nsrTitle">Application Architecture</span>
+          </td>
+        </tr>
+        <tr id="headerTableRow3">
+          <td align="left">
+            <a href="#seeAlsoToggle" onclick="OpenSection(seeAlsoToggle)">See Also</a> <span id="headfeedbackarea" class="feedbackhead"><a href="javascript:SubmitFeedback('ORMAP_ESRI_Programmers@listsmart.osl.state.or.us','ORMAP Taxlot Editing Toolbar AddIn Developer Guide','','3.0.0.0','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback');">Send Feedback</a></span></td>
+        </tr>
+      </table>
+      <table id="gradientTable">
+        <tr>
+          <td class="nsrBottom" background="../icons/gradient.gif" />
+        </tr>
+      </table>
+    </div>
+    <div id="mainSection">
+      <div id="mainBody">
+        <div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+        <span style="color: DarkGray">
+          <p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p>
+        </span>
+        <a name="Intro"> </a>
+        <div class="introduction">
+          <p>
+            <b>The ORMAP Taxlot Editing Toolbar</b> application 
+    architecture is summarized in the Class Diagram (<span class="italic">ClassDiagram.cd
+    </span>). Each component of the architecture is expressed there.</p>
+          <p>This section explains the general architecture patterns used, including 
+    the application tiers, class types, and their relationships.
+    </p>
+          <p>The classes in the application are organized into three tiers following 
+    a variation of the model-view-controler design pattern. In this variation, 
+    the view layer is implemented with very shallow graphical user interface 
+    classes with little or no behavior. The controler tier is divided into 
+    (a) interface-related classes which implement the required interfaces to 
+    extend ArcMap and handle all user-initiated events and (b) utility classes 
+    which provide support functions for the interface-related classes. The model 
+    tier is essentially provided by ArcObjects and is refered to here as the 
+    "Data Access Tier". The controler tier is refered to as the "Behavior Tier". 
+    The view tier is refered to as the "Interface Tier".</p>
+          <p>List Of Class Types:</p>
+          <ul>
+            <li class="outlineSectionEntry">
+              <a href="#S1">Interface Tier</a>
+            </li>
+            <ul>
+              <li class="outlineSectionEntry">
+                <a href="#S1.1">Class-Linked Forms</a>
+              </li>
+              <li class="outlineSectionEntry">
+                <a href="#S1.2">Other Forms</a>
+              </li>
+            </ul>
+            <li class="outlineSectionEntry">
+              <a href="#S2">Behavior Tier</a>
+            </li>
+            <ul>
+              <li class="outlineSectionEntry">
+                <a href="#S2.1">Core Functionality</a>
+              </li>
+              <li class="outlineSectionEntry">
+                <a href="#S2.2">User Configuration</a>
+              </li>
+              <li class="outlineSectionEntry">
+                <a href="#S2.3">Commands</a>
+              </li>
+              <li class="outlineSectionEntry">
+                <a href="#S2.4">Tools</a>
+              </li>
+              <li class="outlineSectionEntry">
+                <a href="#S2.5">Helper Classes</a>
+              </li>
+            </ul>
+            <li class="outlineSectionEntry">
+              <a href="#S3">Data Access Tier</a>
+            </li>
+            <li class="outlineSectionEntry">
+              <a href="#S4">Miscellaneous Classes and Components</a>
+            </li>
+            <li>
+              <a href="#seeAlsoSection">See Also</a>
+            </li>
+          </ul>
+          <p> </p>
+        </div>
+        <a name="S1"> </a>
+        <h1 class="heading">
+          <span onclick="ExpandCollapse(sectionToggleID0EGAAA)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(sectionToggleID0EGAAA, event)" tabindex="0">
+            <img id="sectionToggleID0EGAAA" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Interface Tier</span>
+        </h1>
+        <div id="sectionSectionID0EGAAA" class="section" name="collapseableSection" style="">
+          <p>The user interface tier is implemented with very shallow graphical
+      user interface classes with little or no behavior.</p>
+          <a name="S1.1"> </a>
+          <h3 class="subHeading">Class-Linked Forms</h3>
+          <div class="subsection">
+            <p>The user interface consists of a set of classes (primarily Forms)
+          each of which is paired with a controler class which implements the 
+          required interfaces to extend ArcMap and handle all user-initiated
+          events.</p>
+            <p>
+              <dl class="authored">
+                <dt>Properties Form</dt>
+                <dd />
+                <dt>Settings Form</dt>
+                <dd />
+                <dt>Combine Taxlots Form</dt>
+                <dd />
+                <dt>Locate Feature Dockable Window and User Control</dt>
+                <dd />
+                <dt>Add Arrows Form</dt>
+                <dd />
+                <dt>Dimension Arrows Form</dt>
+                <dd />
+              </dl>
+            </p>
+          </div>
+          <a name="S1.2"> </a>
+          <h3 class="subHeading">Other Forms</h3>
+          <div class="subsection">
+            <p>These form classes are unusual in that the do host their own
+          behavior. This approach is used because these classes are relatively 
+          independant of other features of the application, and do not require
+          data access or other complex behaviors.</p>
+            <p>
+              <dl class="authored">
+                <dt>Help Form</dt>
+                <dd />
+                <dt>About Form</dt>
+                <dd />
+              </dl>
+            </p>
+          </div>
+        </div>
+        <a name="S2"> </a>
+        <h1 class="heading">
+          <span onclick="ExpandCollapse(sectionToggleID0EFAAA)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(sectionToggleID0EFAAA, event)" tabindex="0">
+            <img id="sectionToggleID0EFAAA" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Behavior Tier</span>
+        </h1>
+        <div id="sectionSectionID0EFAAA" class="section" name="collapseableSection" style="">
+          <p>The classes in this tier implement the application behavior.</p>
+          <a name="S2.1"> </a>
+          <h3 class="subHeading">Core Functionality</h3>
+          <div class="subsection">
+            <p>These classes provide the core functionality of the application.
+          They implement the ArcObjects interfaces which allow them to extend the 
+          ESRI ArcMap user interface with additional toolbars and tools and to 
+          extend its Editor Extension behavior, providing an additional layer of 
+          behavior in response to edit events.</p>
+            <p>
+              <dl class="authored">
+                <dt>Editor Extension Class</dt>
+                <dd />
+                <dt>Toolbar Class</dt>
+                <dd />
+              </dl>
+            </p>
+          </div>
+          <a name="S2.2"> </a>
+          <h3 class="subHeading">User Configuration</h3>
+          <div class="subsection">
+            <p>These classes implement the interfaces and .NET framework members 
+          to provide access to the editor extensions properties and the 
+          application's custom user settings.</p>
+            <p>
+              <dl class="authored">
+                <dt>Property Page Class</dt>
+                <dd />
+                <dt>Settings Accessor Class</dt>
+                <dd />
+              </dl>
+            </p>
+          </div>
+          <a name="S2.3"> </a>
+          <h3 class="subHeading">Commands</h3>
+          <div class="subsection">
+            <p>These classes implement the ArcObjects ICommand interface which 
+          allows them to appear as commands on a toolbar or menu. All but the 
+          first have a form class associated with them.</p>
+            <p>
+              <dl class="authored">
+                <dt>Auto-Update-All Toggle Command</dt>
+                <dd />
+                <dt>Combine Taxlots Command</dt>
+                <dd />
+                <dt>Edit Map Index Command</dt>
+                <dd />
+                <dt>Locate Feature Command (and Dockable Window)</dt>
+                <dd />
+              </dl>
+            </p>
+          </div>
+          <a name="S2.4"> </a>
+          <h3 class="subHeading">Tools</h3>
+          <div class="subsection">
+            <p>These classes implement the ArcObjects ICommand and ITool 
+          interfaces which allow them to appear as tool commands on a toolbar 
+          or menu. Each has a main form class associated with it.</p>
+            <p>
+              <dl class="authored">
+                <dt>Add Arrows Tool</dt>
+                <dd />
+                <dt>Taxlot Assignment Tool</dt>
+                <dd />
+              </dl>
+            </p>
+          </div>
+          <a name="S2.5"> </a>
+          <h3 class="subHeading">Helper Classes</h3>
+          <div class="subsection">
+            <p>These classes are essentially utility classes which provide 
+          centralization for support functions for the interface-related 
+          classes.</p>
+            <p>
+              <dl class="authored">
+                <dt>Utilities Class (singleton)</dt>
+                <dd />
+                <dt>String Utilities Class (singleton)</dt>
+                <dd />
+                <dt>Data Monitor Class (singleton)</dt>
+                <dd />
+                <dt>ORMapNum Class (used by EditMapIndex)</dt>
+                <dd />
+                <dt>CatalogFileDialog Class (interface form provided by ArcObjects)</dt>
+                <dd />
+              </dl>
+            </p>
+          </div>
+        </div>
+        <a name="S3"> </a>
+        <h1 class="heading">
+          <span onclick="ExpandCollapse(sectionToggleID0EEAAA)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(sectionToggleID0EEAAA, event)" tabindex="0">
+            <img id="sectionToggleID0EEAAA" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Data Access Tier</span>
+        </h1>
+        <div id="sectionSectionID0EEAAA" class="section" name="collapseableSection" style="">
+          <p>The data access tier is provided by the ArcObjects data components.
+      These effectively abstract direct data manipulations and coordinate 
+      dynamic feature behavior.</p>
+        </div>
+        <a name="S4"> </a>
+        <h1 class="heading">
+          <span onclick="ExpandCollapse(sectionToggleID0EDAAA)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(sectionToggleID0EDAAA, event)" tabindex="0">
+            <img id="sectionToggleID0EDAAA" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Miscellaneous Classes and Components</span>
+        </h1>
+        <div id="sectionSectionID0EDAAA" class="section" name="collapseableSection" style="">
+          <p>The classes in this category play a support role. Either they are
+      automatically generated by Visual Studio, are static resource files, or
+      are part of the installer configuration.</p>
+          <p>
+            <dl class="authored">
+              <dt>Form Designers</dt>
+              <dd />
+              <dt>Settings Designers</dt>
+              <dd />
+              <dt>License File</dt>
+              <dd />
+              <dt>Compiled Resource File</dt>
+              <dd />
+              <dt>Installation Configuration</dt>
+              <dd />
+            </dl>
+          </p>
+        </div>
+        <h1 class="heading">
+          <span onclick="ExpandCollapse(seeAlsoToggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(seeAlsoToggle, event)" tabindex="0">
+            <img id="seeAlsoToggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />See Also</span>
+        </h1>
+        <div id="seeAlsoSection" class="section" name="collapseableSection" style="">
+          <h4 class="subHeading">Concepts</h4>
+          <div class="seeAlsoStyle">
+            <span sdata="link">
+              <a href="cb891d5c-8abe-4848-abcd-bb3302a1db4f.htm">Class Diagram</a>
+            </span>
+          </div>
+          <h4 class="subHeading">Other Resources</h4>
+          <div class="seeAlsoStyle">
+            <a href="http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller" title="Go to Model-View-Controler on Wikipedia" target="_blank">Model-View-Controler on Wikipedia</a>
+          </div>
+        </div>
+        <p> </p>
+        <span sdata="link">
+          <a href="#Intro">Back to the Top</a>
+        </span>
+      </div>
+      <div id="footer">
+        <div class="footerLine">
+          <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" title="Footer image" />
+        </div>
+        <A NAME="feedback"></A>
+        <span id="fb" class="feedbackcss"></span>
+Created using <a href="http://www.codeplex.com/SHFB">Sandcastle Help File Builder</a>.<p />Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:ORMAP_ESRI_Programmers%40listsmart.osl.state.or.us?Subject=ORMAP Taxlot Editing Toolbar AddIn Developer Guide">ORMAP Tech Group</a><script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        var HT_mailLinkText = HT_mailLink.innerHTML;
+        HT_mailLink.href += ": " + document.title;
+        HT_mailLink.innerHTML = HT_mailLinkText;
+        </script><p />Copyright © 2007-2011 ORMAP Tech Group. All rights reserved.</div>
+    </div>
+  </body>
+</html>

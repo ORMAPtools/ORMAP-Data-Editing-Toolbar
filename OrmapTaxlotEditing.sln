@@ -1,9 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "OrmapTaxlotEditing", "OrmapTaxlotEditing\OrmapTaxlotEditing.vbproj", "{EBBEA746-E8D6-4B83-8AD6-7E43D6389D76}"
-EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "OrmapTaxlotEditing_Installation", "OrmapTaxlotEditing_Installation\OrmapTaxlotEditing_Installation.vdproj", "{5E4FF019-B0C0-456E-9A34-A0100128A536}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "OrmapTaxlotEditing", "OrmapToolbar\OrmapTaxlotEditing.vbproj", "{E20460F7-9CEF-4000-B632-45B45B00ED75}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EBBEA746-E8D6-4B83-8AD6-7E43D6389D76}.Debug|Any CPU.ActiveCfg = Release|Any CPU
-		{EBBEA746-E8D6-4B83-8AD6-7E43D6389D76}.Debug|Any CPU.Build.0 = Release|Any CPU
-		{EBBEA746-E8D6-4B83-8AD6-7E43D6389D76}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EBBEA746-E8D6-4B83-8AD6-7E43D6389D76}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5E4FF019-B0C0-456E-9A34-A0100128A536}.Debug|Any CPU.ActiveCfg = Release
-		{5E4FF019-B0C0-456E-9A34-A0100128A536}.Release|Any CPU.ActiveCfg = Release
-		{5E4FF019-B0C0-456E-9A34-A0100128A536}.Release|Any CPU.Build.0 = Release
+		{E20460F7-9CEF-4000-B632-45B45B00ED75}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{E20460F7-9CEF-4000-B632-45B45B00ED75}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{E20460F7-9CEF-4000-B632-45B45B00ED75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E20460F7-9CEF-4000-B632-45B45B00ED75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="b50c7397-1c2c-40f4-8d12-97d914fe74db" revisionNumber="1">
+  <developerOrientationDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction address="Intro">
+      <para>
+        <mediaLink>
+          <image xlink:href="6b7ba21e-fe35-4c47-a68b-1201f63eadda" />
+        </mediaLink>
+      </para>
+      <para>Welcome to the developer guide for the <application>ORMAP Taxlot
+    Editing Toolbar AddIn</application>!</para>
+      <para> </para>
+      <para>Please read the following:</para>
+      <para>
+        <list class="unordered">
+          <listItem>ORMAP Taxlot Editing Toolbar AddIn</listItem>
+          <listItem>Copyright 2008-2011 ORMAP Tech Group</listItem>
+        </list>
+      </para>
+      <para>
+        <list class="unordered">
+          <listItem>Authors:  Shad Campbell, Robert Gumtow,  Jon McDowell, James Moore, John Prychun, Nick Seigal</listItem>
+        </list>
+      </para>
+      <para>
+        <list class="unordered">
+          <listItem>Copyright Holder:  ORMAP Tech Group</listItem>
+          <listItem>Contact Info:  ORMAP Tech Group may be reached at 
+        ORMAP_ESRI_Programmers@listsmart.osl.state.or.us</listItem>
+        </list>
+      </para>
+      <para>
+        <list class="unordered">
+          <listItem>ORMAP Taxlot Editing Toolbar AddIn is free software; you can 
+        redistribute it and/or modify it under the terms of the GNU Lesser 
+        General Public License as published by the Free Software Foundation; 
+        either version 3 of the License, or (at your option) any later version.
+        </listItem>
+        </list>
+      </para>
+      <para>
+        <list class="unordered">
+          <listItem>This program is distributed in the hope that it will be useful, 
+        but WITHOUT ANY WARRANTY; without even the implied warranty of 
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser 
+        General Public License located in the COPYING.LESSER.txt file for more 
+        details.</listItem>
+        </list>
+      </para>
+      <para>
+        <list class="unordered">
+          <listItem>You should have received a copy of the GNU Lesser General 
+        Public License along with the ORMAP Taxlot Editing Toolbar; if not, 
+        write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth 
+        Floor, Boston, MA 02110-1301 USA.</listItem>
+        </list>
+      </para>
+      <para>
+        <alert class="note">
+          <para>
+            <legacyBold>Q:</legacyBold> Why did we use the GNU Lesser General 
+      Public License (LGPL) instead of the GNU General Public License (GNU)?
+      </para>
+          <para>
+            <legacyBold>A:</legacyBold> Using the Lesser GPL permits use of the 
+      library in proprietary programs; using the ordinary GPL for a library 
+      makes it available only for free programs.</para>
+        </alert>
+      </para>
+      <para>
+        <mediaLinkInline>
+          <image xlink:href="02c0b241-fda1-44fa-96f0-38f3fb181ff7" />
+        </mediaLinkInline>
+        <mediaLinkInline>
+          <image xlink:href="b8d956de-6a04-4378-9df3-42f5a7027005" />
+        </mediaLinkInline>
+      </para>
+    </introduction>
+    <para> </para>
+    <relatedTopics>
+      <externalLink>
+        <linkText>ORMAP Parcel Editing Toolbar Project Site on SourceForge</linkText>
+        <linkAlternateText>Go to OPET Project Site on SourceForge</linkAlternateText>
+        <linkUri>http://sourceforge.net/projects/opet/</linkUri>
+        <linkTarget>_blank</linkTarget>
+      </externalLink>
+      <externalLink>
+        <linkText>ORMAP Home Page</linkText>
+        <linkAlternateText>Go to ORMAP Home Page</linkAlternateText>
+        <linkUri>http://www.ormap.org/</linkUri>
+        <linkTarget>_blank</linkTarget>
+      </externalLink>
+      <externalLink>
+        <linkText>GNU Lesser General Public License</linkText>
+        <linkAlternateText>Go to GNU</linkAlternateText>
+        <linkUri>http://www.gnu.org/copyleft/lesser.html</linkUri>
+        <linkTarget>_blank</linkTarget>
+      </externalLink>
+    </relatedTopics>
+    <para> </para>
+    <link xlink:href="#Intro">Back to the Top</link>
+  </developerOrientationDocument>
+</topic>

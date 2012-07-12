@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="" GeneratedClassName="AllTablesSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AutoDateField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">AutoDate</Value>
+    </Setting>
+    <Setting Name="AutoMethodField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">AutoMethod</Value>
+    </Setting>
+    <Setting Name="AutoWhoField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">AutoWho</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

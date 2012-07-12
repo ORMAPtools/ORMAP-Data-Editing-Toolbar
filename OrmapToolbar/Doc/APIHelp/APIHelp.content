@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Topics defaultTopic="b50c7397-1c2c-40f4-8d12-97d914fe74db">
+  <Topic id="b50c7397-1c2c-40f4-8d12-97d914fe74db" title="Welcome" visible="True" />
+  <Topic id="943bec6c-4997-4c5b-b4f3-645e2a5923a2" noFile="True" title="Getting Started" visible="True">
+    <Topic id="0a9e9d5f-bdf8-4595-b866-3b803adba269" title="Installing the Development Environment" visible="True">
+      <Topic id="4b73284f-f6e1-4791-8b58-7754d49bbac8" title="Installing ArcGIS" visible="True" />
+      <Topic id="68ad5395-9f6c-47da-b31c-53eefd613c7b" title="Installing Visual Studio" visible="True" />
+      <Topic id="70a80a50-3e4a-4b47-ad3a-88eae329f91d" title="Installing Subversion Tools" visible="True" />
+      <Topic id="69eb0ba9-7d76-4b6c-a2af-0931560a8512" title="Installing Sandcastle Tools" visible="True" />
+      <Topic id="cd8c7caa-cf5f-4a05-8112-bbdece1cdc87" title="Installing Optional Code Tools" visible="True">
+        <Topic id="7216baa6-8dc6-440e-b493-0f329ca43962" title="Installing FxCop" visible="True" />
+        <Topic id="39deb3d1-ff08-4428-960c-3b4a4bfd026c" title="Installing Refactoring Tools" visible="True" />
+      </Topic>
+    </Topic>
+    <Topic id="497dc8df-49cf-47f6-a5ff-06501c0c9d8f" title="Setting Up the Visual Studio Solution" visible="True" />
+    <Topic id="50753b1c-1a0e-43d3-9d0f-7d96c878b28d" title="Defining Custom Application Settings" visible="True" />
+  </Topic>
+  <Topic id="495805fb-8f85-484c-bba1-1a4ffad713d2" title="Application Architecture" visible="True">
+    <Topic id="cb891d5c-8abe-4848-abcd-bb3302a1db4f" title="Class Diagram" visible="True" />
+  </Topic>
+  <Topic id="610473ad-2a9b-41be-bf9d-923d7b7d6398" title="Tutorials" visible="True">
+    <Topic id="cc704d88-33aa-4098-aaae-02e90137b149" title="How To: Build the Developer Guide " visible="True" />
+    <Topic id="c43f7f1a-6ef9-4b3a-978a-8210486be717" title="How To: Add a Topic to the Developer Guide" visible="True" />
+    <Topic id="2cffa3e3-036f-451b-b75f-320ab62d91f9" title="How To: Add a Button to the Toolbar" visible="True" />
+    <Topic id="4a6b56e2-241a-4ba7-8419-98919c898d07" title="How To: Add an Editing Tool to the Toolbar" visible="True" />
+  </Topic>
+  <Topic id="3edaf656-b469-4120-b5c7-d217f4e6ee95" title="Coding Standards" visible="True" />
+  <Topic id="19b0121a-43e7-4c08-bcb9-cb2d21a6f375" title="Glossary" visible="True" />
+</Topics>

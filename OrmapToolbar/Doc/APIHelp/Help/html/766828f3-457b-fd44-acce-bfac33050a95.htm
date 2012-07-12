@@ -1,0 +1,697 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+  <head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" />
+    <META NAME="save" CONTENT="history" />
+    <title>SpatialUtilities Methods</title>
+    <meta name="Language" content="en-us" />
+    <meta name="System.Keywords" content="SpatialUtilities class, methods" />
+    <meta name="Microsoft.Help.Id" content="Methods.T:OrmapTaxlotEditing.SpatialUtilities" />
+    <meta name="Microsoft.Help.ContentType" content="Reference" />
+    <link rel="stylesheet" type="text/css" href="../styles/Presentation.css" />
+    <link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+    <script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+    <script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+    <script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+    <script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+    <script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+    <script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+    <meta name="container" content="OrmapTaxlotEditing" />
+    <meta name="file" content="766828f3-457b-fd44-acce-bfac33050a95" />
+    <meta name="guid" content="766828f3-457b-fd44-acce-bfac33050a95" />
+    <xml>
+      <MSHelp:Attr Name="AssetID" Value="Methods.T:OrmapTaxlotEditing.SpatialUtilities" />
+      <MSHelp:TOCTitle Title="SpatialUtilities Methods" />
+      <MSHelp:RLTitle Title="SpatialUtilities Methods (OrmapTaxlotEditing)" />
+      <MSHelp:Keyword Index="A" Term="Methods.T:OrmapTaxlotEditing.SpatialUtilities" />
+      <MSHelp:Keyword Index="A" Term="frlrfOrmapTaxlotEditingSpatialUtilitiesMethodsTopic" />
+      <MSHelp:Keyword Index="K" Term="SpatialUtilities class, methods" />
+      <MSHelp:Attr Name="DevLang" Value="VB" />
+      <MSHelp:Attr Name="Locale" Value="en-us" />
+      <MSHelp:Attr Name="TopicType" Value="kbSyntax" />
+      <MSHelp:Attr Name="TopicType" Value="apiref" />
+      <MSHelp:Attr Name="AssemblyVersion" Value="1.0.0.0" />
+    </xml>
+  </head>
+  <body>
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+    <img id="collapseImage" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+    <img id="expandImage" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+    <img id="collapseAllImage" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+    <img id="expandAllImage" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+    <img id="dropDownImage" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+    <img id="dropDownHoverImage" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+    <img id="copyImage" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+    <img id="copyHoverImage" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+    <div id="header">
+      <table id="topTable" cellspacing="0" cellpadding="0">
+        <tr>
+          <td>
+            <span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+              <img ID="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" /> <label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label><label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label> </span>
+            <span>    </span>
+            <span id="memberOptionsDropdown" class="filter" tabindex="0">
+              <img id="memberOptionsDropdownImage" src="../icons/dropdown.gif" /> <label id="memberOptionsMenuAllLabel" for="memberOptionsDropdownImage" style="display: none;"><nobr>Members: Show All </nobr></label><label id="memberOptionsMenuMultipleLabel" for="memberOptionsDropdownImage" style="display: none;"><nobr>Members: Filtered </nobr></label><label id="memberOptionsMenuProtectedLabel" for="memberOptionsDropdownImage" style="display: none;"><nobr>Members: Filtered </nobr></label><label id="memberOptionsMenuInheritedLabel" for="memberOptionsDropdownImage" style="display: none;"><nobr>Members: Filtered </nobr></label></span>
+          </td>
+        </tr>
+      </table>
+      <div id="devlangsMenu">
+        <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on" onClick="SetLanguage(this)" />
+        <label class="checkboxLabel" for="VisualBasicCheckbox">Visual Basic</label>
+        <br />
+      </div>
+      <div id="memberOptionsMenu">
+        <input id="ProtectedCheckbox" type="checkbox" data="Protected" value="on" onClick="SetMemberOptions(this, 'vis')" />
+        <label class="checkboxLabel" for="ProtectedCheckbox">Include Protected Members</label>
+        <br />
+        <input id="InheritedCheckbox" type="checkbox" data="Inherited" value="on" onClick="SetMemberOptions(this, 'decl')" />
+        <label class="checkboxLabel" for="InheritedCheckbox">Include Inherited Members</label>
+        <br />
+      </div>
+      <table id="bottomTable" cellpadding="0" cellspacing="0">
+        <tr id="headerTableRow1">
+          <td align="left">
+            <span id="runningHeaderText">ORMAP Taxlot Editing Toolbar AddIn Developer Guide</span>
+          </td>
+        </tr>
+        <tr id="headerTableRow2">
+          <td align="left">
+            <span id="nsrTitle">SpatialUtilities Methods</span>
+          </td>
+        </tr>
+        <tr id="headerTableRow3">
+          <td align="left">
+            <a href="4ee09230-9932-7b37-c314-911da58c1493.htm">SpatialUtilities Class</a> <a href="#seeAlsoToggle" onclick="OpenSection(seeAlsoToggle)">See Also</a> <span id="headfeedbackarea" class="feedbackhead"><a href="javascript:SubmitFeedback('ORMAP_ESRI_Programmers@listsmart.osl.state.or.us','ORMAP Taxlot Editing Toolbar AddIn Developer Guide','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback');">Send Feedback</a></span></td>
+        </tr>
+      </table>
+      <table id="gradientTable">
+        <tr>
+          <td class="nsrBottom" background="../icons/gradient.gif" />
+        </tr>
+      </table>
+    </div>
+    <div id="mainSection">
+      <div id="mainBody">
+        <div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+        <span style="color: DarkGray">
+          <p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p>
+        </span>
+        <p>The <a href="4ee09230-9932-7b37-c314-911da58c1493.htm">SpatialUtilities</a> type exposes the following members.</p>
+        <h1 class="heading">
+          <span onclick="ExpandCollapse(methodTableToggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(methodTableToggle, event)" tabindex="0">
+            <img id="methodTableToggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Methods</span>
+        </h1>
+        <div id="methodTableSection" class="section" name="collapseableSection" style="">
+          <table id="memberList" class="members" frame="lhs" cellpadding="2">
+            <col width="10%" />
+            <tr>
+              <th class="iconColumn">
+               
+            </th>
+              <th class="nameColumn">Name</th>
+              <th class="descriptionColumn">Description</th>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="a3341918-ba5e-1588-8b87-ff7ce1c57a6b.htm">AddCodesToCombo</a>
+              </td>
+              <td>
+                <div class="summary">
+ Add the descriptive values from each domain to the drop down comboboxes.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="86285752-c33a-e1ae-0c0a-ea5e778bcd5e.htm">CalculateTaxlotValues</a>
+              </td>
+              <td>
+                <div class="summary">
+ Obtains ORMapNum via overlay and calculates other field values.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="20fa7337-884e-e9e1-9662-df1d1a57f983.htm">ConvertCodeValueDomainToCode</a>
+              </td>
+              <td>
+                <div class="summary">
+ Converts a domain descriptive value to the stored code.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="2b6675c6-2285-67e6-0272-e1e4bcb495c3.htm">ConvertCodeValueDomainToDescription</a>
+              </td>
+              <td>
+                <div class="summary">
+ Converts a code index to the domain descriptive value.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="28d7487a-2e1b-776c-f24e-8f8c5d25527e.htm">DoSpatialQuery</a>
+              </td>
+              <td>
+                <div class="summary">
+ Return a feature cursor based on the results of a spatial query.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="9644769c-e430-f0c8-3a8a-2c086e83de81.htm">FindFeatureLayerByDSName</a>
+              </td>
+              <td>
+                <div class="summary">
+ Locate a feature layer by its dataset name.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="bb57a0bf-3167-872a-d7c1-fef7196d78c5.htm">FindStandaloneTableByDSName</a>
+              </td>
+              <td>
+                <div class="summary">
+ Locate a standalone table by its dataset name.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="1145a0ad-420b-d50a-f519-2b7c8a7b7cc2.htm">FlashFeature</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="02a834f4-23d0-c513-2918-0e5c12988cd4.htm">formatWhereClause(String, IFeatureClass)</a>
+              </td>
+              <td>
+                <div class="summary">
+ Formats a WhereClause based upon the data source. Input format should be based on the personal geodatabase.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="ffe6b14f-7c21-7aed-b31a-d2efe6be8094.htm">formatWhereClause(String, ITable)</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="8fb26b03-b4e5-b3eb-1d9d-a9939ef2a073.htm">GetCenterOfEnvelope</a>
+              </td>
+              <td>
+                <div class="summary">
+ Determine the x and y coordinates of the center of envelope, and return them as a Point object.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="272d8525-920a-abc1-3d84-54dc910ef760.htm">GetMapIndexFeatureLayer</a>
+              </td>
+              <td> <font color="red"><b>Obsolete. </b></font><div class="summary">
+ Get the MapIndex feature layer.
+ </div></td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="85d1761b-100d-ecee-678c-5baaefcf8d03.htm">GetMapNumberArray</a>
+              </td>
+              <td>
+                <div class="summary">
+ Returns an array of unique mapnumbers.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="d65b5acd-5410-ad35-f38b-f34422386a63.htm">GetMapSuffixNumber</a>
+              </td>
+              <td>
+                <div class="summary">
+  Validate and format a map suffix number.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="abe52d90-dcc5-7f32-1390-fc3b4189d616.htm">GetMapSuffixType</a>
+              </td>
+              <td>
+                <div class="summary">
+ Validate and format a map suffix type.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="93839a1a-07f1-6e71-6932-7e1497fa9d32.htm">GetRelatedObjects</a>
+              </td>
+              <td>
+                <div class="summary">
+ Retrieve a feature-linked annotation feature.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="940cc7e2-155b-738d-471e-b27279dc9922.htm">GetSelectedFeatures</a>
+              </td>
+              <td>
+                <div class="summary">
+ Return a feature cursor of the selected features of the specified layer.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="646d25d3-1753-b7f7-2215-61bcface205b.htm">GetTaxlotFeatureLayer</a>
+              </td>
+              <td> <font color="red"><b>Obsolete. </b></font><div class="summary">
+ Get the Taxlot feature layer.
+ </div></td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="c2dfa033-bbd7-98ab-09ea-1b69ee15c993.htm">GetValue(IGeometry, IFeatureClass, String)</a>
+              </td>
+              <td>
+                <div class="summary">
+ Calls the overloaded function GetValue and adds an empty string for the 
+ orderBestByFieldName parameter.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="99a5bdb3-d885-43cb-cf79-c3b8effd6ef2.htm">GetValue(IGeometry, IFeatureClass, String, String)</a>
+              </td>
+              <td>
+                <div class="summary">
+ Determine wether return the value from the GetValueViaOverlay function or use
+ a value from the attribute override.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="dbfca1d3-dd3d-4f1a-e439-d3b1f4a5e146.htm">GetValueViaOverlay(IGeometry, IFeatureClass, String)</a>
+              </td>
+              <td>
+                <div class="summary">
+ Overlay the passed in feature with a feature class to get a value from 
+ the specified field.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="4f918b8d-aca5-3999-3cad-1d45fd5d3436.htm">GetValueViaOverlay(IGeometry, IFeatureClass, String, String)</a>
+              </td>
+              <td>
+                <div class="summary">
+ Overlay the passed in feature with a feature class to get a value from 
+ the specified field.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="c315ce98-411a-3ca1-ae22-79f44dc9a3a4.htm">HasSelectedFeatureCount</a>
+              </td>
+              <td>
+                <div class="summary">
+ Determines if the feature layer has a selection of sufficient size.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="29270519-bf81-04bf-3540-9bdd10dbf092.htm">IsAnno</a>
+              </td>
+              <td>
+                <div class="summary">
+ Determine if a feature is annotation.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="1d224178-c5bf-a924-a43f-5ca6db2cee45.htm">IsMapIndex</a>
+              </td>
+              <td>
+                <div class="summary">
+ Determine if the feature belongs to the MapIndex feature class.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="b44d3182-f82f-13e3-ab0a-5ee8c523a7ae.htm">IsOrmapFeature</a>
+              </td>
+              <td>
+                <div class="summary">
+ Determines if a feature class is part of the ORMAP design.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="dee11942-5972-8aad-3b8b-a7a6db9639ba.htm">IsTaxlot</a>
+              </td>
+              <td>
+                <div class="summary">
+ Determine if the feature belongs to the Taxlot feature class.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="7f7e9779-22ac-f19f-7cd5-e86c88a97516.htm">IsTaxlotNumberLocallyUnique</a>
+              </td>
+              <td>
+                <div class="summary">
+ Determine the local uniqueness of a taxlot number.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="c72c0dca-17ff-4aab-9514-329006abf22f.htm">LoadFCIntoMap(String)</a>
+              </td>
+              <td>
+                <div class="summary">
+ Loads the specified feature class into the current map as a feature layer.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="1829e3c5-4655-f94c-3d9d-81715185290a.htm">LoadFCIntoMap(String, String)</a>
+              </td>
+              <td>
+                <div class="summary">
+ Loads the specified feature class into the current map as a feature layer.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="ec678fd8-93a7-ae23-8b4b-0046c63cc4b6.htm">LoadTableIntoMap(String)</a>
+              </td>
+              <td>
+                <div class="summary">
+ Loads the specified object class (table) into the current map.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="10d40f88-65d8-34f6-9922-f388072639fa.htm">LoadTableIntoMap(String, String)</a>
+              </td>
+              <td>
+                <div class="summary">
+ Loads the specified object class (table) into the current map.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="fd4b336a-30aa-ae8b-ae66-21bda784b4c5.htm">LocateFields</a>
+              </td>
+              <td>
+                <div class="summary">
+ Find the index of a field in a feature class.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="df914d9d-d573-f65f-cc47-df0423ce0b59.htm">ReadValue(IRow, String)</a>
+              </td>
+              <td>
+                <div class="summary">
+ Reads a value from a row, given a field name.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="bb19ec60-76a5-7518-4d08-b3ffdcfd38b0.htm">ReadValue(IRow, String, String)</a>
+              </td>
+              <td>
+                <div class="summary">
+ Reads a value from a row, given a field name.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="1eb6b73e-865b-758e-6f6b-91ad669db6db.htm">RefreshDisplaySelection</a>
+              </td>
+              <td>
+                <div class="summary">
+ Refresh the display's selection cache.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="eb2b9d2f-f459-0265-1f09-351d7157379d.htm">SetAnnoSize</a>
+              </td>
+              <td>
+                <div class="summary">
+ Update/Initialize feature linked annotation size.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="4b4818dd-2195-576e-f7bd-9c6830effaad.htm">SetSelectedFeature</a>
+              </td>
+              <td>
+                <div class="summary">
+ Selects a single feature.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="622af411-1768-3ed6-1a77-6e6b83dfd985.htm">UpdateMinimumAutoFields</a>
+              </td>
+              <td>
+                <div class="summary">
+ Updates Auto fields in a feature class.
+ </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="16b35b5a-6013-8749-2462-e2380349b951.htm">ZoomToEnvelope</a>
+              </td>
+              <td>
+                <div class="summary">
+ Zooms to the given envelope.
+ </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <h1 class="heading">
+          <span onclick="ExpandCollapse(seeAlsoToggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(seeAlsoToggle, event)" tabindex="0">
+            <img id="seeAlsoToggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />See Also</span>
+        </h1>
+        <div id="seeAlsoSection" class="section" name="collapseableSection" style="">
+          <div class="seeAlsoStyle">
+            <a href="4ee09230-9932-7b37-c314-911da58c1493.htm">SpatialUtilities Class</a>
+          </div>
+          <div class="seeAlsoStyle">
+            <a href="2c6a4a0d-7ab4-98c5-b5ff-a4e97c655a86.htm">OrmapTaxlotEditing Namespace</a>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="footerLine">
+          <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" title="Footer image" />
+        </div>
+        <A NAME="feedback"></A>
+        <span id="fb" class="feedbackcss"></span>
+Created using <a href="http://www.codeplex.com/SHFB">Sandcastle Help File Builder</a>.<p />Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:ORMAP_ESRI_Programmers%40listsmart.osl.state.or.us?Subject=ORMAP Taxlot Editing Toolbar AddIn Developer Guide">ORMAP Tech Group</a><script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        var HT_mailLinkText = HT_mailLink.innerHTML;
+        HT_mailLink.href += ": " + document.title;
+        HT_mailLink.innerHTML = HT_mailLinkText;
+        </script><p />Copyright © 2007-2011 ORMAP Tech Group. All rights reserved.</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E20460F7-9CEF-4000-B632-45B45B00ED75}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>OrmapTaxlotEditing</RootNamespace>
+    <AssemblyName>OrmapTaxlotEditing</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>OrmapTaxlotEditing.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>OrmapTaxlotEditing.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ESRI.ArcGIS.Carto, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Catalog, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.CatalogUI, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesGDB, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Desktop.AddIns">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Display, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Framework">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geodatabase, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geometry, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddArrows.vb" />
+    <Compile Include="AddArrowsForm.designer.vb">
+      <DependentUpon>AddArrowsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddArrowsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoUpdateAllToggle.vb" />
+    <Compile Include="DimensionArrowsForm.designer.vb">
+      <DependentUpon>DimensionArrowsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DimensionArrowsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditMapIndex.vb" />
+    <Compile Include="EditMapIndexForm.designer.vb">
+      <DependentUpon>EditMapIndexForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditMapIndexForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputDialog.designer.vb">
+      <DependentUpon>InputDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InputDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocateFeature.vb" />
+    <Compile Include="LocateFeatureDockWindow.Designer.vb">
+      <DependentUpon>LocateFeatureDockWindow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LocateFeatureDockWindow.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MapDefinitionForm.designer.vb">
+      <DependentUpon>MapDefinitionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MapDefinitionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="OrmapAnnotateToolbar\AnnotationUtilities.vb" />
+    <Compile Include="OrmapAnnotateToolbar\CreateAnnotation.vb" />
+    <Compile Include="OrmapAnnotateToolbar\CreateAnnotationButton.vb" />
+    <Compile Include="OrmapAnnotateToolbar\CreateAnnotationForm.Designer.vb">
+      <DependentUpon>CreateAnnotationForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OrmapAnnotateToolbar\CreateAnnotationForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrmapAnnotateToolbar\InvertAnnotation.vb" />
+    <Compile Include="OrmapAnnotateToolbar\InvertAnnotationButton.vb" />
+    <Compile Include="OrmapAnnotateToolbar\AnnoMoveDown.vb" />
+    <Compile Include="OrmapAnnotateToolbar\AnnoMoveDownButton.vb" />
+    <Compile Include="OrmapAnnotateToolbar\AnnoMoveUp.vb" />
+    <Compile Include="OrmapAnnotateToolbar\AnnoMoveUpButton.vb" />
+    <Compile Include="OrmapAnnotateToolbar\AnnoBothDownStandard.vb" />
+    <Compile Include="OrmapAnnotateToolbar\AnnoBothDownStandardButton.vb" />
+    <Compile Include="OrmapAnnotateToolbar\AnnoBothUpStandard.vb" />
+    <Compile Include="OrmapAnnotateToolbar\AnnoBothUpStandardButton.vb" />
+    <Compile Include="OrmapAnnotateToolbar\TransposeAnnotation.vb" />
+    <Compile Include="OrmapAnnotateToolbar\TransposeAnnotationButton.vb" />
+    <Compile Include="OrmapAnnotateToolbar\AnnoBothDownWide.vb" />
+    <Compile Include="OrmapAnnotateToolbar\AnnoBothDownWideButton.vb" />
+    <Compile Include="OrmapAnnotateToolbar\AnnoBothUpWide.vb" />
+    <Compile Include="OrmapAnnotateToolbar\AnnoBothUpWideButton.vb" />
+    <Compile Include="OrmapSettings.vb" />
+    <Compile Include="OrmapSettingsForm.designer.vb">
+      <DependentUpon>OrmapSettingsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OrmapSettingsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SortCancelledNumbers.vb" />
+    <Compile Include="SortCancelledNumbersForm.designer.vb">
+      <DependentUpon>SortCancelledNumbersForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SortCancelledNumbersForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpiralToolbar\SCS_tool.vb" />
+    <Compile Include="SpiralToolbar\SingleSpiral.vb" />
+    <Compile Include="SpiralToolbar\SpiralCurveSpiralDockWindow.Designer.vb">
+      <DependentUpon>SpiralCurveSpiralDockWindow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SpiralToolbar\SpiralCurveSpiralDockWindow.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SpiralToolbar\SpiralDockWindow.Designer.vb">
+      <DependentUpon>SpiralDockWindow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SpiralToolbar\SpiralDockWindow.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaxlotAssignment.vb" />
+    <Compile Include="TaxlotAssignmentForm.designer.vb">
+      <DependentUpon>TaxlotAssignmentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TaxlotAssignmentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UtilityHelpersAndClasses\CatalogFileDlg.vb" />
+    <Compile Include="CombineTaxlots.vb" />
+    <Compile Include="CombineTaxlotsForm.Designer.vb">
+      <DependentUpon>CombineTaxlotsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CombineTaxlotsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Config.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Config.esriaddinx</DependentUpon>
+    </Compile>
+    <Compile Include="UtilityHelpersAndClasses\DataMonitor.vb" />
+    <Compile Include="HelpForm.designer.vb">
+      <DependentUpon>HelpForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HelpForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="UtilityHelpersAndClasses\ORMapNum.vb" />
+    <Compile Include="Settings\AllTablesSettings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>AllTablesSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\AnnoTableNamesSettings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>AnnoTableNamesSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\CartographicLinesSettings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>CartographicLinesSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\DefaultValuesSettings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>DefaultValuesSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\DefinitionQuerySettings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>DefinitionQuerySettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\MapIndexSettings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>MapIndexSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\TableNamesSettings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>TableNamesSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\TaxlotAcreageAnnoSettings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>TaxlotAcreageAnnoSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\TaxLotLinesSettings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>TaxLotLinesSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\TaxlotNumberAnnoSettings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>TaxlotNumberAnnoSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\TaxLotSettings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>TaxLotSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="UtilityHelpersAndClasses\SpatialUtilities.vb" />
+    <Compile Include="UtilityHelpersAndClasses\SpiralUtilities.vb" />
+    <Compile Include="UtilityHelpersAndClasses\StringUtilities.vb" />
+    <Compile Include="UtilityHelpersAndClasses\Utilities.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddArrowsForm.resx">
+      <DependentUpon>AddArrowsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CombineTaxlotsForm.resx">
+      <DependentUpon>CombineTaxlotsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DimensionArrowsForm.resx">
+      <DependentUpon>DimensionArrowsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditMapIndexForm.resx">
+      <DependentUpon>EditMapIndexForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpForm.resx">
+      <DependentUpon>HelpForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputDialog.resx">
+      <DependentUpon>InputDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocateFeatureDockWindow.resx">
+      <DependentUpon>LocateFeatureDockWindow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapDefinitionForm.resx">
+      <DependentUpon>MapDefinitionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrmapAnnotateToolbar\CreateAnnotationForm.resx">
+      <DependentUpon>CreateAnnotationForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrmapSettingsForm.resx">
+      <DependentUpon>OrmapSettingsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SortCancelledNumbersForm.resx">
+      <DependentUpon>SortCancelledNumbersForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpiralToolbar\SpiralCurveSpiralDockWindow.resx">
+      <DependentUpon>SpiralCurveSpiralDockWindow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpiralToolbar\SpiralDockWindow.resx">
+      <DependentUpon>SpiralDockWindow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaxlotAssignmentForm.resx">
+      <DependentUpon>TaxlotAssignmentForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="help\AddArrows_help.rtf" />
+    <EmbeddedResource Include="help\CombineSelectedTaxlots_help.rtf" />
+    <EmbeddedResource Include="help\CreateAnnotation_help.rtf" />
+    <EmbeddedResource Include="help\EditMapIndex_help.rtf" />
+    <EmbeddedResource Include="help\LocateFeature_help.rtf" />
+    <EmbeddedResource Include="help\ReportOrRequest_help.rtf" />
+    <EmbeddedResource Include="help\Settings_help.rtf" />
+    <EmbeddedResource Include="help\TaxlotAssignment_help.rtf" />
+    <EmbeddedResource Include="help\SortCancelledNumbers_help.rtf" />
+    <EmbeddedResource Include="help\SpiralCurveSpiral_help.rtf" />
+    <EmbeddedResource Include="help\Spiral_help.rtf" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Settings\AllTablesSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>AllTablesSettings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Settings\AnnoTableNamesSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>AnnoTableNamesSettings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Settings\CartographicLinesSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>CartographicLinesSettings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Settings\DefaultValuesSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>DefaultValuesSettings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Settings\DefinitionQuerySettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>DefinitionQuerySettings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Settings\MapIndexSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>MapIndexSettings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Settings\TableNamesSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>TableNamesSettings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Settings\TaxlotAcreageAnnoSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>TaxlotAcreageAnnoSettings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Settings\TaxLotLinesSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>TaxLotLinesSettings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Settings\TaxlotNumberAnnoSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>TaxlotNumberAnnoSettings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Settings\TaxLotSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>TaxLotSettings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AddInContent Include="Config.esriaddinx">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>ArcGISAddInHostGenerator</Generator>
+      <LastGenOutput>Config.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </AddInContent>
+  </ItemGroup>
+  <ItemGroup>
+    <AddInContent Include="Images\OrmapLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OrmapExtension.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="ESRI.ArcGIS.Editor">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorExtension.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="ESRI.ArcGIS.ArcMapUI">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <AddInContent Include="Images\AddArrows.bmp" />
+    <AddInContent Include="Images\AutoUpdateAllToggle.bmp" />
+    <AddInContent Include="Images\CombineTaxlots.bmp" />
+    <AddInContent Include="Images\EditMapIndex.bmp" />
+    <AddInContent Include="Images\LocateFeature.bmp" />
+    <AddInContent Include="Images\TaxlotAssignment.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <AddInContent Include="Images\OrmapSettings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AddInContent Include="Images\SortCancelledNumbers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AddInContent Include="OrmapAnnotateToolbar\Images\CreateAnnotationButton.bmp" />
+    <AddInContent Include="OrmapAnnotateToolbar\Images\InvertAnnotationButton.bmp" />
+    <AddInContent Include="OrmapAnnotateToolbar\Images\MoveDownButton.bmp" />
+    <AddInContent Include="OrmapAnnotateToolbar\Images\MoveUpButton.bmp" />
+    <AddInContent Include="OrmapAnnotateToolbar\Images\StandardBothSidesDownButton.bmp" />
+    <AddInContent Include="OrmapAnnotateToolbar\Images\StandardBothSidesUpButton.bmp" />
+    <AddInContent Include="OrmapAnnotateToolbar\Images\TransposeAnnotationButton.bmp" />
+    <AddInContent Include="OrmapAnnotateToolbar\Images\WideBothSidesDownButton.bmp" />
+    <AddInContent Include="OrmapAnnotateToolbar\Images\WideBothSidesUpButton.bmp" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AddInContent Include="SpiralToolbar\Images\CenterOnTarget32.png" />
+    <AddInContent Include="SpiralToolbar\Images\SCS_button.png" />
+    <AddInContent Include="SpiralToolbar\Images\SingleSpiral.png" />
+  </ItemGroup>
+  <PropertyGroup>
+    <ZipFileExtension>esriAddIn</ZipFileExtension>
+    <AddInTargetProduct>Desktop</AddInTargetProduct>
+    <AddInTargetVersion>10.0</AddInTargetVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\ESRI\ESRI.ArcGIS.AddIns.targets" Condition="Exists('$(MSBuildExtensionsPath)\ESRI\ESRI.ArcGIS.AddIns.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  -->
+  <Target Name="AfterBuild">
+    <!-- Gives build warning when add-in targets file is not found. -->
+    <Warning Text="Unable to create .esriAddin; missing ESRI ArcGIS Add-in SDK component(s)." Condition="!Exists('$(MSBuildExtensionsPath)\ESRI\ESRI.ArcGIS.AddIns.targets')" />
+  </Target>
+  <ProjectExtensions>
+    <!-- Default ESRI add-in properties -->
+    <ESRIAddInProperties>
+      <Host>ArcMap</Host>
+    </ESRIAddInProperties>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

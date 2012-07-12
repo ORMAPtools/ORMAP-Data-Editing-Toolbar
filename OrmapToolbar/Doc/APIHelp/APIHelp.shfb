@@ -1,0 +1,115 @@
+﻿<project schemaVersion="1.6.0.7">
+    <assemblies>
+        <assembly assemblyPath="..\..\OrmapTaxlotEditing\bin\Release\OrmapTaxlotEditing.dll" xmlCommentsPath="..\..\OrmapTaxlotEditing\bin\Release\OrmapTaxlotEditing.xml" commentsOnly="False" />
+    </assemblies>
+    <namespaceSummaries>
+        <namespaceSummaryItem name="" isDocumented="False" />
+        <namespaceSummaryItem name="OrmapTaxlotEditing" isDocumented="True" />
+    </namespaceSummaries>
+    <conceptualContent snippetFile="">
+        <images>
+            <image id="9d1c344f-2368-472a-83c8-4a743643214d" file=".\Images\About.png" altText="About" alwaysCopy="False" />
+            <image id="929e7fda-a341-47e2-aced-3f75becf9acb" file=".\Images\ClassDiagram.png" altText="Class Diagram" alwaysCopy="False" />
+            <image id="02c0b241-fda1-44fa-96f0-38f3fb181ff7" file="..\..\OrmapTaxlotEditing\icons\lgplv3-88x31.png" altText="LGPL 3 Logo" alwaysCopy="False" />
+            <image id="d5140b99-4ff7-4189-9743-ea91781ac2a8" file=".\Images\SourceForgeLogo.png" altText="Old SourceForge Logo" alwaysCopy="False" />
+            <image id="6b7ba21e-fe35-4c47-a68b-1201f63eadda" file="..\..\OrmapTaxlotEditing\icons\ORMAPLogo.gif" altText="ORMAP Logo" alwaysCopy="False" />
+            <image id="88c51ef0-501f-4e6a-8d0f-4112d19d0d72" file=".\Images\RegionsExample.jpg" altText="Regions Example" alwaysCopy="False" />
+            <image id="b8d956de-6a04-4378-9df3-42f5a7027005" file=".\Images\SourceForgeLogo2.png" altText="SourceForge Logo" alwaysCopy="False" />
+        </images>
+        <topics defaultTopic="b50c7397-1c2c-40f4-8d12-97d914fe74db">
+            <topic id="b50c7397-1c2c-40f4-8d12-97d914fe74db" file=".\MAML\b50c7397-1c2c-40f4-8d12-97d914fe74db.xml" title="Welcome" revision="1" visible="True" />
+            <topic id="943bec6c-4997-4c5b-b4f3-645e2a5923a2" title="Getting Started" revision="1" visible="True">
+                <topic id="0a9e9d5f-bdf8-4595-b866-3b803adba269" file=".\MAML\0a9e9d5f-bdf8-4595-b866-3b803adba269.xml" title="Installing the Development Environment" revision="1" visible="True">
+                    <topic id="4b73284f-f6e1-4791-8b58-7754d49bbac8" file=".\MAML\4b73284f-f6e1-4791-8b58-7754d49bbac8.xml" title="Installing ArcGIS" revision="1" visible="True" />
+                    <topic id="68ad5395-9f6c-47da-b31c-53eefd613c7b" file=".\MAML\68ad5395-9f6c-47da-b31c-53eefd613c7b.xml" title="Installing Visual Studio" revision="1" visible="True" />
+                    <topic id="70a80a50-3e4a-4b47-ad3a-88eae329f91d" file=".\MAML\70a80a50-3e4a-4b47-ad3a-88eae329f91d.xml" title="Installing Subversion Tools" revision="1" visible="True" />
+                    <topic id="69eb0ba9-7d76-4b6c-a2af-0931560a8512" file=".\MAML\69eb0ba9-7d76-4b6c-a2af-0931560a8512.xml" title="Installing Sandcastle Tools" revision="1" visible="True" />
+                    <topic id="cd8c7caa-cf5f-4a05-8112-bbdece1cdc87" file=".\MAML\cd8c7caa-cf5f-4a05-8112-bbdece1cdc87.xml" title="Installing Optional Code Tools" revision="1" visible="True">
+                        <topic id="7216baa6-8dc6-440e-b493-0f329ca43962" file=".\MAML\7216baa6-8dc6-440e-b493-0f329ca43962.xml" title="Installing FxCop" revision="1" visible="True" />
+                        <topic id="39deb3d1-ff08-4428-960c-3b4a4bfd026c" file=".\MAML\39deb3d1-ff08-4428-960c-3b4a4bfd026c.xml" title="Installing Refactoring Tools" revision="1" visible="True" />
+                    </topic>
+                </topic>
+                <topic id="497dc8df-49cf-47f6-a5ff-06501c0c9d8f" file=".\MAML\497dc8df-49cf-47f6-a5ff-06501c0c9d8f.xml" title="Setting Up the Visual Studio Solution" revision="1" visible="True" />
+                <topic id="50753b1c-1a0e-43d3-9d0f-7d96c878b28d" file=".\MAML\50753b1c-1a0e-43d3-9d0f-7d96c878b28d.xml" title="Defining Custom Application Settings" revision="1" visible="True" />
+            </topic>
+            <topic id="495805fb-8f85-484c-bba1-1a4ffad713d2" file=".\MAML\495805fb-8f85-484c-bba1-1a4ffad713d2.xml" title="Application Architecture" revision="1" visible="True">
+                <topic id="cb891d5c-8abe-4848-abcd-bb3302a1db4f" file=".\MAML\cb891d5c-8abe-4848-abcd-bb3302a1db4f.xml" title="Class Diagram" revision="1" visible="True" />
+            </topic>
+            <topic id="610473ad-2a9b-41be-bf9d-923d7b7d6398" file=".\MAML\610473ad-2a9b-41be-bf9d-923d7b7d6398.xml" title="Tutorials" revision="1" visible="True">
+                <topic id="cc704d88-33aa-4098-aaae-02e90137b149" file=".\MAML\cc704d88-33aa-4098-aaae-02e90137b149.xml" title="How To: Build the Developer Guide " revision="1" visible="True" />
+                <topic id="c43f7f1a-6ef9-4b3a-978a-8210486be717" file=".\MAML\c43f7f1a-6ef9-4b3a-978a-8210486be717.xml" title="How To: Add a Topic to the Developer Guide" revision="1" visible="True" />
+                <topic id="2cffa3e3-036f-451b-b75f-320ab62d91f9" file=".\MAML\2cffa3e3-036f-451b-b75f-320ab62d91f9.xml" title="How To: Add a Button to the Toolbar" revision="1" visible="True" />
+                <topic id="4a6b56e2-241a-4ba7-8419-98919c898d07" file=".\MAML\4a6b56e2-241a-4ba7-8419-98919c898d07.xml" title="How To: Add an Editing Tool to the Toolbar" revision="1" visible="True" />
+            </topic>
+            <topic id="3edaf656-b469-4120-b5c7-d217f4e6ee95" file=".\MAML\3edaf656-b469-4120-b5c7-d217f4e6ee95.xml" title="Coding Standards" revision="1" visible="True" />
+            <topic id="19b0121a-43e7-4c08-bcb9-cb2d21a6f375" file=".\MAML\19b0121a-43e7-4c08-bcb9-cb2d21a6f375.xml" title="Glossary" revision="1" visible="True" />
+        </topics>
+    </conceptualContent>
+    <apiFilter>
+        <filter entryType="Namespace" fullName="" isExposed="False" />
+        <filter entryType="Namespace" fullName="OrmapTaxlotEditing" isExposed="True">
+            <filter entryType="Class" fullName="OrmapTaxlotEditing.AboutForm" filterName="AboutForm" isExposed="False">
+                <filter entryType="Method" fullName="OrmapTaxlotEditing.AboutForm.AboutForm_Load" filterName="AboutForm_Load" isExposed="True" />
+                <filter entryType="Method" fullName="OrmapTaxlotEditing.AboutForm.OKButton_Click" filterName="OKButton_Click" isExposed="True" />
+            </filter>
+            <filter entryType="Class" fullName="OrmapTaxlotEditing.AddArrows" filterName="AddArrows" isExposed="True">
+                <filter entryType="Class" fullName="OrmapTaxlotEditing.AddArrows._partnerAddArrowsForm" filterName="_partnerAddArrowsForm" isExposed="False" />
+                <filter entryType="Class" fullName="OrmapTaxlotEditing.AddArrows._partnerDimensionArrowsForm" filterName="_partnerDimensionArrowsForm" isExposed="False" />
+                <filter entryType="Class" fullName="OrmapTaxlotEditing.AddArrows._theEditorEvents" filterName="_theEditorEvents" isExposed="False" />
+                <filter entryType="Constructor" fullName="OrmapTaxlotEditing.AddArrows.#ctor" filterName=".ctor" isExposed="False" />
+                <filter entryType="Constructor" fullName="OrmapTaxlotEditing.AddArrows.#cctor" filterName=".cctor" isExposed="False" />
+            </filter>
+            <filter entryType="Interface" fullName="OrmapTaxlotEditing.AddArrows._AddArrows" filterName="AddArrows._AddArrows" isExposed="False" />
+            <filter entryType="Interface" fullName="OrmapTaxlotEditing.AutoUpdateAllToggle._AutoUpdateAllToggle" filterName="AutoUpdateAllToggle._AutoUpdateAllToggle" isExposed="False" />
+            <filter entryType="Interface" fullName="OrmapTaxlotEditing.CombineTaxlots._CombineTaxlots" filterName="CombineTaxlots._CombineTaxlots" isExposed="False" />
+            <filter entryType="Interface" fullName="OrmapTaxlotEditing.EditMapIndex._EditMapIndex" filterName="EditMapIndex._EditMapIndex" isExposed="False" />
+            <filter entryType="Interface" fullName="OrmapTaxlotEditing.EditorExtension._EditorExtension" filterName="EditorExtension._EditorExtension" isExposed="False" />
+            <filter entryType="Interface" fullName="OrmapTaxlotEditing.LocateFeature._LocateFeature" filterName="LocateFeature._LocateFeature" isExposed="False" />
+            <filter entryType="Interface" fullName="OrmapTaxlotEditing.OrmapToolbar._OrmapToolbar" filterName="OrmapToolbar._OrmapToolbar" isExposed="False" />
+            <filter entryType="Interface" fullName="OrmapTaxlotEditing.PropertyPage._PropertyPage" filterName="PropertyPage._PropertyPage" isExposed="False" />
+            <filter entryType="Interface" fullName="OrmapTaxlotEditing.TaxlotAssignment._TaxlotAssignment" filterName="TaxlotAssignment._TaxlotAssignment" isExposed="False" />
+        </filter>
+        <filter entryType="Namespace" fullName="OrmapTaxlotEditing.My" isExposed="False" />
+    </apiFilter>
+    <ProjectSummary />
+    <MissingTags>Summary, Parameter, Returns, AutoDocumentCtors, Namespace, TypeParameter</MissingTags>
+    <VisibleItems>None</VisibleItems>
+    <HtmlHelp1xCompilerPath path="" />
+    <HtmlHelp2xCompilerPath path="" />
+    <OutputPath>.\Help\</OutputPath>
+    <SandcastlePath path="" />
+    <WorkingPath path="" />
+    <CleanIntermediates>True</CleanIntermediates>
+    <KeepLogFile>True</KeepLogFile>
+    <BuildLogFile path="" />
+    <HelpFileFormat>HtmlHelp1x</HelpFileFormat>
+    <CppCommentsFixup>False</CppCommentsFixup>
+    <FrameworkVersion>2.0.50727</FrameworkVersion>
+    <IndentHtml>True</IndentHtml>
+    <Preliminary>False</Preliminary>
+    <RootNamespaceContainer>True</RootNamespaceContainer>
+    <RootNamespaceTitle>API Documentation</RootNamespaceTitle>
+    <HelpTitle>ORMAP Taxlot Editing Toolbar Developer Guide</HelpTitle>
+    <HtmlHelpName>DeveloperGuide</HtmlHelpName>
+    <Language>en-US</Language>
+    <CopyrightHref />
+    <CopyrightText>Copyright © 2008 ORMAP Tech Group. All rights reserved.</CopyrightText>
+    <FeedbackEMailAddress>ORMAP_ESRI_Programmers@listsmart.osl.state.or.us</FeedbackEMailAddress>
+    <FeedbackEMailLinkText>ORMAP Tech Group</FeedbackEMailLinkText>
+    <HeaderText />
+    <FooterText>Created using &lt;a href="http://www.codeplex.com/SHFB"&gt;Sandcastle Help File Builder&lt;/a&gt;.</FooterText>
+    <ProjectLinkType>Local</ProjectLinkType>
+    <SdkLinkType>Msdn</SdkLinkType>
+    <SdkLinkTarget>Blank</SdkLinkTarget>
+    <PresentationStyle>vs2005</PresentationStyle>
+    <NamingMethod>Guid</NamingMethod>
+    <SyntaxFilters>VisualBasic</SyntaxFilters>
+    <ShowFeedbackControl>False</ShowFeedbackControl>
+    <BinaryTOC>True</BinaryTOC>
+    <IncludeFavorites>True</IncludeFavorites>
+    <CollectionTocStyle>Hierarchical</CollectionTocStyle>
+    <IncludeStopWordList>True</IncludeStopWordList>
+    <PlugInNamespaces>ms.vsipcc+, ms.vsexpresscc+</PlugInNamespaces>
+    <HelpFileVersion>2.1.2.0</HelpFileVersion>
+    <ContentPlacement>AboveNamespaces</ContentPlacement>
+</project>
