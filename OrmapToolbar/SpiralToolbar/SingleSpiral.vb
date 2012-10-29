@@ -269,7 +269,7 @@ Public Class SingleSpiral
             Dim theFeatureClass As IFeatureClass = GetTargetFeatureClass()
 
             If .uxByArcLength.Checked Then
-                ConstructSpiralbyLength(theFromPoint, theTangentPoint, CDbl(.uxArcLenghtValue.Text), theBeginRadius, TheEndRadius, .uxCurvetotheRight.Checked, theFeatureClass.AliasName, CDbl(Trim(.uxDensityValue.Text)))
+                ConstructSpiralByLength(theFromPoint, theTangentPoint, CDbl(.uxArcLenghtValue.Text), theBeginRadius, TheEndRadius, .uxCurvetotheRight.Checked, theFeatureClass.AliasName, CDbl(Trim(.uxDensityValue.Text)))
             Else
                 ConstructSpiralbyDelta(theFromPoint, theTangentPoint, .uxCurvetotheLeft.Checked, theBeginRadius, TheEndRadius, .uxDeltaAngle.Text, theFeatureClass.AliasName, CDbl(Trim(.uxDensityValue.Text)))
             End If

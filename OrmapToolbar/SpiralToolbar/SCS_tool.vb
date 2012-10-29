@@ -126,21 +126,21 @@ Public Class SCS_tool
             'subscribe to partner form events
             AddHandler _partnerSCSDockWindowUI.uxCreate.Click, AddressOf uxCreate_Click
             AddHandler _partnerSCSDockWindowUI.uxHelp.Click, AddressOf uxHelp_Click
-            AddHandler _partnerSCSDockWindowUI.uxGettoPoint.Click, AddressOf uxGettoPoint_Click
+            AddHandler _partnerSCSDockWindowUI.uxGettoPoint.Click, AddressOf uxGetToPoint_Click
             AddHandler _partnerSCSDockWindowUI.uxGetTangentPoint.Click, AddressOf uxGetTangentPoint_Click
             AddHandler _partnerSCSDockWindowUI.uxGetFromPoint.Click, AddressOf uxGetFromPoint_Click
             AddHandler _partnerSCSDockWindowUI.uxCurveByRadius.CheckedChanged, AddressOf uxCurveByRadius_CheckedChanged
-            AddHandler _partnerSCSDockWindowUI.uxCurvebyDegree.CheckedChanged, AddressOf uxCurvebyDegree_CheckedChanged
+            AddHandler _partnerSCSDockWindowUI.uxCurvebyDegree.CheckedChanged, AddressOf uxCurveByDegree_CheckedChanged
             AddHandler _partnerSCSDockWindowUI.uxTimer.Tick, AddressOf uxTimer_tick
         Else
             'unSubscribe to partner form events
             RemoveHandler _partnerSCSDockWindowUI.uxCreate.Click, AddressOf uxCreate_Click
             RemoveHandler _partnerSCSDockWindowUI.uxHelp.Click, AddressOf uxHelp_Click
-            RemoveHandler _partnerSCSDockWindowUI.uxGettoPoint.Click, AddressOf uxGettoPoint_Click
+            RemoveHandler _partnerSCSDockWindowUI.uxGettoPoint.Click, AddressOf uxGetToPoint_Click
             RemoveHandler _partnerSCSDockWindowUI.uxGetTangentPoint.Click, AddressOf uxGetTangentPoint_Click
             RemoveHandler _partnerSCSDockWindowUI.uxGetFromPoint.Click, AddressOf uxGetFromPoint_Click
             RemoveHandler _partnerSCSDockWindowUI.uxCurveByRadius.CheckedChanged, AddressOf uxCurveByRadius_CheckedChanged
-            RemoveHandler _partnerSCSDockWindowUI.uxCurvebyDegree.CheckedChanged, AddressOf uxCurvebyDegree_CheckedChanged
+            RemoveHandler _partnerSCSDockWindowUI.uxCurvebyDegree.CheckedChanged, AddressOf uxCurveByDegree_CheckedChanged
             RemoveHandler _partnerSCSDockWindowUI.uxTimer.Tick, AddressOf uxTimer_tick
         End If
     End Sub
@@ -201,11 +201,11 @@ Public Class SCS_tool
             Dim theCurveRadius As Double
             If .uxCurveByRadius.Checked Then
                 'John Prychun, Jan 2012
-                ConstructSCSbyLength(theFromPoint, theTangent, theToPoint, CDbl(Trim(.uxArcLengthValue.Text)), CDbl(Trim(.uxCurveByRadiusValue.Text)), .uxCurvetotheRight.Checked, theFeatureClass.AliasName, CDbl(Trim(.uxCurveDensity.Text))) 'Trim(.uxTargetLayers.Text), CDbl(Trim(.uxCurveDensity.Text)))
+                ConstructSCSByLength(theFromPoint, theTangent, theToPoint, CDbl(Trim(.uxArcLengthValue.Text)), CDbl(Trim(.uxCurveByRadiusValue.Text)), .uxCurvetotheRight.Checked, theFeatureClass.AliasName, CDbl(Trim(.uxCurveDensity.Text))) 'Trim(.uxTargetLayers.Text), CDbl(Trim(.uxCurveDensity.Text)))
                 'end John Prychun, Jan 2012 
             ElseIf .uxCurvebyDegree.Checked Then
                 If Not IsNumeric(.uxCurveDegreeValue.Text) Then
-                    theCurveRadius = 5729.578 / DMSAngletoDouble(Trim(.uxCurveDegreeValue.Text))
+                    theCurveRadius = 5729.578 / DMSAngleToDouble(Trim(.uxCurveDegreeValue.Text))
                     If theCurveRadius = 0 Then
                         MessageBox.Show("Please Enter a valid degree value" & vbNewLine _
                                         & "for example, 1-30-00")
@@ -220,7 +220,7 @@ Public Class SCS_tool
                 Try
 
                     'John Prychun, Jan 2012
-                    ConstructSCSbyLength(theFromPoint, theTangent, theToPoint, CDbl(Trim(.uxArcLengthValue.Text)), theCurveRadius, .uxCurvetotheRight.Checked, theFeatureClass.AliasName, CDbl(Trim(.uxCurveDensity.Text))) 'Trim(.uxTargetLayers.Text), CDbl(Trim(.uxCurveDensity.Text)))
+                    ConstructSCSByLength(theFromPoint, theTangent, theToPoint, CDbl(Trim(.uxArcLengthValue.Text)), theCurveRadius, .uxCurvetotheRight.Checked, theFeatureClass.AliasName, CDbl(Trim(.uxCurveDensity.Text))) 'Trim(.uxTargetLayers.Text), CDbl(Trim(.uxCurveDensity.Text)))
                     'ConstructSCSbyLength(theFromPoint, theTangent, theToPoint, CDbl(.uxArcLengthValue.Text), theCurveRadius, .uxCurvetotheRight.Checked, .uxTargetLayers.Text, CDbl(Trim(.uxCurveDensity.Text)))
                     'end John Prychun, Jan 2012 
 
@@ -246,7 +246,7 @@ Public Class SCS_tool
     ''' <summary>
     ''' Gets the end point for the Spiral Curve Spiral Construction from the map.
     ''' </summary>
-    Private Sub uxGettoPoint_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub uxGetToPoint_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
         _IsGettingToPoint = True
         _IsCircleActive = True
@@ -290,7 +290,7 @@ Public Class SCS_tool
     ''' Defines if the central curve is defined by a degree of curve.
     ''' </summary>
     ''' <remarks>If checked, the .uxCurvebyDegreeValue is Enable.  The .uxCurvebyRadiusValue is disabled</remarks>
-    Private Sub uxCurvebyDegree_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub uxCurveByDegree_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
         If _partnerSCSDockWindowUI.uxCurvebyDegree.Checked Then
             _partnerSCSDockWindowUI.uxCurveDegreeValue.Enabled = True
@@ -491,10 +491,7 @@ Public Class SCS_tool
 
 #End Region
 
-    Private Function featureclass() As Object
-        Throw New NotImplementedException
-    End Function
-
+    
 
 
 End Class

@@ -132,7 +132,7 @@ Module SpiralUtilities
             If IsNumeric(theDeltaString) Then
                 theDelta = CDbl(theDeltaString) * (Math.PI / 180)
             Else
-                theDelta = DMSAngletoDouble(theDeltaString) * (Math.PI / 180)
+                theDelta = DMSAngleToDouble(theDeltaString) * (Math.PI / 180)
             End If
 
             If theBeginRadius <> 0 Then theBeginCurvature = 1 / theBeginRadius
@@ -181,7 +181,7 @@ Module SpiralUtilities
         End Try
 
     End Sub
-    Public Sub ConstructSpiralbyLength(ByVal theFromPoint As IPoint, ByVal theTangentPoint As IPoint, ByVal theSpiralLength As Double, ByVal theBeginRadius As Double, ByVal theEndRadius As Double, ByVal isCCW As Boolean, ByVal theTargetLayerName As String, ByVal theCurveDensity As Double)
+    Public Sub ConstructSpiralByLength(ByVal theFromPoint As IPoint, ByVal theTangentPoint As IPoint, ByVal theSpiralLength As Double, ByVal theBeginRadius As Double, ByVal theEndRadius As Double, ByVal isCCW As Boolean, ByVal theTargetLayerName As String, ByVal theCurveDensity As Double)
         If My.ArcMap.Editor.EditState = esriEditState.esriStateNotEditing Then Exit Sub
 
         Try
@@ -192,7 +192,7 @@ Module SpiralUtilities
             If theEndRadius <> 0 Then theEndCurvature = 1 / theEndRadius
 
             'Consturcts and validates the polyline
-            Dim theSpiralPolyLine As IPolyline6 = ConstructSpiralbyLength(theFromPoint, theTangentPoint, theBeginCurvature, theEndCurvature, isCCW, theSpiralLength, theCurveDensity)
+            Dim theSpiralPolyLine As IPolyline6 = ConstructSpiralByLength(theFromPoint, theTangentPoint, theBeginCurvature, theEndCurvature, isCCW, theSpiralLength, theCurveDensity)
             If theSpiralPolyLine Is Nothing Then
                 MessageBox.Show("Invalid Spiral Parameters.")
                 Exit Sub
@@ -238,7 +238,7 @@ Module SpiralUtilities
     ''' <param name="theRadius">As double, the radius of the central spiral</param>
     ''' <param name="isCCW">as boolena, is curve counter clockwise</param>
     ''' <remarks></remarks>
-    Public Sub ConstructSCSbyLength(ByVal theFromPoint As IPoint, ByVal theTangentPoint As IPoint, ByVal theToPoint As IPoint, ByVal theSpiralLengths As Double, ByVal theRadius As Double, ByVal isCCW As Boolean, ByVal theTargetLayerName As String, ByVal theCurveDensity As Double)
+    Public Sub ConstructSCSByLength(ByVal theFromPoint As IPoint, ByVal theTangentPoint As IPoint, ByVal theToPoint As IPoint, ByVal theSpiralLengths As Double, ByVal theRadius As Double, ByVal isCCW As Boolean, ByVal theTargetLayerName As String, ByVal theCurveDensity As Double)
         If My.ArcMap.Editor.EditState = esriEditState.esriStateNotEditing Then Exit Sub
 
         Try
@@ -246,7 +246,7 @@ Module SpiralUtilities
             Dim DensifyParameter As Double = 0.5
 
             'Constructs the spiral curves
-            Dim theFirstSpiralPolyLine As IPolyline6 = ConstructSpiralbyLength(theFromPoint, theTangentPoint, 0, toCurvature, isCCW, theSpiralLengths, theCurveDensity)
+            Dim theFirstSpiralPolyLine As IPolyline6 = ConstructSpiralByLength(theFromPoint, theTangentPoint, 0, toCurvature, isCCW, theSpiralLengths, theCurveDensity)
             If theFirstSpiralPolyLine Is Nothing Then
                 MessageBox.Show("Failed to construct the first spiral" & vbNewLine & "Please check construction inputs")
                 Exit Sub
@@ -254,7 +254,7 @@ Module SpiralUtilities
 
             Dim theSecondSpiralisCCW As Boolean = Not isCCW
 
-            Dim theSecondSpiralPolyLine As IPolyline6 = ConstructSpiralbyLength(theToPoint, theTangentPoint, 0, toCurvature, theSecondSpiralisCCW, theSpiralLengths, theCurveDensity)
+            Dim theSecondSpiralPolyLine As IPolyline6 = ConstructSpiralByLength(theToPoint, theTangentPoint, 0, toCurvature, theSecondSpiralisCCW, theSpiralLengths, theCurveDensity)
             If theSecondSpiralPolyLine Is Nothing Then
                 MessageBox.Show("Failed to construct the first spiral" & vbNewLine & "Please check construction inputs")
                 Exit Sub
@@ -301,7 +301,7 @@ Module SpiralUtilities
             If FindField("RADIUS", theCenterCircularFeature) >= 0 Then theCenterCircularFeature.Value(FindField("RADIUS", theCenterCircularFeature)) = FormatNumber(theRadius, 2).ToString
             If FindField("SIDE", theCenterCircularFeature) >= 0 Then theCenterCircularFeature.Value(FindField("SIDE", theCenterCircularFeature)) = theCurveDirection
             If FindField("DISTANCE", theCenterCircularFeature) >= 0 Then theCenterCircularFeature.Value(FindField("DISTANCE", theCenterCircularFeature)) = LineLength(theCentralCurve.FromPoint, theCentralCurve.ToPoint).ToString
-            If FindField("DELTA", theCenterCircularFeature) >= 0 Then theCenterCircularFeature.Value(FindField("DELTA", theCenterCircularFeature)) = GetDelta(DirectCast(theCentralCurve, ICircularArc))
+            If FindField("DELTA", theCenterCircularFeature) >= 0 Then theCenterCircularFeature.Value(FindField("DELTA", theCenterCircularFeature)) = getDelta(DirectCast(theCentralCurve, ICircularArc))
             If FindField("DIRECTION", theCenterCircularFeature) >= 0 Then theCenterCircularFeature.Value(FindField("DIRECTION", theCenterCircularFeature)) = getDirection(theCentralCurve.FromPoint, theCentralCurve.ToPoint)
             If FindField("LINETYPE", theFirstSpiralFeature) >= 0 Then theFirstSpiralFeature.Value(FindField("LINETYPE", theFirstSpiralFeature)) = theTemplate.DefaultValue("LINETYPE")
             theCenterCircularFeature.Store()
@@ -343,7 +343,7 @@ Module SpiralUtilities
 
         Return theLineDirection
     End Function
-    Function GetDelta(ByVal TheCircularArc As ICircularArc) As String
+    Function getDelta(ByVal TheCircularArc As ICircularArc) As String
 
         Dim theDelta As String
         Dim theCentralAngle As Double = TheCircularArc.CentralAngle * (180 / Math.PI)
@@ -427,7 +427,7 @@ Module SpiralUtilities
     ''' <param name="theSpiralLength"></param>
     ''' <returns></returns>
     ''' <remarks></remarks>
-    Private Function ConstructSpiralbyLength(ByVal theFromPoint As IPoint, ByVal theTangentpoint As IPoint, ByRef theFromCurvature As Double, ByRef theToCurvature As Double, ByVal isCCW As Boolean, ByVal theSpiralLength As Double, ByVal theCurveDensity As Double) As IPolyline6
+    Private Function ConstructSpiralByLength(ByVal theFromPoint As IPoint, ByVal theTangentpoint As IPoint, ByRef theFromCurvature As Double, ByRef theToCurvature As Double, ByVal isCCW As Boolean, ByVal theSpiralLength As Double, ByVal theCurveDensity As Double) As IPolyline6
         Dim thePolyLine As IPolyline6 = DirectCast(New Polyline, IPolyline6)
 
         Try
@@ -448,7 +448,7 @@ Module SpiralUtilities
     ''' <param name="TheCircularDegree"></param>
     ''' <returns>A double value.</returns>
     ''' <remarks>If 0 is returned then an invalid value was sent.</remarks>
-    Public Function DMSAngletoDouble(ByVal TheCircularDegree As String) As Double
+    Public Function DMSAngleToDouble(ByVal TheCircularDegree As String) As Double
 
         Try
             Dim theNewValue As Double = 0
