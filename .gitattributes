@@ -1,2 +1,2 @@
 # Tell Git Linguist that the docs folder is just documentation, not code.
-/OrmapToolbar/Doc/* linguist-documentation
+OrmapToolbar/Doc/* linguist-documentation
