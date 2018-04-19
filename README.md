@@ -4,7 +4,7 @@ The ORMAP Data Editing toolbar is a specific set of tools built to support Orego
 parcels.  The tools are built using the programming language Visual Basic.  They are platform as an Add-in and supports version 10.1+ (currently tested up to version 10.5). ArcMap is required 
 to use this toolbar. 
 
-![alt text](https://raw.githubusercontent.com/ORMAPtools/ORMAP-Data-Editing-Toolbar/blob/OrmapToolbarAddIn_for_10_1/OrmapToolbar/Images/ORMAP%20Toolbar.png "Image of the toolbar")
+![alt text](https://raw.githubusercontent.com/ORMAPtools/ORMAP-Data-Editing-Toolbar/OrmapToolbarAddIn_for_10_1/OrmapToolbar/Images/ORMAP%20Toolbar.png "Image of the toolbar")
 
 
 ### Download
