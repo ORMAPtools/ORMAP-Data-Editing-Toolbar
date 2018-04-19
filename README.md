@@ -16,11 +16,9 @@ The download contains everything you need including the Add-In, documentation, a
 
 This Add-In requires configuration and setup prior to use.  This documentation is meant for an administrator who will configure and distribute the Add-In to users.   
 
-Download the zip file and unzip it to a folder on your hard drive.  We can use one of the buttons on the toolbar to help us configure the map elements for the new toolbar. Install the toolbar.
-
-1.	Start by navigating to the Add-In file.  To do this, navigate to where you unzipped the contents of the zip file and go into the Install folder.  
-2.  Run the "OrmapTaxlotEditing" add-in file.
-
+1.	Download the add-in from the link above to a folder on your hard drive.
+2.  Start by navigating to folder where you downloaded the "OrmapTaxlotEditing" Add-In file and double click the file to install.   
+3.  You should recieve confirmation that the toolbar was added successfully.
 
 You can now use the ORMAP Taxlot Editing Settings within Arcmap.
 
