@@ -9,7 +9,7 @@ to use this toolbar.
 
 ### Download
 The download contains everything you need including the Add-In, documentation, and configuration files.
-> [DOWNLOAD NOW](https://github.com/ORMAPtools/ORMAP-Data-Editing-Toolbar/archive/OrmapToolbarAddIn_for_10_1.zip).
+> [DOWNLOAD NOW](https://github.com/ORMAPtools/ORMAP-Data-Editing-Toolbar/raw/OrmapToolbarAddIn_for_10_1/OrmapToolbar/Install/OrmapTaxlotEditing.esriAddIn).
 
 
 ### Documentation/Configuration
