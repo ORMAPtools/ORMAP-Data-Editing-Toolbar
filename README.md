@@ -41,4 +41,4 @@ The ORMAP tools were created by the ORMAP tools developers.  We encourage anyone
 
 ### Licensing
 Licensed under the GNU General Public License, version 3 (GPL-3.0).  
-> [View License](https://github.com/ORMAPtools/ORMAP-Data-Editing-Toolbar/blob/master/LICENSE).
+> [View License](https://github.com/ORMAPtools/ORMAP-Data-Editing-Toolbar/blob/OrmapToolbarAddIn_for_10_1/LICENSE).
